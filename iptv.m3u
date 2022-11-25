@@ -199,9 +199,9 @@ https://livecdn.fptplay.net/hda2/davincihd_vhls.smil/playlist.m3u8
 https://livecdn.fptplay.net/hda1/afchd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TLC" tvg-logo="https://i.ibb.co/c2kb3GM/TLC-BEARTV.png" group-title="QUỐC TẾ", TLC
 https://livecdn.fptplay.net/hda2/travelliving_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Rock Entertainment" tvg-logo="https://i.ibb.co/j6vx4SJ/Rock-Entertainment-BEARTV.png" group-title="QUỐC TẾ", Rock Entertainment
+#EXTINF:-1 tvg-id="Blue Ant Entertainment HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_blue-ant-entertainment_165649225527.png" group-title="QUỐC TẾ", Blue Ant Entertainment HD
 https://livecdn.fptplay.net/hda1/blueantent_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Rock Extreme" tvg-logo="https://i.ibb.co/gwsD8QY/Rock-Extreme-BEARTV.png" group-title="QUỐC TẾ", Rock Extreme
+#EXTINF:-1 tvg-id="Blue Ant Extreme HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_blue-ant-extreme_165649226345.png" group-title="QUỐC TẾ", Blue Ant Extreme HD
 https://livecdn.fptplay.net/hda1/blueantext_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="National Geographic HD" tvg-logo="https://i.ibb.co/RjN9fs6/National-Geographic-BEARTV.png" group-title="QUỐC TẾ", National Geographic HD
 https://vips-livecdn.fptplay.net/hda2/natgeohd_vhls.smil/playlist.m3u8
