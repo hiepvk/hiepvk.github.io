@@ -221,9 +221,9 @@ https://vips-livecdn.fptplay.net/hda2/dwenglish_vhls.smil/playlist.m3u8
 https://vips-livecdn.fptplay.net/hda2/fashiontvhd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Fashion TV 4K" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_fashion-tv_165649235825.png" group-title="07 QUỐC TẾ", Fashion TV 4K
 http://fash2043.cloudycdn.services/slive/_definst_/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Fight Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Fight_network_logo.svg/1200px-Fight_network_logo.svg.png" group-title="07 QUỐC TẾ", Fight Network
+#EXTINF:-1 tvg-id="Fight Network" tvg-logo="https://hiepvk.github.io/images/fightnetwork.png" group-title="07 QUỐC TẾ", Fight Network
 https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8
-#EXTINF:-1 tvg-id="FIGHT SPORTS" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5b/FIGHT_SPORTS_2018.png" group-title="07 QUỐC TẾ", FIGHT SPORTS
+#EXTINF:-1 tvg-id="FIGHT SPORTS" tvg-logo="https://hiepvk.github.io/images/fightsports.png" group-title="07 QUỐC TẾ", FIGHT SPORTS
 https://shls-fight-sports-ak.akamaized.net/out/v1/ee7e6475b12e484bbfa5c31461ad4306/index.m3u8
 #EXTINF:-1 tvg-id="France 24" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_france-24_165649308045.png" group-title="07 QUỐC TẾ", France 24
 https://vips-livecdn.fptplay.net/sdb/france24_hls.smil/playlist.m3u8
