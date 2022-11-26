@@ -181,7 +181,11 @@ https://livecdn.fptplay.net/hda1/blueantent_vhls.smil/playlist.m3u8
 https://livecdn.fptplay.net/hda1/blueantext_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Boomerang" tvg-logo="https://i.ibb.co/vD7cGzQ/Boomerang-BEARTV.png" group-title="07 QUỐC TẾ", Boomerang
 https://livecdn.fptplay.net/hda3/boomerang_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BOX HITS" tvg-logo="https://i.ibb.co/XbkM9D2/Box-Hit-BEARTV.png" group-title="07 QUỐC TẾ", BOX HITS
+#EXTINF:-1 tvg-id="BOX" tvg-logo="http://tvmienphi.tv/uploads/tv_image/sm/in-the-box.jpg" group-title="07 QUỐC TẾ", BOX
+http://115.72.21.57:8080/live/inthebox/index.m3u8?token=cCN51EBeya780quohKsKkA&e=1669447860
+#EXTINF:-1 tvg-id="BOX HITS" tvg-logo="http://tvmienphi.tv/uploads/tv_image/box-hits.jpg" group-title="07 QUỐC TẾ", BOX HITS
+http://115.72.18.38:8080/live/boxhits/index.m3u8?token=PCvCIY5M939lEa13_DCU3w&e=1669447721
+#EXTINF:-1 tvg-id="BOX HITS 1" tvg-logo="https://i.ibb.co/XbkM9D2/Box-Hit-BEARTV.png" group-title="07 QUỐC TẾ", BOX HITS 1
 http://live.vthanhtivi.pw:8080/boxhits
 #EXTINF:-1 tvg-id="Cartoon Network HD" tvg-logo="https://i.ibb.co/THhk8Wf/Cartoon-Network-BEARTV.png" group-title="07 QUỐC TẾ", Cartoon Network HD
 https://livecdn.fptplay.net/hda3/cartoonnetworkhd_vhls.smil/playlist.m3u8
