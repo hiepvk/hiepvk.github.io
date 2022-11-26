@@ -55,7 +55,7 @@ http://cdn.vovtv.mediatech.vn/vovlive/tv1live.m3u8
 https://video.nhandan.thienvietjsc.net/live/nhandan720/chunklist_w1915921234.m3u8
 #EXTINF:-1 tvg-id="VNews" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_thong-tan-xa-viet-nam_165649329873.png" group-title="02 KÊNH CHUYÊN BIỆT", Vnews HD
 https://vips-livecdn.fptplay.net/hda2/ttxvn_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="FPT PLAY" tvg-logo="https://images.fptplay.net/media/channels/icon_channel_fpt-play_16564756306.png" group-title="03 KÊNH ĐỊA PHƯƠNG", FPT PLAY 
+#EXTINF:-1 tvg-id="FPT PLAY" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_fpt-play_16564756306.png" group-title="03 KÊNH ĐỊA PHƯƠNG", FPT PLAY 
 https://vips-livecdn.fptplay.net/hda1/f-channel1_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Hải Phòng HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_hai-phong_165655891473.png" group-title="03 KÊNH ĐỊA PHƯƠNG", Hải Phòng HD   
 https://vips-livecdn.fptplay.net/sdc/haiphong_hls.smil/playlist.m3u8
