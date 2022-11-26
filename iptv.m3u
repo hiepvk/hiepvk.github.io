@@ -171,7 +171,7 @@ https://vips-livecdn.fptplay.net/sdb/arirang_hls.smil/playlist.m3u8
 https://vips-livecdn.fptplay.net/hda1/afchd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AXN" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_axn_165647568626.png" group-title="07 QUỐC TẾ", AXN
 https://vips-livecdn.fptplay.net/hda3/axnhd_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Baby First" tvg-logo="https://i.ibb.co/X5gLjLF/babyfirst-BEARTV.png" group-title="07 QUỐC TẾ", Baby First
+#EXTINF:-1 tvg-id="Baby First" tvg-logo="https://hiepvk.github.io/images/babyfirst.png" group-title="07 QUỐC TẾ", Baby First
 https://vips-livecdn.fptplay.net/hda1/babyfirst_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BabyTV HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_babytv-hd_165649289806.png" group-title="07 QUỐC TẾ", BabyTV HD
 https://vips-livecdn.fptplay.net/hda3/babytvhd_vhls.smil/playlist.m3u8
