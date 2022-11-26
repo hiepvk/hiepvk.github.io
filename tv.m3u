@@ -189,10 +189,10 @@ https://vips-livecdn.fptplay.net/hda1/blueantent_vhls.smil/playlist.m3u8
 https://vips-livecdn.fptplay.net/hda1/blueantext_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Boomerang" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_boomerang_16564929211.png" group-title="07 QUỐC TẾ", Boomerang
 https://vips-livecdn.fptplay.net/hda3/boomerang_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BOX HITS" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1628059683/cmc_new/img.live_channel/0/0/0/0/268.jpg" group-title="07 QUỐC TẾ", BOX HITS
-https://api.vthanhtivi.pw/v1/getlink/mytv_web/105/hd
 #EXTINF:-1 tvg-id="BOX 1 MOVIE" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1604651302/cmc_new/img.live_channel/0/0/0/0/250.jpg" group-title="07 QUỐC TẾ", BOX 1 MOVIE
 http://106bec9d8.vws.vegacdn.vn/ZHjpimzoln80zWgBySKSDA/1669550228/cliptv_live/amlst:boxmovies1hd/playlist.m3u8
+#EXTINF:-1 tvg-id="BOX HITS" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1628059683/cmc_new/img.live_channel/0/0/0/0/268.jpg" group-title="07 QUỐC TẾ", BOX HITS
+https://api.vthanhtivi.pw/v1/getlink/mytv_web/105/hd
 #EXTINF:-1 tvg-id="Cartoon Network HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_cartoon-network_165649227684.png" group-title="07 QUỐC TẾ", Cartoon Network HD
 https://vips-livecdn.fptplay.net/hda3/cartoonnetworkhd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Cbeebies" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_cbeebies_165649232726.png" group-title="07 QUỐC TẾ", Cbeebies
@@ -239,7 +239,7 @@ https://vips-livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 https://vips-livecdn.fptplay.net/hda1/kixhd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MTV" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_mtv_165649252829.png" group-title="07 QUỐC TẾ", MTV
 https://vips-livecdn.fptplay.net/sdb/mtv_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Nat Geo Wild HD" tvg-logo="https://i.ibb.co/fxH50gT/Nat-Geo-Wild-HD-BEARTV.png" group-title="07 QUỐC TẾ", Nat Geo Wild HD
+#EXTINF:-1 tvg-id="Nat Geo Wild HD" tvg-logo="https://hiepvk.github.io/images/natgeowildhd.png" group-title="07 QUỐC TẾ", Nat Geo Wild HD
 https://vips-livecdn.fptplay.net/hda3/natgeowild_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="National Geographic HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_national-geographic-hd_165647725527.png" group-title="07 QUỐC TẾ", National Geographic HD
 https://vips-livecdn.fptplay.net/hda2/natgeohd_vhls.smil/playlist.m3u8
