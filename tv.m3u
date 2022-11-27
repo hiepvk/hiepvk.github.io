@@ -109,6 +109,9 @@ https://nvzoftzsvflivcf.vcdn.com.vn/vtvcab6/vtvcab6@high.m3u8
 https://856175157.r.vtvcdn.com/ondrm/INFO_TV/m20_index.m3u8
 #EXTINF:-1 tvg-id="VTVCab 10 - ON CINE" tvg-logo="https://hiepvk.github.io/images/oncine.png" group-title="05 VTVCAB", VTVCab10 ON CINE
 https://856175157.r.vtvcdn.com/ondrm/O2_TV/m20_index.m3u8
+#EXTINF:-1 tvg-id="VTVcab12 Style TV" tvg-logo="https://hiepvk.github.io/images/styletv.png" group-title="05 VTVCAB", VTVcab12 Style TV
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0
+https://api.vthanhtivi.pw/v1/getlink/vieon2/34c161ed-e70e-418d-b7a7-885500f8a355
 #EXTINF:-1 tvg-id="VTVCab 16 - ON FOOTBALL" tvg-logo="https://hiepvk.github.io/images/onfootbal.png" group-title="05 VTVCAB", VTVCab16 ON FOOTBALL
 https://livevlive.vtvcab.vn/hls/OS_BONGDA_HD/sc-gaFEAA/m30_index.m3u8
 #EXTINF:-1 tvg-id="ON SPORTS NEWS" tvg-logo="https://hiepvk.github.io/images/onsportnew.png" group-title="05 VTVCAB", ON SPORTS NEWS
