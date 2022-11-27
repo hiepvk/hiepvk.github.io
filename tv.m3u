@@ -123,6 +123,8 @@ https://livevlive.vtvcab.vn/hls/OS_BONGDA_HD/sc-gaFEAA/m30_index.m3u8
 https://livevlive.vtvcab.vn/hls/OS_THETHAO_TINTUC_HD/sc-gaFEAA/m30_index.m3u8
 #EXTINF:-1 tvg-id="VTVCab19" tvg-logo="https://hiepvk.github.io/images/vtvcab19.png" group-title="05 VTVCAB", VTVCab19
 https://856175157.r.vtvcdn.com/ondrm/FILM_TV/m20_index.m3u8
+#EXTINF:-1 tvg-id="VTVCab20 VFAMILY" tvg-logo="https://hiepvk.github.io/images/vtvcab20.png" group-title="05 VTVCAB", VTVCab20 VFAMILY
+https://api.vthanhtivi.pw/v1/getlink/vieon2/2eb37e8d-2abf-4bce-aa44-b3b9a4460469
 #EXTINF:-1 tvg-id="VTVCab21 KIDS" tvg-logo="https://hiepvk.github.io/images/cartoonkids.png" group-title="05 VTVCAB", VTVCab21 KIDS
 https://856175157.r.vtvcdn.com/ondrm/BIBI_PLUS_clear/m20_index.m3u8
 #EXTINF:-1 tvg-id="VTVCab22 Life TV" tvg-logo="https://hiepvk.github.io/images/lifetv.png" group-title="05 VTVCAB", VTVCab22 LIFE TV
