@@ -8,14 +8,10 @@ https://nvzoftzsvflivcf.vcdn.com.vn/vtv1/vtv1@mid.m3u8
 https://vips-livecdn.fptplay.net/hda1/vtv2_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV2 SV2" tvg-logo="https://hiepvk.github.io/images/vtv2hd.png" group-title="01 VTV", VTV2 SV2
 https://nvzoftzsvflivcf.vcdn.com.vn/vtv2/vtv2@mid.m3u8
-#EXTINF:-1 tvg-id="VTV2 SV3" tvg-logo="https://hiepvk.github.io/images/vtv2hd.png" group-title="01 VTV", VTV2 SV3
-https://worldcup2022-bak.vtvdigital.vn/worldcup2022/vtv2-manifest.m3u8
 #EXTINF:-1 tvg-id="VTV3 SV1" tvg-logo="https://hiepvk.github.io/images/vtv3hd.png" group-title="01 VTV", VTV3 SV1
 https://vips-livecdn.fptplay.net/hda1/vtv3hd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV3 SV2" tvg-logo="https://hiepvk.github.io/images/vtv3hd.png" group-title="01 VTV", VTV3 SV2
 https://nvzoftzsvflivcf.vcdn.com.vn/vtv3/vtv3@mid.m3u8
-#EXTINF:-1 tvg-id="VTV3 SV3" tvg-logo="https://hiepvk.github.io/images/vtv3hd.png" group-title="01 VTV", VTV3 SV3
-https://worldcup2022-bak.vtvdigital.vn/worldcup2022/vtv3-manifest.m3u8
 #EXTINF:-1 tvg-id="VTV4 SV1" tvg-logo="https://hiepvk.github.io/images/vtv4hd.png" group-title="01 VTV", VTV4 SV1
 https://vips-livecdn.fptplay.net/hda1/vtv4_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV4 SV2" tvg-logo="https://hiepvk.github.io/images/vtv4hd.png" group-title="01 VTV", VTV4 SV2
@@ -24,14 +20,10 @@ https://nvzoftzsvflivcf.vcdn.com.vn/vtv4/vtv4@mid.m3u8
 https://vips-livecdn.fptplay.net/hda2/vtv5hd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV5 SV2" tvg-logo="https://hiepvk.github.io/images/vtv5hd.png" group-title="01 VTV", VTV5 SV2     
 https://nvzoftzsvflivcf.vcdn.com.vn/vtv5/vtv5@mid.m3u8
-#EXTINF:-1 tvg-id="VTV5 SV3" tvg-logo="https://hiepvk.github.io/images/vtv5hd.png" group-title="01 VTV", VTV5 SV3
-https://worldcup2022-bak.vtvdigital.vn/worldcup2022/vtv5-manifest.m3u8
-#EXTINF:-1 tvg-id="VTV6 SV1" tvg-logo="https://hiepvk.github.io/images/vtvcantho.png" group-title="01 VTV", VTV6 CẦN THƠ SV1
+#EXTINF:-1 tvg-id="VTV6 SV1" tvg-logo="https://hiepvk.github.io/images/vtvcantho.png" group-title="01 VTV", VTV CẦN THƠ SV1
 https://vips-livecdn.fptplay.net/hda1/vtv6hd_vhls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV6 SV2" tvg-logo="https://hiepvk.github.io/images/vtvcantho.png" group-title="01 VTV", VTV6 CẦN THƠ SV2
+#EXTINF:-1 tvg-id="VTV6 SV2" tvg-logo="https://hiepvk.github.io/images/vtvcantho.png" group-title="01 VTV", VTV CẦN THƠ SV2
 https://nvzoftzsvflivcf.vcdn.com.vn/vtv6/vtv6@mid.m3u8
-#EXTINF:-1 tvg-id="VTV6 CẦN THƠ SV3" tvg-logo="https://hiepvk.github.io/images/vtvcantho.png" group-title="01 VTV", VTV6 CẦN THƠ SV3
-https://worldcup2022-bak.vtvdigital.vn/worldcup2022/vtv6-manifest.m3u8
 #EXTINF:-1 tvg-id="VTV7 SV1" tvg-logo="https://hiepvk.github.io/images/vtv7hd.png" group-title="01 VTV", VTV7 SV1    
 https://vips-livecdn.fptplay.net/hda3/vtv7hd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV7 SV2" tvg-logo="https://hiepvk.github.io/images/vtv7hd.png" group-title="01 VTV", VTV7 SV2    
@@ -173,7 +165,9 @@ https://vips-livecdn.fptplay.net/hda1/blueantext_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Boomerang" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_boomerang_16564929211.png" group-title="06 QUỐC TẾ", Boomerang
 https://vips-livecdn.fptplay.net/hda3/boomerang_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BOX 1 MOVIE" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1604651302/cmc_new/img.live_channel/0/0/0/0/250.jpg" group-title="06 QUỐC TẾ", BOX 1 MOVIE
-http://code.television4you.xyz/cliptv.php?id=822
+https://api.vthanhtivi.pw/v1/getlink/cliptv/822
+#EXTINF:-1 tvg-id="BOX 1 MOVIE SCTV" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1604651302/cmc_new/img.live_channel/0/0/0/0/250.jpg" group-title="06 QUỐC TẾ", BOX 1 MOVIE SCTV
+https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/boxmovie1
 #EXTINF:-1 tvg-id="BOX HITS" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1628059683/cmc_new/img.live_channel/0/0/0/0/268.jpg" group-title="06 QUỐC TẾ", BOX HITS
 https://api.vthanhtivi.pw/v1/getlink/mytv_web/105/hd
 #EXTINF:-1 tvg-id="Cartoon Network HD" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_cartoon-network_165649227684.png" group-title="06 QUỐC TẾ", Cartoon Network HD
@@ -196,8 +190,10 @@ https://vips-livecdn.fptplay.net/hda2/davincihd_vhls.smil/playlist.m3u8
 https://vips-livecdn.fptplay.net/hda2/discoveryasia_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Discovery Channel" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_discovery_165649301639.png" group-title="06 QUỐC TẾ", Discovery Channel
 https://vips-livecdn.fptplay.net/hda2/discovery_vhls.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DMAX" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1635732563/cmc_new/img.live_channel/0/0/0/0/271.jpg" group-title="06 QUỐC TẾ", DMAX
+https://api.vthanhtivi.pw/v1/getlink/cliptv/841
 #EXTINF:-1 tvg-id="Dr.Fit" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1606205532/cmc_new/img.live_channel/0/0/0/0/251.jpg" group-title="06 QUỐC TẾ", Dr.Fit
-http://code.television4you.xyz/cliptv.php?id=823
+https://api.vthanhtivi.pw/v1/getlink/cliptv/823
 #EXTINF:-1 tvg-id="DreamWorks" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1653982343/cmc_new/img.live_channel/0/0/0/0/275.jpg" group-title="06 QUỐC TẾ", DreamWorks
 https://vips-livecdn.fptplay.net/hda3/dreamworks_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="DW" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_dw_165649234541.png" group-title="06 QUỐC TẾ", DW
@@ -213,19 +209,21 @@ https://shls-fight-sports-ak.akamaized.net/out/v1/ee7e6475b12e484bbfa5c31461ad43
 #EXTINF:-1 tvg-id="France 24" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_france-24_165649308045.png" group-title="06 QUỐC TẾ", France 24
 https://vips-livecdn.fptplay.net/sdb/france24_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Happy Kids" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1604391903/cmc_new/img.live_channel/0/0/0/0/252.jpg" group-title="06 QUỐC TẾ", Happy Kids
-http://code.television4you.xyz/cliptv.php?id=824
+https://api.vthanhtivi.pw/v1/getlink/cliptv/824
 #EXTINF:-1 tvg-id="HBO" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_hbo_165647605697.png" group-title="06 QUỐC TẾ", HBO
 https://vips-livecdn.fptplay.net/hda1/hbo_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Hollywood Classics" tvg-logo="https://hiepvk.github.io/images/hlwc.png" group-title="06 QUỐC TẾ", Hollywood Classics
-http://code.television4you.xyz/cliptv.php?id=825
+https://api.vthanhtivi.pw/v1/getlink/cliptv/825
+#EXTINF:-1 tvg-id="Hollywood Classics SCTV" tvg-logo="https://hiepvk.github.io/images/hlwc.png" group-title="06 QUỐC TẾ", Hollywood Classics SCTV
+https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/hollywoodclassics
 #EXTINF:-1 tvg-id="In The Box" tvg-logo="https://hiepvk.github.io/images/inthebox.png" group-title="06 QUỐC TẾ", In The Box
-http://code.television4you.xyz/cliptv.php?id=838
+https://api.vthanhtivi.pw/v1/getlink/cliptv/838
 #EXTINF:-1 tvg-id="KBS World" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_kbs-world_165655726411.png" group-title="06 QUỐC TẾ", KBS World
 https://vips-livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KIX" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_kix_16564931853.png" group-title="06 QUỐC TẾ", KIX
 https://vips-livecdn.fptplay.net/hda1/kixhd_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MAN HD" tvg-logo="https://106b9c59d.vws.vegacdn.vn/rBN9EfEEFSyoELIQDjEu/408x230x1628059719/cmc_new/img.live_channel/0/0/0/0/269.jpg" group-title="06 QUỐC TẾ", MAN HD
-http://code.television4you.xyz/cliptv.php?id=837
+https://api.vthanhtivi.pw/v1/getlink/cliptv/837
 #EXTINF:-1 tvg-id="MTV" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_mtv_165649252829.png" group-title="06 QUỐC TẾ", MTV
 https://vips-livecdn.fptplay.net/sdb/mtv_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Nat Geo Wild HD" tvg-logo="https://hiepvk.github.io/images/natgeowildhd.png" group-title="06 QUỐC TẾ", Nat Geo Wild HD
@@ -288,7 +286,7 @@ https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/sctv3
 https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/sctv4
 #EXTINF:-1 tvg-id="SCTV5" tvg-logo="https://cdn.hqth.me/logo/thumbs/67.png" group-title="08 SCTV", SCTV5
 https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/sctv5
-#EXTINF:-1 tvg-id="SCTV6 FIM 360" tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_fim360_165649256362.png" group-title="08 SCTV", SCTV6 FIM 360
+#EXTINF:-1 tvg-id="SCTV6" tvg-logo="https://hiepvk.github.io/images/sctv6.png" group-title="08 SCTV", SCTV6
 https://vips-livecdn.fptplay.net/hda3/film360_vhls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SCTV7" tvg-logo="https://cdn.hqth.me/logo/thumbs/69.png" group-title="08 SCTV", SCTV7
 https://api.vthanhtivi.pw/v1/getlink/sctv-tv24/sctv7
