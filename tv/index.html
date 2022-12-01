@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Easy Web TV：Online SmartTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Zhang Boheng">
+    <meta name="keywords" content="iptv, movie, github, online tv, web tv, series tv...">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body {
+        background-image: url("images/bg.jpg");
+    }
+    
+    #menu {
+        overflow-y: scroll !important;
+    }
+</style>
+
+<body>
+    <div id="left">
+        <h3>Select Countries</h3>
+        <ul id="menu">
+            <li>
+                <p><a href="tv.html?tab=vn&title=Vietnam">Vietnam</a></p>
+            </li>
+        </ul>
+    </div>
+    <div id="right">
+        <div id="div1">
+            <img src="images/index.png" />
+        </div>
+    </div>
+    <script>
+        let menuHeight = document.getElementById('menu');
+        let screenHeight = window.innerHeight;
+        menuHeight.style.height = screenHeight - 60 + "px";
+        $("#menu").css({
+            "overflow-y": "auto",
+            "height": menuHeight
+        });
+        $("li p").mouseover(function() {
+            $(this).children("a").css({
+                "color": "#000"
+            })
+        })
+        $("li p").mouseleave(function() {
+            $(this).children("a").css({
+                "color": "#fff"
+            })
+        })
+    </script>
+</body>
+
+</html>
