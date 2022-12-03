@@ -12,7 +12,7 @@ $(document).ready(function() {
     var tis = decodeURIComponent(window.location.href).split('=')[2];
 
     //Set Page Title
-    $('title').html(tis + ' Channels');
+    $('title').html(tis + ' Channels - Web TV');
     $('#left h3').empty();
     $('#left h3').html(tis + ' Channels');
     //Get iptv-org m3u list and show contents lists
