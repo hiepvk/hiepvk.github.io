@@ -1,6 +1,6 @@
 {
-  "name": "Flyinghead",
-  "identifier": "com.flyinghead.source",
+  "name": "Hiepvk",
+  "identifier": "com.hiepvk.source",
   "apps": [
     {
       "beta": false,
@@ -21,6 +21,21 @@
         "https://github.com/flyinghead/flycast/raw/master/shell/imgs/screenshot2.png",
         "https://github.com/flyinghead/flycast/raw/master/shell/imgs/screenshot3.png"
       ]
-    }
+    },
+	{
+            "name": "ESign",
+            "bundleIdentifier": "p3.xyz.yyyue.esign",
+            "developerName": "yyy",
+            "version": "4.8.1",
+            "versionDate": "2023-03-19T16:50:00+08:00",
+            "versionDescription": "Support Remove mobileprovision after signing\nSupport clear app data (iOS15-15.7.1 and 16.0-16.1.2)\nfix bug",
+            "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_4.8.1_unsigned.ipa",
+            "localizedDescription": "Easy Sign là một công cụ có thể ký ipa mà không cần bẻ khóa và có các chức năng đưa vào thư viện, xóa thư viện, v.v.",
+            "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
+            "tintColor": "018084",
+            "isLanZouCloud": 0,
+            "size": 7206362,
+            "type": 1
+        }
   ]
 }
