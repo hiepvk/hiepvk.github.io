@@ -27,7 +27,7 @@
             "versionDescription": "Support Remove mobileprovision after signing\nSupport clear app data (iOS15-15.7.1 and 16.0-16.1.2)\nfix bug",
             "downloadURL": "https://hiepvk.github.io/app/ESign_Chongqing.ipa",
             "localizedDescription": "Easy Sign is a tool that can sign ipa without jailbreak, and has the functions of injecting library, removing library and so on.",
-            "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
+            "iconURL": "https://github.com/Nguyenhuyhoan/icons/raw/main/1.png",
             "tintColor": "018084",
             "isLanZouCloud": 0,
             "size": 7206362,
