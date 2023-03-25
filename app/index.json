@@ -49,6 +49,21 @@
             "type": 1
         },
 		{
+            "name": "DiuTube",
+            "bundleIdentifier": "com.google.ios.youtube",
+            "developerName": "Google LLC",
+            "version": "18.08.1",
+            "versionDate": "2023-02-28T12:00:00-01:00",
+            "versionDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/2qkmi6t1m3nqavh/DiuTube_18.08.1_LeTi.ipa?dl=0",
+            "localizedDescription": "DiuTube by Lê Tí – iOS CodeVN.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2020/10/DiuTube.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 100292812,
+            "type": 1
+        },
+		{
             "name": "CamScanner Premium",
             "bundleIdentifier": "com.intsig.CamScanner",
             "developerName": "Kiengk0eng",
