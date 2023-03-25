@@ -47,8 +47,7 @@
             "isLanZouCloud": 0,
             "size": 111605847,
             "type": 1
-        }
-		,
+        },
 		{
             "name": "CamScanner Premium",
             "bundleIdentifier": "com.intsig.CamScanner",
@@ -63,7 +62,7 @@
             "isLanZouCloud": 0,
             "size": 153142717,
             "type": 1
-        } ,
+        },
 		{
             "name": "Bilibili",
             "bundleIdentifier": "com.bstar.intl",
@@ -77,6 +76,36 @@
             "tintColor": "e85567",
             "isLanZouCloud": 0,
             "size": 71279691,
+            "type": 1
+        },
+		{
+            "name": "Xingtu VIP – Xingtu++",
+            "bundleIdentifier": "com.xt.retouch",
+            "developerName": "深圳市脸萌科技有限公司",
+            "version": "7.3.0",
+            "versionDate": "2023-03-02T12:00:00-01:00",
+            "versionDescription": "Xingtu++ iPA mở khóa các tính năng VIP của ứng dụng Xingtu (醒图).\nLỗi ghi nhận:\nCrash 1 lần duy nhất sau khi chọn ảnh cần chỉnh sửa.\nTemplate chưa mở VIP.",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/iypxqrpawx4fzqo/XingTu%2B%2B_7.3.0_LeTi.ipa?dl=0",
+            "localizedDescription": "Xingtu (醒图) VIP – Xingtu++ iPA by Lê Tí – iOS CodeVN",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2022/10/Xingtu.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 117760167,
+            "type": 1
+        },
+		{
+            "name": "ibis Paint X",
+            "bundleIdentifier": "com.xt.retouch",
+            "developerName": "ibis inc.",
+            "version": "10.0.7",
+            "versionDate": "2023-03-12T12:00:00-01:00",
+            "versionDescription": "ibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X.",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/rbq7ld792qsp7kd/ibisPaint%20X%2B%2B_10.0.7_LeTi.ipa?dl=0",
+            "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/02/ibis-Paint-X.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 35875014,
             "type": 1
         }
     ]
