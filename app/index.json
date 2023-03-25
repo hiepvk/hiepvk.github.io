@@ -34,18 +34,18 @@
             "type": 1
         },
 		{
-            "name": "ESign",
-            "bundleIdentifier": "p3.xyz.yyyue.esign",
-            "developerName": "yyy",
-            "version": "4.8.1",
-            "versionDate": "2023-03-19T16:50:00+08:00",
-            "versionDescription": "Support Remove mobileprovision after signing\nSupport clear app data (iOS15-15.7.1 and 16.0-16.1.2)\nfix bug",
-            "downloadURL": "https://pan.yyyue.xyz/d/esign/esign_4.8.1_unsigned.ipa",
-            "localizedDescription": "Easy Sign is a tool that can sign ipa without jailbreak, and has the functions of injecting library, removing library and so on.",
-            "iconURL": "https://esign.yyyue.xyz/ESignLogo200.png",
-            "tintColor": "018084",
+            "name": "uYouPlus (uYou+)",
+            "bundleIdentifier": "com.google.ios.youtube",
+            "developerName": "MiRO92 & Qn_",
+            "version": "18.08.1",
+            "versionDate": "2023-02-28T12:00:00-01:00",
+            "versionDescription": "v18.08.1 (2.3~1): The changelog can be found at\nhttps://github.com/qnblackcat/uYouPlus/releases/latest",
+            "downloadURL": "https://github.com/qnblackcat/uYouPlus/releases/download/v18.08.1-2.3.1/uYouPlus_18.08.1_2.3.1.ipa",
+            "localizedDescription": "uYouPlus is a modified version of uYou with some extra features! (requires iOS 14.0 and later).\n\nFull infomation about uYouPlus (uYou+) is available on my Github: https://github.com/qnblackcat/uYouPlus/\n\nCredits: Please keep the Credits if you re-up uYouPlus! \nhttps://github.com/qnblackcat/uYouPlus#credits\n\nAttention:\n- If you like the app, considering support the developers!\n- YTUHD is not stable atm. You might encounter stuttering, heat, battery drain..., especially when playing at 2160p (4K) quality. However, this should not happen if you use TrollStore.\n- Unless you're using TrollStore, deep-link (aka Open in the YouTube App) simply will not work.\n\nKnown issues:\n- uYou's issues: https://github.com/MiRO92/uYou-for-YouTube/issues\n- uYouPlus's issues: https://github.com/qnblackcat/uYouPlus",
+            "iconURL": "https://raw.githubusercontent.com/qnblackcat/My-AltStore-repo/main/ScreenShot/icon_clipped.png",
+            "tintColor": "e85567",
             "isLanZouCloud": 0,
-            "size": 7206362,
+            "size": 111605847,
             "type": 1
         }
     ]
