@@ -122,6 +122,21 @@
             "isLanZouCloud": 0,
             "size": 35875014,
             "type": 1
+        },
+		{
+            "name": "Lightroom Premium – Lightroom++",
+            "bundleIdentifier": "com.adobe.lrmobilephone",
+            "developerName": "Adobe Inc.",
+            "version": "8.2.1",
+            "versionDate": "2023-02-19T12:00:00-01:00",
+            "versionDescription": "Lightroom++ iPA mở khóa tất cả các tính năng Premium của ứng dụng Lightroom Photo & Video Editor trừ dung lượng cloud.\nHướng dẫn mở khóa Premium: Bấm mua sau đó bấm Hủy.",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/u8zy0r8lep6mzzw/Lightroom%2B%2B_8.2.1_LeTi.ipa?dl=0",
+            "localizedDescription": "Lightroom Premium – Lightroom++ iPA sử dụng Satella by Paisseon.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2022/11/Lightroom.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 181928576,
+            "type": 1
         }
     ]
 }
