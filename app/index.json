@@ -155,17 +155,17 @@
         },
 		{
             "name": "Dead Cells",
-            "bundleIdentifier": "com.adobe.lrmobilephone",
+            "bundleIdentifier": "com.playdigious.deadcells",
             "developerName": "Playdigious",
             "version": "3.2.0",
             "versionDate": "2023-03-1T12:00:00-01:00",
             "versionDescription": "Dead Cells là một trong những trò chơi nhập vai hành động nổi tiếng trên nhiều nền tảng, bao gồm cả iOS. Được phát triển bởi Motion Twin, trò chơi này nhanh chóng trở thành một tựa game “roguelike” phổ biến nhất hiện nay. Với đồ họa pixel art đẹp mắt, âm nhạc sôi động và gameplay thú vị, Dead Cells chắc chắn sẽ làm hài lòng người chơi khó tính nhất.",
-            "downloadURL": "https://dl.dropboxusercontent.com/s/r4hzov3ek98sugt/PS%20Express%2B%2B_23.5.0_LeTi.ipa?dl=0",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/tx3te4goii2uo43/DeadCells_3.2.2_LeTi.ipa?dl=0",
             "localizedDescription": "Game trả phí",
             "iconURL": "https://ios.codevn.net/wp-content/uploads/2020/04/Dead-Cells.jpg",
             "tintColor": "e85567",
             "isLanZouCloud": 0,
-            "size": 137678812,
+            "size": 1449344373,
             "type": 1
         }
     ]
