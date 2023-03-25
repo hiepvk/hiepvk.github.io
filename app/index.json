@@ -48,5 +48,21 @@
             "size": 111605847,
             "type": 1
         }
+		,
+		{
+            "name": "Bilibili",
+            "bundleIdentifier": "com.bstar.intl",
+            "developerName": "BALABOOM PTE LTD",
+            "version": "2.28.0",
+            "versionDate": "2023-03-03T12:00:00-01:00",
+            "versionDescription": "Bilibili iPA mở khóa chất lượng video 1080 (hoặc 4K tùy video), không mở khóa VIP.\nCộng đồng xem anime, giải trí và thế giới 2D với bình luận trực tiếp",
+            "downloadURL": "https://public.dm.files.1drv.com/y4mbplJwChgK4IGIP_PAB00Re2DFioTMuCvc1Afreym3wS0ZVOqItNfSEPXkubx8bI5xvcxQ4-WoCwzfztf1-KtR_uD4x_FWe5cCQQv_3BecSaPt5W9ib6UR7VgRCMX0nPmn8anuE5W5ARRfsyYggM0i39sL6a_PcXTkQkXwQKhBwxWfY_TT5f2lgccuiiWtC_IHYmdyot26HonzkmLIMb6XDQ3AeUIUdlEiK70M-MAhTU?AVOverride=1",
+            "localizedDescription": "Bilibili iPA mở khóa chất lượng video 1080 (hoặc 4K tùy video), không mở khóa VIP",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/02/Bilibili.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 71279691,
+            "type": 1
+        }
     ]
 }
