@@ -181,7 +181,22 @@
             "tintColor": "e85567",
             "isLanZouCloud": 0,
             "size": 1449344373,
-            "type": 1
+            "type": 2
+        },
+		{
+            "name": "Grand Theft Auto: San Andreas",
+            "bundleIdentifier": "com.rockstargames.gta3sa",
+            "developerName": "Rockstar Games",
+            "version": "2.2.0",
+            "versionDate": "2022-09-26T12:00:00-01:00",
+            "versionDescription": "Grand Theft Auto: San Andreas là một trò chơi hành động mở thế giới được phát triển bởi Rockstar Games và được phát hành trên iOS vào năm 2013. Được phát hành đầu tiên trên hệ máy PlayStation 2 vào năm 2004, trò chơi đã trở thành một trong những tựa game kinh điển và ảnh hưởng đến rất nhiều trò chơi khác sau này.",
+            "downloadURL": "https://dl.dropboxusercontent.com/s/tx3te4goii2uo43/DeadCells_3.2.2_LeTi.ipa?dl=0",
+            "localizedDescription": "Game trả phí",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2020/04/Grand-Theft-Auto-San-Andreas.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 2068530531,
+            "type": 2
         }
     ]
 }
