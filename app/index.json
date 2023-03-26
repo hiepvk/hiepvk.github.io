@@ -154,6 +154,21 @@
             "type": 1
         },
 		{
+            "name": "VN Video Editor Pro – VN Video Editor++",
+            "bundleIdentifier": "com.playdigious.deadcells",
+            "developerName": "Ubiquiti Labs",
+            "version": "1.63.1",
+            "versionDate": "2023-03-22T12:00:00-01:00",
+            "versionDescription": "VN Video Editor++ mở khóa tính năng pro của ứng dụng VN Video Editor.\nVN Video Editor là một ứng dụng chỉnh sửa video chuyên nghiệp và dễ sử dụng trên iOS.\nỨng dụng này cung cấp cho người dùng các công cụ chỉnh sửa video chất lượng cao để tạo ra các video đẹp và chuyên nghiệp. Dưới đây là một số tính năng của VN Video Editor:",
+            "downloadURL": "https://onedrive.live.com/download?cid=FA74A415386B33DA&resid=FA74A415386B33DA%21946&authkey=AJj3_Vy9qgfreHM",
+            "localizedDescription": "VN Video Editor Pro – VN Video Editor++ iPA by Lê Tí – iOS CodeVN.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/03/VN-Video-Editor.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 1449344373,
+            "type": 1
+        },
+		{
             "name": "Dead Cells",
             "bundleIdentifier": "com.playdigious.deadcells",
             "developerName": "Playdigious",
