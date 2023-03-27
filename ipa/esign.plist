@@ -19,7 +19,7 @@
 <key>needs-shine</key>
 <true/>
 <key>url</key>
-<string>https://github.com/Nguyenhuyhoan/icons/raw/main/1.png</string>
+<string>https://esign.yyyue.xyz/ESignLogo200.png</string>
 </dict>
 <dict>
 <key>kind</key>
@@ -33,7 +33,7 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>p3.xyz.yyyue.esign</string>
+<string>p3.xyz.yyyue.esign.vk</string>
 <key>bundle-version</key>
 <string>1</string>
 <key>kind</key>
