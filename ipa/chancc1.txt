@@ -1,0 +1,9 @@
+||ocsp.apple.com^
+||world-gen.g.aaplimg.com^
+||ocsp.usertrust.com^
+||ocsp.digicert.com^
+||ocsp2.apple.com^
+||radarsubmissions.apple.com^
+||iadsdk.apple.com^
+||idiagnostics.apple.com^
+@@||ontology.health.apple.com^
