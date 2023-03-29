@@ -145,7 +145,7 @@
             "version": "8.5.60",
             "versionDate": "2023-03-22T12:00:00-01:00",
             "versionDescription": "Spotify++ using spotilife by JulioVerne.\nFeatures:\nUnlimited Skips;\nNo ADSs;\nExtreme Quality Sound Stream Unlocked;\nDownloads Tracks Currently Unavailable.\nConfigure Options From Spotify Settings.",
-            "downloadURL": "https://github.com/hiepvk/vkh/raw/main/Spotify_8.5.60.ipa",
+            "downloadURL": "https://github.com/hiepvk/app/releases/download/app/Spotify_8.5.60.ipa",
             "localizedDescription": "Mở khóa tính năng",
             "iconURL": "https://img.ipa4fun.com/ef/cd/d4/324684580-logo.jpg",
             "tintColor": "e85567",
@@ -160,12 +160,28 @@
             "version": "3.9.0",
             "versionDate": "2023-03-6T12:00:00-01:00",
             "versionDescription": "TeraBox++ iPA mở khóa tất cả các tính năng premium của ứng dụng TeraBox: 1024GB Cloud Storage TRỪ DUNG LƯỢNG. Bao gồm:\nTải tốc độ cao.\nChỉnh tốc độ video.\nChất lượng HD.\nSao lưu video.\nKhông giới hạn số lần lưu.\nSao lưu tệp lớn.\nKét sắt.\nKhông quảng cáo.\nThùng rác.\nGiải nén trên dữ liệu đám mây.\nTăng tốc âm thanh.\nTự động sao lưu thư mục (có thể không hoạt động khi sideload).\nChỉnh sửa ảnh.\nLưu ý: TeraBox Premium – TeraBox++ iPA KHÔNG giúp bạn tăng dung lượng của gói premium.",
-            "downloadURL": "https://github.com/hiepvk/vkh/raw/main/TeraBox++_3.9.0_LeTi.ipa",
+            "downloadURL": "https://github.com/hiepvk/app/releases/download/app/TeraBox++_3.9.0_LeTi.ipa",
             "localizedDescription": "TeraBox Premium – TeraBox++ iPA by Lê Tí – iOS CodeVN.",
             "iconURL": "https://ios.codevn.net/wp-content/uploads/2022/11/TeraBox.png",
             "tintColor": "e85567",
             "isLanZouCloud": 0,
             "size": 93312501,
+            "type": 1
+        },
+		{
+            "name": "Nicegram: #1 Chat for Telegram
+",
+            "bundleIdentifier": "app.nicegram",
+            "developerName": "Appvillis",
+            "version": "1.2.0",
+            "versionDate": "2023-03-25T12:00:00-01:00",
+            "versionDescription": "Nicegram: #1 Chat for Telegram",
+            "downloadURL": "https://github.com/hiepvk/app/releases/download/app/Nicegram_1.2.4_CERT_DPixel.ipa",
+            "localizedDescription": "Nicegram: #1 Chat for Telegram",
+            "iconURL": "https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/7c/91/39/7c913918-b02a-a6fe-5aa0-7fe7a0bcca50/AppIconLLC-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 204968576,
             "type": 1
         },
 		{
