@@ -2,6 +2,7 @@
     "name": "Hiepvk",
     "identifier": "com.hiepvk.esign",
     "sourceURL": "https://hiepvk.github.io/app/",
+    "sourceicon": "https://hiepvk.github.io/app/hiepvk.ico",
     "apps": [
         {
             "name": "uYouPlus (uYou+)",
