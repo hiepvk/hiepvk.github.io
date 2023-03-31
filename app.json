@@ -1,7 +1,8 @@
 {
     "name": "Hiepvk",
-    "identifier": "com.hiepvk.esign",
+    "identifier": "com.hiepvk.vn",
     "sourceURL": "https://hiepvk.github.io/app/",
+    "sourceicon": "https://api.ios222.com/favicon.ico",
     "apps": [
         {
             "name": "uYouPlus (uYou+)",
