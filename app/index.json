@@ -35,6 +35,36 @@
             "type": 1
         },
 		{
+            "name": "Whitelist",
+            "bundleIdentifier": "ca.bomberfish.Whitelist",
+            "developerName": "BomberFish",
+            "version": "1.1.0",
+            "versionDate": "2023-03-14T12:00:00-01:00",
+            "versionDescription": "Whitelist là một công cụ sử dụng khai thác MacDirtyCow để vượt qua các hạn chế trong danh sách đen và các ứng dụng bị thu hồi trên iOS 15 đến iOS 16.1.2. Điều này cho phép bạn chạy các ứng dụng đã tải hoặc bị cấm từ Cửa hàng ứng dụng của bên thứ ba trên iPhone hoặc iPad của mình mà không sợ bị thu hồi.\nLưu ý rằng công cụ này không tương thích với iOS 15.7.2, 15.7.3 và iOS 16.2 trở lên",
+            "downloadURL": "https://github.com/BomberFish/Whitelist/releases/latest/download/Whitelist.ipa",
+            "localizedDescription": "Ứng dụng khai thác MacDirtyCow",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/03/Whitelist.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 599193,
+            "type": 1
+        },
+		{
+            "name": "Blacklist",
+            "bundleIdentifier": "com.AppInstalleriOS.Blacklist",
+            "developerName": "AppInstalleriOS",
+            "version": "1.0.0",
+            "versionDate": "2023-03-14T12:00:00-01:00",
+            "versionDescription": "Blacklist là một công cụ sử dụng khai thác MacDirtyCow để vượt qua các hạn chế trong danh sách đen và các ứng dụng bị thu hồi trên iOS 15 đến iOS 16.1.2. Điều này cho phép bạn chạy các ứng dụng đã tải hoặc bị cấm từ Cửa hàng ứng dụng của bên thứ ba trên iPhone hoặc iPad của mình mà không sợ bị thu hồi.\nSau khi cài đặt iPA Blacklist vào thiết bị tương thích của mình, bạn có thể dễ dàng truy cập ứng dụng từ Màn hình chính. Ứng dụng này có giao diện thân thiện với người dùng, giúp việc sửa chữa các ứng dụng trong danh sách đen trở nên đơn giản.\nLưu ý rằng công cụ này không tương thích với iOS 15.7.2, 15.7.3 và iOS 16.2 trở lên",
+            "downloadURL": "https://appinstallerios.com/TrollStoreIPAs/Blacklist.ipa",
+            "localizedDescription": "Ứng dụng khai thác MacDirtyCow",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2023/03/Blacklist.jpeg",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 1473958,
+            "type": 1
+        },
+		{
             "name": "CamScanner Premium",
             "bundleIdentifier": "com.intsig.CamScanner",
             "developerName": "Kiengk0eng",
