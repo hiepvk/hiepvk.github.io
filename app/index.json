@@ -200,6 +200,21 @@
             "type": 1
         },
 		{
+            "name": "Meitu VIP – Meitu++",
+            "bundleIdentifier": "com.meitu.mtxx",
+            "developerName": "Laila Azmi",
+            "version": "9.7.30",
+            "versionDate": "2022-12-23T12:00:00-01:00",
+            "versionDescription": "Meitu VIP – Meitu++ iPA sử dụng dylib bởi Laila Azmi.\nMeitu++ iPA mở khóa tất cả các tính năng VIP của ứng dụng Meitu- Photo Editor & AI Art.",
+            "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Meitu.ipa",
+            "localizedDescription": "Meitu VIP – Meitu++ iPA sử dụng dylib bởi Laila Azmi.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2022/12/Meitu.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 221377534,
+            "type": 1
+        },
+		{
             "name": "Dead Cells",
             "bundleIdentifier": "com.playdigious.deadcells",
             "developerName": "Playdigious",
