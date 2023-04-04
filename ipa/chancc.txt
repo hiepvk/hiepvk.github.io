@@ -1,3 +1,4 @@
+ppq.apple.com
 ocsp.apple.com
 world-gen.g.aaplimg.com
 ocsp.usertrust.com
