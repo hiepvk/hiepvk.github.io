@@ -5,6 +5,21 @@
     "sourceicon": "https://hiepvk.github.io/app/hiepvk.ico",
     "apps": [
         {
+            "name": "uYouPlus (uYou+) iOS 13",
+            "bundleIdentifier": "com.google.ios.youtube",
+            "developerName": "MiRO92 & Qn_",
+            "version": "17.40.5",
+            "versionDate": "2023-02-28T12:00:00-01:00",
+            "versionDescription": "v17.40.5: The changelog can be found at\nhttps://github.com/qnblackcat/uYouPlus/releases/latest",
+            "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/uYouPlus_17.40.5_2.1.ipa",
+            "localizedDescription": "uYou iPA sử dụng uYou của MiRO92 , YouTube-Sign-in fix của BandarHL, Fix YouTube sign in for iOS sideloaded bởi AhmedBafkir, fix crash iOS 16 của level3tjg và YoutubeExtensions của CokePokes.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2018/01/youtube.jpg",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 111605847,
+            "type": 1
+        },
+		{
             "name": "uYouPlus (uYou+)",
             "bundleIdentifier": "com.google.ios.youtube",
             "developerName": "MiRO92 & Qn_",
@@ -17,6 +32,21 @@
             "tintColor": "e85567",
             "isLanZouCloud": 0,
             "size": 111605847,
+            "type": 1
+        },
+		{
+            "name": "DiuTube iOS 13",
+            "bundleIdentifier": "com.google.ios.youtube",
+            "developerName": "Google LLC",
+            "version": "17.40.5",
+            "versionDate": "2023-02-28T12:00:00-01:00",
+            "versionDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).",
+            "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_17.40.5_LeTi.ipa",
+            "localizedDescription": "DiuTube by Lê Tí – iOS CodeVN.",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2020/10/DiuTube.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 100292812,
             "type": 1
         },
 		{
