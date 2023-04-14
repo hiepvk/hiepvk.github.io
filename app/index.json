@@ -303,6 +303,21 @@
             "isLanZouCloud": 0,
             "size": 127678812,
             "type": 2
+        },
+		{
+            "name": "Minecraft",
+            "bundleIdentifier": "com.mojang.minecraftpe",
+            "developerName": "Mojang",
+            "version": "1.19.73",
+            "versionDate": "2023-04-13T12:00:00-01:00",
+            "versionDescription": "Minecraft là một trong những tựa game nổi tiếng nhất trên thế giới, và hiện nay đã có mặt trên hầu hết các nền tảng, bao gồm cả iOS. Trò chơi này được phát triển bởi Mojang Studios, một công ty con của Microsoft, và được phát hành lần đầu vào năm 2011.",
+            "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Minecraft_1.19.73_LeTi.ipa",
+            "localizedDescription": "Game trả phí",
+            "iconURL": "https://vkhiep.github.io/jb/minecraft.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 848572207,
+            "type": 2
         }
     ]
 }
