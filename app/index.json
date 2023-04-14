@@ -95,6 +95,21 @@
             "type": 1
         },
 		{
+            "name": "YouTube Music",
+            "bundleIdentifier": "com.google.ios.youtubemusic",
+            "developerName": "Google LLC",
+            "version": "5.52",
+            "versionDate": "2023-04-12T12:00:00-01:00",
+            "versionDescription": "YTMusicUltimate iPA sử dụng tweak YTMusicUltimate của GinSu và fixYouTubeLogin của BandarHL.\nYTMusicUltimate mở khóa tất cả nếu không muốn nói là hầu hết các tính năng cao cấp của YT Music. Nó cũng bổ sung thêm một số tính năng hữu dụng.",
+            "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTubeMusic_5.52_YTMusicUltimate_1.2.7_LeTi.ipa",
+            "localizedDescription": "Mở khóa Premium",
+            "iconURL": "https://ios.codevn.net/wp-content/uploads/2022/07/YTMusicUltimate.png",
+            "tintColor": "e85567",
+            "isLanZouCloud": 0,
+            "size": 80473243,
+            "type": 1
+        },
+		{
             "name": "CamScanner Premium",
             "bundleIdentifier": "com.intsig.CamScanner",
             "developerName": "Kiengk0eng",
