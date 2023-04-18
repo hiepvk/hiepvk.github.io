@@ -24,7 +24,7 @@
             "bundleIdentifier": "com.google.ios.youtube",
             "developerName": "MiRO92 & Qn_",
             "version": "18.15.1",
-            "versionDate": "18-04-2023T12:00:00-01:00",
+            "versionDate": "2023-04-18T12:00:00-01:00",
             "versionDescription": "v18.15.1: The changelog can be found at\nhttps://github.com/qnblackcat/uYouPlus/releases/latest",
             "downloadURL": "https://github.com/qnblackcat/uYouPlus/releases/download/v18.15.1-3.0/uYouPlus_18.15.1_3.0.ipa",
             "localizedDescription": "uYou iPA sử dụng uYou của MiRO92 , YouTube-Sign-in fix của BandarHL, Fix YouTube sign in for iOS sideloaded bởi AhmedBafkir, fix crash iOS 16 của level3tjg và YoutubeExtensions của CokePokes.",
