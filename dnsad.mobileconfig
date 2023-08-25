@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://8fa797df.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 1</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.1bb25b95-d838-4036-a516-e441d1d8b28f</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>c480aa7e-db4a-47c2-b408-ce532808a1b1</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://bf86abd5.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 2</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.e5468b59-d4ab-47c6-8700-80625ae016d4</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>7c9f4574-dd2b-425f-9edb-0ec8221446ac</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://982528ed.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 3</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.63166952-7a18-4aca-9cc4-f0b8024900c8</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>dd65332e-421e-4c9a-bf9e-b7955af3c854</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://58e295d9.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 4</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.7051bc09-935b-4d69-bbb5-82f397719799</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>c1c9d99b-c8ca-4378-9eb9-49b43f24dc66</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://575caf9d.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 5</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.04bb08bc-217c-4735-8d25-bad81ae4f37c</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>e85baa79-fb8c-41f6-9af0-8b74de9adf16</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://ed86b287.d.adguard-dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard DNS</string>
+				<key>PayloadDisplayName</key>
+				<string>CHAN THU HOI 6</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.0dca8ce8-bea6-47cd-a389-df959780cea5</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>41cbfa98-3f6e-420f-b3b1-c60d50277aea</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>			
+		</array>
+		<key>PayloadDescription</key>
+		<string>Adds AdGuard DNS to Big Sur and iOS 14 or newer systems</string>
+		<key>PayloadDisplayName</key>
+		<string>CHAN THU HOI 1</string>
+		<key>PayloadIdentifier</key>
+		<string>e9a4cdd4-986a-424b-a1f4-88f8e3b2ae21</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false />
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>346c8aee-2445-40f1-af23-a5ef78c0fa92</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
