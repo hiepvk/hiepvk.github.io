@@ -134,7 +134,7 @@
 		<key>PayloadDescription</key>
 		<string>Adds AdGuard DNS to Big Sur and iOS 14 or newer systems</string>
 		<key>PayloadDisplayName</key>
-		<string>CHAN THU HOI 1</string>
+		<string>CHAN THU HOI</string>
 		<key>PayloadIdentifier</key>
 		<string>e9a4cdd4-986a-424b-a1f4-88f8e3b2ae21</string>
 		<key>PayloadRemovalDisallowed</key>
