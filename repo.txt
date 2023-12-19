@@ -1,0 +1,10 @@
+KHO APP CHO TROLLSTORE
+- Cài app Trollapp để add các repo app
+Link: https://github.com/TheResonanceTeam/TrollApps/releases
+- Sau khi cài xong add các repo để tải App
+- https://ipa.cypwn.xyz/cypwn.json
+- https://raw.githubusercontent.com/.../Trol.../main/apps.json
+- Repo TTJ: https://ipa.thuthuatjb.com/repo
+- https://ipa.cypwn.xyz/cypwn_ts.json
+- Link tải appstore+++: https://github.com/34306/TrollStoreiPA/releases
+Các bác nào có repo hay commment em xin để tổng hợp ạ.
