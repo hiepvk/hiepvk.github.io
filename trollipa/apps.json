@@ -1,14 +1,14 @@
 {
   "name": "Hiepvk IPA Library",
   "identifier": "hiepvk.ipalibrary",
-  "sourceURL": "https://raw.githubusercontent.com/hiepvk.github.io/trollipa/main/apps.json",
+  "sourceURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/apps.json",
   "apps": [
     {
       "name": "ApolloICA",
       "bundleIdentifier": "com.christianselig.Apollo",
       "developerName": "",
       "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk.github.io/trollipa/main/icons/com.christianselig.Apollo.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.christianselig.Apollo.png",
       "versions": [
         {
           "version": "1.0.8",
