@@ -3,29 +3,19 @@
   "subtitle": "Hiepvk repo",
   "description": "Hiepvk repo",
   "iconURL": "https://hiepvk.github.io/esignipa/hiepvk.ico",
-  "headerURL": "https://hiepvk.github.io/icon_channel/vtv1hd.png",
-  "website": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/apps.json",
-  "tintColor": "#F54F32",
-  "featuredApps": ["com.hiepvk.store"],
   "apps": [
     {
-      "name": "ApolloICA",
-      "bundleIdentifier": "com.christianselig.Apollo",
+      "name": "DiuTube",
+      "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
       "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.christianselig.Apollo.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
-          "version": "1.0.8",
-          "date": "2023-12-18",
-          "size": 87096056,
-          "downloadURL": "https://github.com/hiepvk.github.io/trollipa/releases/download/12-18-2023/ApolloICA-1.0.8.ipa"
-        },
-        {
-          "version": "1.0.5",
-          "date": "2023-12-03",
-          "size": 87165733,
-          "downloadURL": "https://github.com/hiepvk.github.io/trollipa/releases/download/12-03-2023/ApolloICA-1.0.5.ipa"
+          "version": "18.46.3",
+          "date": "2023-12-01",
+          "size": 116391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_18.46.3_LeTi.ipa"
         }
       ]
     }
