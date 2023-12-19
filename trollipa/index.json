@@ -1,7 +1,12 @@
 {
   "name": "Hiepvk IPA Library",
-  "identifier": "hiepvk.ipalibrary",
-  "sourceURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/apps.json",
+  "subtitle": "Hiepvk repo",
+  "description": "Hiepvk repo",
+  "iconURL": "https://hiepvk.github.io/esignipa/hiepvk.ico",
+  "headerURL": "https://hiepvk.github.io/icon_channel/vtv1hd.png",
+  "website": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/apps.json",
+  "tintColor": "#F54F32",
+  "featuredApps": ["com.hiepvk.store"],
   "apps": [
     {
       "name": "ApolloICA",
