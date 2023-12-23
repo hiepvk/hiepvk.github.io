@@ -1,1 +1,9 @@
-
+#EXTM3U
+#EXTINF:-1 tvg-id="Phim Lồng Tiếng" tvg-logo="https://toplist.vn/images/800px/do-thanh-54984.jpg" group-title="Phim Lồng Tiếng", Đỗ Thánh
+https://vod01-cdn.fptplay.net/ovod/_definst_/smil:mp4/encoded/20210719/all_for_the_winner_1990_hongkong_lt_v3/7c9d8f81ab56a795bfbaf293b37756fb.smil/chunklist_b1596000.m3u8
+#EXTINF:-1 tvg-id="Phim Lồng Tiếng" tvg-logo="https://3.bp.blogspot.com/-rmUWpy87AGE/VQ5k1SLt2fI/AAAAAAAABHc/Ss5qZqEGvfE/s1600/God-Of-Gamblers-2-1.jpg" group-title="Phim Lồng Tiếng", Đỗ Thánh 2
+https://vod03-cdn.fptplay.net/ovod/_definst_/smil:mp4/encoded/20210719/godofgamblersii_1991_hongkong_lt_v2/1156fe0cf49a22375ba875baa13d8bac.smil/chunklist_b1596000.m3u8
+#EXTINF:-1 tvg-id="Phim Lồng Tiếng" tvg-logo="https://gocphimk.net/wp-content/uploads/2023/07/Do-Thanh-III-God-Of-Gamblers-Back-To-Shanghai-1991-1.jpg" group-title="Phim Lồng Tiếng", Đỗ Thánh 3: Trở lại Thượng Hải
+https://vod07-cdn.fptplay.net/ovod/_definst_/smil:mp4/encoded/20170105/4bad772328bc2d14520e6fcf58f4c41c.smil/chunklist_b996000.m3u8
+#EXTINF:-1 tvg-id="Phim Lồng Tiếng" tvg-logo="https://static2.vieon.vn/vieplay-image/poster_v4/2022/01/11/ez7pjp82_660x946-tayduky2.jpg" group-title="Phim Lồng Tiếng", Tây Du Ký 2: Ba Lần Đánh Bạch Cốt Tinh
+https://vod05-cdn.fptplay.net/ovod/_definst_/smil:mp4/encoded/20200820/the_monkey_king_2_2016_china_1080p_tm/d16b745bd87a6b19776f0d1c9d7db999.smil/playlist.m3u8
