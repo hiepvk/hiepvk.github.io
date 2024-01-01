@@ -20,6 +20,21 @@
       ]
     },
     {
+      "name": "uYou",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "18.49.3",
+          "date": "2023-12-01",
+          "size": 116391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube_18.49.3.ipa"
+        }
+      ]
+    },
+    {
       "name": "uYouEnhanced",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "arichorn / zxcvbn's tweaked IPAs",
