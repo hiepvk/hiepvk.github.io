@@ -2,7 +2,7 @@
   "name": "Hiepvk IPA Library",
   "subtitle": "Hiepvk repo",
   "description": "Hiepvk repo",
-  "iconURL": "https://hiepvk.github.io/esignipa/hiepvk.ico",
+  "iconURL": "https://hiepvk.github.io/favicon.ico",
   "apps": [
     {
       "name": "DiuTube",
