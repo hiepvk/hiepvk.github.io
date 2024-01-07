@@ -5,6 +5,21 @@
   "iconURL": "https://hiepvk.github.io/favicon.ico",
   "apps": [
     {
+      "name": "Filza",
+      "bundleIdentifier": "com.tigisoftware.Filza",
+      "developerName": "",
+      "localizedDescription": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/filza.png",
+      "versions": [
+        {
+          "version": "4.0.0",
+          "date": "2023-12-01",
+          "size": 13912275,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Filza_NoUrlScheme_4.0Crack.tipa"
+        }
+      ]
+    },
+	{
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
