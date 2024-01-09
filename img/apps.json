@@ -3,7 +3,7 @@
 "icon":"./img/misaka.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/misaka.plist",
 "dev":"@straight-tamago",
-"version":"v8.1.1",
+"version":"v8.1.2",
 "category":"misakaPurekfd",
 "featured":true},
 
@@ -12,7 +12,7 @@
 "icon":"./img/misaka.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/misakam.plist",
 "dev":"@straight-tamago",
-"version":"v8.1.1",
+"version":"v8.1.2",
 "category":"misakaPurekfd",
 "featured":true},
 
@@ -77,6 +77,14 @@
 "link":"https://betaprofiles.com/install/block-ota/",
 "dev":"@betaprofiles",
 "version":"tvOS 17 beta",
+"category":"other",
+"featured":true},
+
+{"name":"Vũ Khắc Hiệp",
+"short-description":"iOS",
+"icon":"./img/ota.png",
+"dev":"@hiepvk",
+"version":"v8.8.8",
 "category":"other",
 "featured":true},
 
