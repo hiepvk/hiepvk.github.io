@@ -80,14 +80,6 @@
 "category":"other",
 "featured":true},
 
-{"name":"Vũ Khắc Hiệp",
-"short-description":"iOS",
-"icon":"./img/ota.png",
-"dev":"@hiepvk",
-"version":"v8.8.8",
-"category":"other",
-"featured":true},
-
 {"name":"ESign AVI",
 "short-description":"iOS 12 - All devices",
 "icon":"./img/esign.png",
