@@ -80,6 +80,15 @@
 "category":"other",
 "featured":true},
 
+{"name":"ESign ANBANG",
+"short-description":"iOS 12 - All devices",
+"icon":"./img/esign.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/ESignab.plist",
+"dev":"@ESign",
+"version":"v4.8.2",
+"category":"esign",
+"featured":true},
+
 {"name":"ESign AVI",
 "short-description":"iOS 12 - All devices",
 "icon":"./img/esign.png",
