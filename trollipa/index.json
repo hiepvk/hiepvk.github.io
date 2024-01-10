@@ -5,6 +5,34 @@
   "iconURL": "https://hiepvk.github.io/favicon.ico",
   "apps": [
     {
+      "name": "FacebookWolf",
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "CyPwn IPA Library / Manpreet Singh @thisismanpreets / FayezUpdates / DPixel / CydiaAbdullah / iApps / Clement \uea00",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "versions": [
+        {
+          "version": "445.0",
+          "date": "2023-12-21",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookWolf-445.0.ipa",
+          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 12-21-2023\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+      "name": "MessengerLSN",
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "ipalibrary.me",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Messenger.png",
+      "versions": [
+        {
+          "version": "439.0.0",
+          "date": "2023-12-29",
+          "size": 64677332,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/MessengerLSN-439.0.0.ipa",
+          "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 12-29-2023\nStatus: \u2754"
+        }
+      ]
+    },
+    {
       "name": "Filza",
       "bundleIdentifier": "com.tigisoftware.Filza",
       "developerName": "",
