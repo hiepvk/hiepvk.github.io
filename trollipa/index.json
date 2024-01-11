@@ -101,6 +101,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
+          "version": "19.01.1",
+          "date": "2024-01-11",
+          "size": 116391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube_19.01.1.ipa",
+          "localizedDescription": "YouTube Noads"
+        },
+        {
           "version": "18.49.3",
           "date": "2024-01-09",
           "size": 116391936,
