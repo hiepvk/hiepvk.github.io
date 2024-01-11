@@ -39,7 +39,7 @@
       "bundleIdentifier": "com.tigisoftware.Filza",
       "developerName": "",
       "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/filza.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.tigisoftware.Filza.png",
       "versions": [
         {
           "version": "4.0",
@@ -50,9 +50,24 @@
       ]
     },
     {
+      "name": "ibisPaint X",
+      "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
+      "developerName": "Lê Tí",
+      "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X.",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/jp.ne.ibis.ibisPaintX.png",
+      "versions": [
+        {
+          "version": "11.2.0",
+          "date": "2024-01-11",
+          "size": 43513602,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/ibisPaint.X-11.2.0.ipa"
+        }
+      ]
+    },
+    {
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
-      "developerName": "",
+      "developerName": "Lê Tí",
       "localizedDescription": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.burbn.instagram.png",
       "versions": [
@@ -67,8 +82,8 @@
 	{
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "",
-      "localizedDescription": "",
+      "developerName": "Lê Tí",
+      "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
