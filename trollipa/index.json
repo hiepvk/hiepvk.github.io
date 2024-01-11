@@ -86,6 +86,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
+          "version": "19.01.1",
+          "date": "2024-01-11",
+          "size": 116402499,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_19.01.1.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN."
+        },
+		{
           "version": "18.46.3",
           "date": "2023-12-01",
           "size": 116391936,
