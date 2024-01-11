@@ -34,78 +34,78 @@
         }
       ]
     },
-    {
+        {
       "name": "Filza",
       "bundleIdentifier": "com.tigisoftware.Filza",
-      "developerName": "",
-      "localizedDescription": "",
+      "developerName": "tigisoftware",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.tigisoftware.Filza.png",
       "versions": [
         {
           "version": "4.0",
-          "date": "2023-12-01",
+          "date": "2024-01-11",
           "size": 13912275,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Filza_NoUrlScheme_4.0Crack.tipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Filza_NoUrlScheme_4.0Crack.tipa",
+          "localizedDescription": "tigisoftware"
         }
       ]
     },
-    {
+        {
       "name": "ibisPaint X",
       "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
       "developerName": "Lê Tí",
-      "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X.",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/jp.ne.ibis.ibisPaintX.png",
       "versions": [
         {
           "version": "11.2.0",
           "date": "2024-01-11",
           "size": 43513602,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/ibisPaint.X-11.2.0.ipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/ibisPaint.X-11.2.0.ipa",
+          "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
         }
       ]
     },
-    {
+        {
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Lê Tí",
-      "localizedDescription": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.burbn.instagram.png",
       "versions": [
         {
           "version": "311.0.2",
           "date": "2024-01-09",
           "size": 140391936,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Instagram_311.0.0_Rocket_3.8.18_Cracked.ipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Instagram_311.0.0_Rocket_3.8.18_Cracked.ipa",
+          "localizedDescription": "Instagram Rocket Crack"
         }
       ]
     },
-	{
+        {
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "Lê Tí",
-      "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
           "version": "18.46.3",
           "date": "2023-12-01",
           "size": 116391936,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_18.46.3_LeTi.ipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_18.46.3_LeTi.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN."
         }
       ]
     },
-    {
+        {
       "name": "uYou",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
-      "localizedDescription": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
       "versions": [
         {
           "version": "18.49.3",
           "date": "2024-01-09",
           "size": 116391936,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube_18.49.3.ipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube_18.49.3.ipa",
+          "localizedDescription": "YouTube Noads"
         }
       ]
     },
