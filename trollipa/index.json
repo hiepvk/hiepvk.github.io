@@ -127,14 +127,14 @@
       "name": "AppDump2",
       "bundleIdentifier": "cn.bswbw.AppsDump",
       "developerName": "",
-      "localizedDescription": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/cn.bswbw.AppsDump.png",
       "versions": [
         {
           "version": "1.2",
-          "date": "2023-11-30",
+          "date": "2023-12-29",
           "size": 3274107,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppDump2.tipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppDump2.tipa",
+          "localizedDescription": ""
         }
       ]
     },
@@ -142,14 +142,14 @@
       "name": "TrollDecrypt",
       "bundleIdentifier": "com.fiore.trolldecrypt",
       "developerName": "",
-      "localizedDescription": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.fiore.trolldecrypt.png",
       "versions": [
         {
-          "version": "1.1.",
-          "date": "2023-12-12",
+          "version": "1.1",
+          "date": "2023-12-29",
           "size": 691519,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa//TrollDecrypt.tipa"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa//TrollDecrypt.tipa",
+          "localizedDescription": ""
         }
       ]
     },
