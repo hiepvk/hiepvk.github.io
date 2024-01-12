@@ -7,15 +7,15 @@
     {
       "name": "FacebookWolf",
       "bundleIdentifier": "com.facebook.Facebook",
-      "developerName": "CyPwn IPA Library / Manpreet Singh @thisismanpreets / FayezUpdates / DPixel / CydiaAbdullah / iApps / Clement \uea00",
+      "developerName": "Hiepvk",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "445.0",
-          "date": "2023-12-21",
+          "date": "2024-01-13",
           "size": 150201298,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookWolf-445.0.ipa",
-          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 12-21-2023\nStatus: \u2705 \ud83d\udc4d"
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookWolf-445.0.0.ipa",
+          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
         },
