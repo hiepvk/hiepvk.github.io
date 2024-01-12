@@ -49,7 +49,7 @@
 "icon":"./img/simplekfd.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/SimpleKFD.plist",
 "dev":"@braumye",
-"version":"v1.0",
+"version":"v1.0.9",
 "category":"other",
 "featured":true},
 
