@@ -35,7 +35,7 @@
 				<key>bundle-identifier</key>
 				<string>com.braumye.kfd</string>
 				<key>bundle-version</key>
-				<string>1.0</string>
+				<string>1.0.9</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
