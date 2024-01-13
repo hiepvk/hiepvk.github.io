@@ -5,6 +5,21 @@
   "iconURL": "https://hiepvk.github.io/favicon.ico",
   "apps": [
     {
+      "name": "AppStore++",
+      "bundleIdentifier": "com.cokepokes.AppStorePlus",
+      "developerName": "CokePokes",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.cokepokes.AppStorePlus.png",
+      "versions": [
+        {
+          "version": "1.0.3",
+          "date": "2024-01-13",
+          "size": 17588239,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppStore++_TrollStore_v1.0.3-2.ipa",
+          "localizedDescription": "Status: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
       "name": "FacebookWolf",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
