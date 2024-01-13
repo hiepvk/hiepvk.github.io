@@ -1,1 +1,401 @@
-hello
+{
+  "name": "Hiepvk IPA Library",
+  "subtitle": "Hiepvk repo",
+  "description": "Hiepvk repo",
+  "iconURL": "https://hiepvk.github.io/favicon.ico",
+  "apps": [
+    {
+      "name": "AppStore++",
+      "bundleIdentifier": "com.cokepokes.AppStorePlus",
+      "developerName": "CokePokes",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.cokepokes.AppStorePlus.png",
+      "versions": [
+        {
+          "version": "1.0.3",
+          "date": "2024-01-13",
+          "size": 17588239,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppStore++_TrollStore_v1.0.3-2.ipa",
+          "localizedDescription": "Status: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
+      "name": "Facebook",
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "versions": [
+        {
+          "version": "445.0",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Facebook-445.0.0.ipa",
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
+      "name": "FacebookNoAds",
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "versions": [
+        {
+          "version": "445.0",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookNoAds-445.0.0.ipa",
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
+      "name": "FacebookWolf",
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "versions": [
+        {
+          "version": "445.0",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookWolf-445.0.0.ipa",
+          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
+      "name": "MessengerLSN",
+      "bundleIdentifier": "com.facebook.Messenger",
+      "developerName": "ipalibrary.me",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Messenger.png",
+      "versions": [
+        {
+          "version": "439.0.0",
+          "date": "2023-12-29",
+          "size": 64677332,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/MessengerLSN-439.0.0.ipa",
+          "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 12-29-2023\nStatus: \u2754"
+        }
+      ]
+    },
+        {
+      "name": "Filza",
+      "bundleIdentifier": "com.tigisoftware.Filza",
+      "developerName": "tigisoftware",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.tigisoftware.Filza.png",
+      "versions": [
+        {
+          "version": "4.0",
+          "date": "2024-01-11",
+          "size": 13912275,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Filza_NoUrlScheme_4.0Crack.tipa",
+          "localizedDescription": "tigisoftware"
+        }
+      ]
+    },
+        {
+      "name": "ibisPaint X",
+      "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
+      "developerName": "Lê Tí",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/jp.ne.ibis.ibisPaintX.png",
+      "versions": [
+        {
+          "version": "11.2.0",
+          "date": "2024-01-11",
+          "size": 43513602,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/ibisPaint.X-11.2.0.ipa",
+          "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
+        }
+      ]
+    },
+        {
+      "name": "Instagram",
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "Lê Tí",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.burbn.instagram.png",
+      "versions": [
+        {
+          "version": "311.0.2",
+          "date": "2024-01-09",
+          "size": 140391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Instagram_311.0.0_Rocket_3.8.18_Cracked.ipa",
+          "localizedDescription": "Instagram Rocket Crack"
+        }
+      ]
+    },
+        {
+      "name": "DiuTube",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Lê Tí",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "19.01.1",
+          "date": "2024-01-11",
+          "size": 116402499,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube-19.01.1.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN."
+        },
+		{
+          "version": "18.46.3",
+          "date": "2023-12-01",
+          "size": 116391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/DiuTube_18.46.3_LeTi.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN."
+        }
+      ]
+    },
+        {
+      "name": "uYou",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "19.01.1",
+          "date": "2024-01-11",
+          "size": 132029683,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube-19.01.1.ipa",
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.1\nLast updated: 11-01-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.49.3",
+          "date": "2024-01-09",
+          "size": 116391936,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/YouTube_18.49.3.ipa",
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.1\nLast updated: 09-01-2024\nStatus: \u2705 \ud83d\udc4d"
+        }
+      ]
+    },
+    {
+      "name": "AppDump2",
+      "bundleIdentifier": "cn.gblw.AppsDump",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/cn.bswbw.AppsDump.png",
+      "versions": [
+        {
+          "version": "2.0.6",
+          "date": "2024-01-12",
+          "size": 3274107,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppDump2-2.0.6.tipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "name": "TrollDecrypt",
+      "bundleIdentifier": "com.fiore.trolldecrypt",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.fiore.trolldecrypt.png",
+      "versions": [
+        {
+          "version": "1.1.2",
+          "date": "2024-01-12",
+          "size": 691519,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/TrollDecrypt-1.1.2.tipa",
+          "localizedDescription": ""
+        },
+        {
+          "version": "1.1",
+          "date": "2023-12-29",
+          "size": 691519,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/TrollDecrypt.tipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "name": "Spotify",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.spotify.client.png",
+      "versions": [
+        {
+          "version": "8.6.42",
+          "date": "2023-12-29",
+          "size": 43366725,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Spotify-8.6.42.ipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "name": "CamScanner_Lite",
+      "bundleIdentifier": "com.intsig.CamScannerLite",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.intsig.CamScannerLite.png",
+      "versions": [
+        {
+          "version": "6.57.0",
+          "date": "2024-01-11",
+          "size": 123702452,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/CamScannerLite_6.57.0.ipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
+    {
+      "name": "uYouEnhanced",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "arichorn / zxcvbn's tweaked IPAs",
+      "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "19.01.1",
+          "date": "2024-01-12",
+          "size": 126540963,
+          "downloadURL": "https://github.com/arichorn/uYouEnhanced/releases/download/v19.01.1-3.0.1/uYouEnhanced_19.01.1_3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-12-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.49.3-3.0.1-F3",
+          "date": "2024-01-09",
+          "size": 126540963,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/01-09-2024/uYouEnhanced-18.49.3-3.0.1-F3.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.49.3-3.0.1-F2",
+          "date": "2023-12-21",
+          "size": 126528062,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-21-2023/uYouEnhanced-18.49.3-3.0.1-F2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.49.3-3.0.1",
+          "date": "2023-12-12",
+          "size": 123567452,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-12-2023/uYouEnhanced-18.49.3-3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.48.3-3.0.1",
+          "date": "2023-12-05",
+          "size": 126236234,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-05-2023/uYouEnhanced-18.48.3-3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.46.3-3.0.1-F2",
+          "date": "2023-12-03",
+          "size": 125914250,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/12-03-2023/uYouEnhanced-18.46.3-3.0.1-F2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.46.3-3.0.1-F1",
+          "date": "2023-11-21",
+          "size": 135029716,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-21-2023/uYouEnhanced-18.46.3-3.0.1-F1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.45.2-3.0.1-F1",
+          "date": "2023-11-16",
+          "size": 130931567,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-16-2023/uYouEnhanced-18.45.2-3.0.1-F1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.44.3-3.0.1-F2",
+          "date": "2023-11-12",
+          "size": 130682484,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-12-2023/uYouEnhanced-18.44.3-3.0.1-F2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.44.3-3.0.1",
+          "date": "2023-11-09",
+          "size": 130682671,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-09-2023/uYouEnhanced-18.44.3-3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.41.5-3.0.1-F2",
+          "date": "2023-11-05",
+          "size": 129441983,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/11-05-2023/uYouEnhanced-18.41.5-3.0.1-F2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.41.5",
+          "date": "2023-10-25",
+          "size": 125927587,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-25-2023/uYouEnhanced-18.41.5.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.40.1",
+          "date": "2023-10-09",
+          "size": 126797323,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-09-2023/uYouEnhanced-18.40.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.39.1",
+          "date": "2023-10-03",
+          "size": 125970406,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/10-03-2023/uYouEnhanced-18.39.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.38.2",
+          "date": "2023-09-25",
+          "size": 125683291,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-25-2023/uYouEnhanced-18.38.2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.35.4",
+          "date": "2023-09-08",
+          "size": 122380639,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-08-2023/uYouEnhanced-18.35.4.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.34.5",
+          "date": "2023-09-05",
+          "size": 113485537,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/09-05-2023/uYouEnhanced-18.34.5.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.33.3",
+          "date": "2023-08-31",
+          "size": 104167377,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-31-2023/uYouEnhanced-18.33.3.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.33.2",
+          "date": "2023-08-25",
+          "size": 107279964,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-25-2023/uYouEnhanced-18.33.2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.32.2",
+          "date": "2023-08-14",
+          "size": 107094274,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-14-2023/uYouEnhanced-18.32.2.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.31.3",
+          "date": "2023-08-09",
+          "size": 106928334,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-09-2023/uYouEnhanced-18.31.3.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "18.30.7",
+          "date": "2023-08-02",
+          "size": 108885324,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/08-02-2023/uYouEnhanced-18.30.7.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
+        }
+      ]
+    }
+  ]
+}
