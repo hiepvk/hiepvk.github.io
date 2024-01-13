@@ -20,6 +20,21 @@
           ]
         },
         {
+      "name": "Facebook",
+      "bundleIdentifier": "com.facebook.Facebook",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "versions": [
+        {
+          "version": "445.0",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Facebook-445.0.0.ipa",
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
+        {
       "name": "FacebookNoAds",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
@@ -30,7 +45,7 @@
           "date": "2024-01-13",
           "size": 150201298,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookNoAds-445.0.0.ipa",
-          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
         },
