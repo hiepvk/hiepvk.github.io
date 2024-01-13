@@ -167,6 +167,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.fiore.trolldecrypt.png",
       "versions": [
         {
+          "version": "1.1.2",
+          "date": "2024-01-12",
+          "size": 691519,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/TrollDecrypt-1.1.2.tipa",
+          "localizedDescription": ""
+        },
+        {
           "version": "1.1",
           "date": "2023-12-29",
           "size": 691519,
