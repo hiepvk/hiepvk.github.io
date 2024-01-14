@@ -8,7 +8,7 @@
       "name": "AppStore++",
       "bundleIdentifier": "com.cokepokes.AppStorePlus",
       "developerName": "CokePokes",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.cokepokes.AppStorePlus.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.cokepokes.AppStorePlus.png",
       "versions": [
         {
           "version": "1.0.3",
@@ -23,7 +23,7 @@
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "445.0",
@@ -38,7 +38,7 @@
       "name": "FacebookNoAds",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "445.0",
@@ -53,7 +53,7 @@
       "name": "FacebookWolf",
       "bundleIdentifier": "com.facebook.Facebook",
       "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Facebook.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
           "version": "445.0",
@@ -68,7 +68,7 @@
       "name": "MessengerLSN",
       "bundleIdentifier": "com.facebook.Messenger",
       "developerName": "ipalibrary.me",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.facebook.Messenger.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Messenger.png",
       "versions": [
         {
           "version": "439.0.0",
@@ -83,7 +83,7 @@
       "name": "Filza",
       "bundleIdentifier": "com.tigisoftware.Filza",
       "developerName": "tigisoftware",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.tigisoftware.Filza.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.tigisoftware.Filza.png",
       "versions": [
         {
           "version": "4.0",
@@ -98,7 +98,7 @@
       "name": "ibisPaint X",
       "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
       "developerName": "Lê Tí",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/jp.ne.ibis.ibisPaintX.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/jp.ne.ibis.ibisPaintX.png",
       "versions": [
         {
           "version": "11.2.0",
@@ -113,7 +113,7 @@
       "name": "Instagram",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Lê Tí",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.burbn.instagram.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.burbn.instagram.png",
       "versions": [
         {
           "version": "311.0.2",
@@ -128,7 +128,7 @@
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "Lê Tí",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
         {
           "version": "19.01.1",
@@ -150,7 +150,7 @@
       "name": "uYou",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.google.ios.youtube.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
         {
           "version": "19.01.1",
@@ -172,7 +172,7 @@
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/cn.bswbw.AppsDump.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/cn.bswbw.AppsDump.png",
       "versions": [
         {
           "version": "2.0.6",
@@ -187,7 +187,7 @@
       "name": "TrollDecrypt",
       "bundleIdentifier": "com.fiore.trolldecrypt",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.fiore.trolldecrypt.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.fiore.trolldecrypt.png",
       "versions": [
         {
           "version": "1.1.2",
@@ -209,7 +209,7 @@
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.spotify.client.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.spotify.client.png",
       "versions": [
         {
           "version": "8.6.42",
@@ -224,7 +224,7 @@
       "name": "CamScanner_Lite",
       "bundleIdentifier": "com.intsig.CamScannerLite",
       "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/trollipa/icons/com.intsig.CamScannerLite.png",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.intsig.CamScannerLite.png",
       "versions": [
         {
           "version": "6.57.0",
