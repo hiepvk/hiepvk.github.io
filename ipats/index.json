@@ -19,6 +19,35 @@
             }
           ]
         },
+		{
+      "name": "Documents",
+      "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.readdle.ReaddleDocsIPad.png",
+      "versions": [
+        {
+          "version": "8.10.2",
+          "date": "2024-01-16",
+          "size": 163841215,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Documents-8.10.2.ipa",
+          "localizedDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
+          "version": "8.7.0",
+          "date": "2024-01-16",
+          "size": 163841215,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Documents-8.7.0.ipa",
+          "localizedDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
+          "version": "8.3.0",
+          "date": "2024-01-16",
+          "size": 163841215,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Documents-8.3.0.ipa",
+          "localizedDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
         {
       "name": "Facebook",
       "bundleIdentifier": "com.facebook.Facebook",
