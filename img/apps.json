@@ -105,7 +105,7 @@
 "dev":"@ESign",
 "version":"v4.8.2",
 "category":"esign",
-"featured":true},
+"featured":false},
 
 {"name":"Certificates",
 "short-description":"All devices",
