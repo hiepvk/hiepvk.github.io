@@ -5,7 +5,6 @@
 "dev":"@straight-tamago",
 "version":"v8.2.0",
 "category":"misakaPurekfd",
-"featured":true},
 
 {"name":"Misaka for M1, M2",
 "short-description":"M1/M2 on 16.5.1 - 16.6.1",
@@ -14,7 +13,6 @@
 "dev":"@straight-tamago",
 "version":"v8.1.2",
 "category":"misakaPurekfd",
-"featured":true},
 
 {"name":"PureKFD",
 "short-description":"iOS 14.0 - 16.6.1",
@@ -24,7 +22,6 @@
 "dev":"@Lrdsnow",
 "version":"v5.0",
 "category":"misakaPurekfd",
-"featured":true},
 
 {"name":"PureKFD for M1, M2",
 "short-description":"M1/M2 on 16.5.1 - 16.6.1",
@@ -33,7 +30,14 @@
 "dev":"@Lrdsnow",
 "version":"v5.0",
 "category":"misakaPurekfd",
-"featured":true},
+
+{"name":"TrollStar",
+"short-description":"iOS/iPadOS 16.0-16.6.1",
+"icon":"./img/TrollStar.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/TrollStar.plist",
+"dev":"@huynguyen",
+"version":"v1.1",
+"category":"other",
 
 {"name":"TrollInstallerMDC",
 "short-description":"iOS 15.0 - 15.7.1/16.1.2",
@@ -42,7 +46,6 @@
 "dev":"@dhinakg",
 "version":"v1.0.2",
 "category":"other",
-"featured":true},
 
 {"name":"SimpleKFD for iPad",
 "short-description":"M1/M2 on 16.5.1 - 16.6.1",
@@ -51,7 +54,6 @@
 "dev":"@braumye",
 "version":"v1.0.9",
 "category":"other",
-"featured":true},
 
 {"name":"nekoJB",
 "short-description":"iOS 15.0 - 15.8 (A9 - A11)",
@@ -60,7 +62,6 @@
 "dev":"@HAHALOSAH",
 "version":"v0.1.0 beta4 dev2",
 "category":"other",
-"featured":true},
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
@@ -69,7 +70,6 @@
 "dev":"@dev1lb0rn",
 "version":"v0.0.0",
 "category":"other",
-"featured":true},
 
 {"name":"Block OTA",
 "short-description":"iOS 15 - 17",
@@ -78,7 +78,6 @@
 "dev":"@betaprofiles",
 "version":"tvOS 17 beta",
 "category":"other",
-"featured":true},
 
 {"name":"ESign ANBANG",
 "short-description":"iOS 12 - All devices",
@@ -87,7 +86,6 @@
 "dev":"@ESign",
 "version":"v4.8.2",
 "category":"esign",
-"featured":true},
 
 {"name":"ESign AVI",
 "short-description":"iOS 12 - All devices",
@@ -96,16 +94,6 @@
 "dev":"@ESign",
 "version":"v4.8.2",
 "category":"esign",
-"featured":true},
-
-{"name":"ESign CN",
-"short-description":"iOS 12 - All devices",
-"icon":"./img/esign.png",
-"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/ESignc.plist",
-"dev":"@ESign",
-"version":"v4.8.2",
-"category":"esign",
-"featured":false},
 
 {"name":"Certificates",
 "short-description":"All devices",
@@ -113,7 +101,6 @@
 "link":"https://hiepvk.github.io/cer.zip",
 "dev":"@Apple",
 "version":"v0.0.0",
-"category":"esign",
-"featured":true}
+"category":"esign"
 
 ]
