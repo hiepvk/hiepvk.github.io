@@ -58,7 +58,7 @@
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Facebook-445.0.0.ipa",
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/fb-mes/Facebook-445.0.0.ipa",
           "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
@@ -73,7 +73,7 @@
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookNoAds-445.0.0.ipa",
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/fb-mes/FacebookNoAds-445.0.0.ipa",
           "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
@@ -88,7 +88,7 @@
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/FacebookWolf-445.0.0.ipa",
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/fb-mes/FacebookWolf-445.0.0.ipa",
           "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
@@ -146,7 +146,7 @@
       ]
     },
         {
-      "name": "Instagram",
+      "name": "Instagram Rocket",
       "bundleIdentifier": "com.burbn.instagram",
       "developerName": "Hiepvk",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.burbn.instagram.png",
@@ -269,7 +269,7 @@
           "localizedDescription": ""
         },
         {
-          "version": "1.1",
+          "version": "1.1.1",
           "date": "2023-12-29",
           "size": 691519,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/TrollDecrypt.tipa",
