@@ -55,6 +55,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
+          "version": "446.0",
+          "date": "2024-01-18",
+          "size": 150201298,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/fb-mes/Facebook-446.0.0.ipa",
+          "localizedDescription": "Last updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
