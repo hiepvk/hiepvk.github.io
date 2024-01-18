@@ -121,6 +121,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Messenger.png",
       "versions": [
         {
+          "version": "441.0.0",
+          "date": "2024-01-19",
+          "size": 78788029,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/fb-mes/MessengerLSN-441.0.0.ipa",
+          "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 01-18-2024\nStatus: \u2754"
+        },
+		{
           "version": "440.0.0",
           "date": "2024-01-17",
           "size": 78788029,
