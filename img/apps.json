@@ -90,7 +90,7 @@
 {"name":"ESign - Install",
 "short-description":"iOS",
 "icon":"./img/TrollMisaka.png",
-"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/ESign-Install.plist",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign-Install.plist",
 "dev":"@hiepvk",
 "version":"v8.4",
 "category":"other"},
