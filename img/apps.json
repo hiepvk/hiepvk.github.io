@@ -1,4 +1,12 @@
-[{"name":"Misaka",
+[{"name":"TrollMisaka",
+"short-description":"iOS 14 - 15.7.1/15.8.2 (A9 - A11)",
+"icon":"./img/TrollMisaka.png",
+"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/TrollMisaka.plist",
+"dev":"@straight-tamago",
+"version":"v2.0",
+"category":"misakaPurekfd"},
+
+{"name":"Misaka",
 "short-description":"iOS 15.0 - 16.6.1",
 "icon":"./img/misaka.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/misaka.plist",
@@ -32,7 +40,7 @@
 "category":"misakaPurekfd"},
 
 {"name":"TrollStar",
-"short-description":"iOS/iPadOS 16.0-16.6.1",
+"short-description":"iOS/iPadOS 16.0 - 16.6.1",
 "icon":"./img/TrollStar.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/TrollStar.plist",
 "dev":"@huynguyen",
