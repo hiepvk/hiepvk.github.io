@@ -87,14 +87,6 @@
 "version":"tvOS 17 beta",
 "category":"other"},
 
-{"name":"ESign - Install",
-"short-description":"iOS",
-"icon":"./img/TrollMisaka.png",
-"link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/ESign-Install.plist",
-"dev":"@hiepvk",
-"version":"v8.4",
-"category":"other"},
-
 {"name":"ESign AVI",
 "short-description":"iOS 12 - All devices",
 "icon":"./img/esign.png",
