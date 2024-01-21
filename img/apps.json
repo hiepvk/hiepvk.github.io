@@ -107,7 +107,7 @@
 "short-description":"iOS All",
 "icon":"./img/ota.png",
 "link":"itms-services://?action=download-manifest&url=https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/install.plist",
-"dev":"@betaprofiles",
+"dev":"@hiepvk",
 "version":"iOS All",
 "category":"esign"}
 
