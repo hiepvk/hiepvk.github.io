@@ -101,6 +101,14 @@
 "link":"https://hiepvk.github.io/cer.zip",
 "dev":"@Apple",
 "version":"v0.0.0",
+"category":"esign"},
+
+{"name":"Install App",
+"short-description":"iOS All",
+"icon":"./img/ota.png",
+"link":"itms-services://?action=download-manifest&url=https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/install.plist",
+"dev":"@betaprofiles",
+"version":"iOS All",
 "category":"esign"}
 
 ]
