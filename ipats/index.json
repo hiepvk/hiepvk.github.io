@@ -301,10 +301,8 @@
           "size": 3274107,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/AppDump2-2.0.7.tipa",
           "localizedDescription": ""
-        }
-      ]
-    },
-    {
+        },
+		{
           "version": "2.0.6",
           "date": "2024-01-12",
           "size": 3274107,
