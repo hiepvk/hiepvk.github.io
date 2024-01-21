@@ -161,9 +161,9 @@
           "size": 64677332,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/MessengerLSN-439.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 12-29-2023\nStatus: \u2754"
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "Filza",
       "bundleIdentifier": "com.tigisoftware.Filza",
@@ -176,9 +176,9 @@
           "size": 13912275,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Filza_NoUrlScheme_4.0Crack.tipa",
           "localizedDescription": "tigisoftware"
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "ibisPaint X",
       "bundleIdentifier": "jp.ne.ibis.ibisPaintX",
@@ -191,9 +191,9 @@
           "size": 43513602,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/ibisPaint.X-11.2.0.ipa",
           "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "Instagram Rocket",
       "bundleIdentifier": "com.burbn.instagram",
@@ -213,9 +213,9 @@
           "size": 140391936,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/Instagram_311.0.0_Rocket_3.8.18_Cracked.ipa",
           "localizedDescription": "Instagram Rocket Crack"
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "Instagram BH",
       "bundleIdentifier": "com.burbn.instagram",
@@ -228,9 +228,9 @@
           "size": 148409155,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/insta/Instagram-Rocket-BH-314.0.6.ipa",
           "localizedDescription": "Instagram Rocket BH Crack\nLast updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "DiuTube",
       "bundleIdentifier": "com.google.ios.youtube",
@@ -257,9 +257,9 @@
           "size": 116391936,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/DiuTube/DiuTube-18.49.3.ipa",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN."
-        }
-      ]
-    },
+            }
+          ]
+        },
         {
       "name": "uYou",
       "bundleIdentifier": "com.google.ios.youtube",
@@ -363,11 +363,18 @@
       "iconURL": "https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/main/icons/com.google.ios.youtube.png",
       "versions": [
         {
-          "version": "19.01.1",
+          "version": "19.02.1-3.0.1",
+          "date": "2024-01-18",
+          "size": 126097628,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/01-18-2024/uYouEnhanced-19.02.1-3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
+          "version": "19.01.1-3.0.1",
           "date": "2024-01-12",
-          "size": 126540963,
-          "downloadURL": "https://github.com/arichorn/uYouEnhanced/releases/download/v19.01.1-3.0.1/uYouEnhanced_19.01.1_3.0.1.ipa",
-          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-12-2024\nStatus: \u2705 \ud83d\udc4d"
+          "size": 128336381,
+          "downloadURL": "https://github.com/swaggyP36000/TrollStore-IPAs/releases/download/01-12-2024/uYouEnhanced-19.01.1-3.0.1.ipa",
+          "localizedDescription": "Formerly known as uYouPlusExtra. This enhanced version of uYou+ not only incorporates its existing features but also integrates additional functionalities that were initially intended to be included in the original uYou+, but might have been declined during its initial development phase. Full features here.\nLast updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
         },
         {
           "version": "18.49.3-3.0.1-F3",
