@@ -11,7 +11,7 @@
 "icon":"./img/misaka.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/misaka.plist",
 "dev":"@straight-tamago",
-"version":"v8.2.0",
+"version":"v8.2.4",
 "category":"misakaPurekfd"},
 
 {"name":"Misaka for M1, M2",
