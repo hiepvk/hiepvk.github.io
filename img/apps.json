@@ -44,7 +44,7 @@
 "icon":"./img/TrollStar.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/ipa/TrollStar.plist",
 "dev":"@huynguyen",
-"version":"v1.1",
+"version":"v1.2",
 "category":"other"},
 
 {"name":"TrollInstallerMDC",
