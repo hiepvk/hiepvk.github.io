@@ -1,4 +1,13 @@
-[{"name":"TrollMisaka",
+[
+{"name":"Tải IPA",
+"short-description":"iOS 13 - 17",
+"icon":"./img/ipa.png",
+"link":"https://github.com/vkhiep/vkhiep.github.io/releases",
+"dev":"@Hiepvk",
+"version":"v0.0.0",
+"category":"misakaPurekfd"},    
+    
+{"name":"TrollMisaka",
 "short-description":"iOS 14 - 15.7.1/15.8.2 (A9 - A11)",
 "icon":"./img/TrollMisaka.png",
 "link":"itms-services://?action=download-manifest&url=https://hiepvk.github.io/plist/TrollMisaka.plist",
