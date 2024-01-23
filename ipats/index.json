@@ -244,13 +244,6 @@
       "developerName": "Lê Tí",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
-        {
-          "version": "19.03.2",
-          "date": "2024-01-22",
-          "size": 123363524,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/DiuTube/DiuTube-19.03.2.ipa",
-          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
-        },
 		{
           "version": "19.02.1",
           "date": "2024-01-16",
@@ -280,13 +273,6 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
-        {
-          "version": "19.03.2",
-          "date": "2024-01-22",
-          "size": 137973803,
-          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/uYou/YouTube-19.03.2.ipa",
-          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.1\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
-        },
 		{
           "version": "19.02.1",
           "date": "2024-01-16",
@@ -321,6 +307,13 @@
           "date": "2024-01-22",
           "size": 135386074,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/YouTubeReborn/YouTubeReborn-19.03.2.ipa",
+          "localizedDescription": "YouTube Reborn v5.0.0 (BETA-5.1)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+		{
+          "version": "19.02.1",
+          "date": "2024-01-22",
+          "size": 135386074,
+          "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/YouTubeReborn/YouTubeReborn-19.02.1.ipa",
           "localizedDescription": "YouTube Reborn v5.0.0 (BETA-5.1)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
         }
       ]
