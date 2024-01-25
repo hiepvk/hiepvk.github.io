@@ -55,6 +55,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
+          "version": "448.0.0",
+          "date": "2024-01-25",
+          "size": 149762860,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-448.0.0.ipa",
+          "localizedDescription": "Last updated: 01-25-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
           "version": "447.1.2",
           "date": "2024-01-21",
           "size": 149762860,
@@ -84,6 +91,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
+          "version": "448.0.0",
+          "date": "2024-01-25",
+          "size": 149762860,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-448.0.0.ipa",
+          "localizedDescription": "Last updated: 01-25-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
           "version": "447.1.2",
           "date": "2024-01-21",
           "size": 149762860,
@@ -113,6 +127,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.facebook.Facebook.png",
       "versions": [
         {
+          "version": "448.0.0",
+          "date": "2024-01-25",
+          "size": 153623252,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-448.0.0.ipa",
+          "localizedDescription": "Last updated: 01-25-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
           "version": "447.1.2",
           "date": "2024-01-21",
           "size": 153623252,
