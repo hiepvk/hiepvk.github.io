@@ -7,17 +7,21 @@
             "name": "Documents",
             "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
             "developerName": "Hiepvk",
-            "version": "8.10.2",
-            "versionDate": "2024-01-16",
-            "versionDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d",
-            "downloadURL": "https://github.com/hiepvk/ipa/releases/download/doc/Documents-8.10.2.ipa",
-            "localizedDescription": "",
             "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.readdle.ReaddleDocsIPad.png",
             "tintColor": "018084",
             "isLanZouCloud": 0,
-            "size": 163841215,
-            "type": 1
+            "type": 1,
+			"version": [
+				{
+				"version": "8.10.2"
+				"versionDate": "2024-01-16",
+				"size": 163841215,
+				"versionDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d",
+				"downloadURL": "https://github.com/hiepvk/ipa/releases/download/doc/Documents-8.10.2.ipa",
+				"localizedDescription": ""
+				}
+					]
         }
         
-    ]
+			]
 }
