@@ -19,6 +19,14 @@
 				"versionDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d",
 				"downloadURL": "https://github.com/hiepvk/ipa/releases/download/doc/Documents-8.10.2.ipa",
 				"localizedDescription": ""
+				},
+				{
+				"version": "8.7.0"
+				"versionDate": "2024-01-16",
+				"size": 163841215,
+				"versionDescription": "Last updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d",
+				"downloadURL": "https://github.com/hiepvk/ipa/releases/download/doc/Documents-8.7.0.ipa",
+				"localizedDescription": ""
 				}
 					]
         }
