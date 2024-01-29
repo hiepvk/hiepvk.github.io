@@ -34,6 +34,21 @@
             }
           ]
         },
+        {
+      "name": "TrollSpeed",
+      "bundleIdentifier": "ch.xxtou.hudapp",
+      "developerName": "Ichitaso",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/ch.xxtou.hudapp.png",
+      "versions": [
+        {
+          "version": "1.11.0",
+          "date": "2024-01-29",
+          "size": 159430,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/TrollSpeed-1.11.0.tipa",
+          "localizedDescription": "Status: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
 		{
       "name": "Documents",
       "bundleIdentifier": "com.readdle.ReaddleDocsIPad",
