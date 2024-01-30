@@ -437,6 +437,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
 		{
+          "version": "19.04.3",
+          "date": "2024-01-30",
+          "size": 136765412,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.04.3.ipa",
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-30-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+		{
           "version": "19.03.2",
           "date": "2024-01-25",
           "size": 136765412,
