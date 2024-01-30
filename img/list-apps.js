@@ -51,7 +51,6 @@ function setupAppsWithCategory(category) {
 			align.appendChild(div4);
 			let a = document.createElement("a");
 			a.classList = "stretched-link";
-			a.setAttribute("target", "_blank");
 			a.href = element["link"];
 			div4.appendChild(a);
 			
