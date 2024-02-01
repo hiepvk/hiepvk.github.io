@@ -529,6 +529,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.google.ios.youtube.png",
       "versions": [
         {
+          "version": "19.04.3",
+          "date": "2024-02-01",
+          "size": 135386074,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.04.3.ipa",
+          "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 02-01-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
           "version": "19.03.2",
           "date": "2024-01-22",
           "size": 135386074,
