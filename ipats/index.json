@@ -570,7 +570,7 @@
     {
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
-      "developerName": "",
+      "developerName": "Hiepvk",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.spotify.client.png",
       "versions": [
         {
@@ -578,6 +578,21 @@
           "date": "2023-12-29",
           "size": 43366725,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/spo/Spotify-8.6.42.ipa",
+          "localizedDescription": ""
+        }
+      ]
+    },
+	{
+      "name": "Speedtest",
+      "bundleIdentifier": "com.ookla.speedtest",
+      "developerName": "Hiepvk",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/ipats/icons/com.ookla.speedtest.png",
+      "versions": [
+        {
+          "version": "5.3.0",
+          "date": "2024-02-01",
+          "size": 61067908,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/spo/Speedtest-5.3.0.ipa",
           "localizedDescription": ""
         }
       ]
