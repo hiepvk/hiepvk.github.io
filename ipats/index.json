@@ -132,6 +132,13 @@
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-445.0.0.ipa",
           "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
+          "version": "439.1",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-439.1.ipa",
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
         },
@@ -175,6 +182,13 @@
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-445.0.0.ipa",
           "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
+          "version": "439.1",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-439.1.ipa",
+          "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
         },
@@ -217,6 +231,13 @@
           "date": "2024-01-13",
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-445.0.0.ipa",
+          "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+			{
+          "version": "439.1",
+          "date": "2024-01-13",
+          "size": 150201298,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-439.1.ipa",
           "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
             }
           ]
