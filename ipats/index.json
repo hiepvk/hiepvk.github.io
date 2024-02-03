@@ -19,6 +19,21 @@
             }
           ]
         },
+		{
+      "name": "CarTubePlus",
+      "bundleIdentifier": "com.osk3apps.CarTubePlus",
+      "developerName": "osk3",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.osk3apps.CarTubePlus.png",
+      "versions": [
+        {
+          "version": "b1",
+          "date": "2024-02-03",
+          "size": 247500,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/CarTubePlus-beta1.ipa",
+          "localizedDescription": "Status: \u2705 \ud83d\udc4d"
+            }
+          ]
+        },
         {
       "name": "OTADisabler",
       "bundleIdentifier": "com.ichitaso.otadisablerts",
