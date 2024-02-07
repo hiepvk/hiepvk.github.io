@@ -176,36 +176,36 @@
           "size": 149762860,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-448.1.0.ipa",
           "localizedDescription": "Last updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+       },
+			 {
           "version": "448.0.0",
           "date": "2024-01-25",
           "size": 149762860,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-448.0.0.ipa",
           "localizedDescription": "Last updated: 01-25-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+       },
+			 {
           "version": "447.1.2",
           "date": "2024-01-21",
           "size": 149762860,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-447.1.2.ipa",
           "localizedDescription": "Last updated: 01-21-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "446.0",
           "date": "2024-01-18",
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-446.0.0.ipa",
           "localizedDescription": "Last updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-445.0.0.ipa",
           "localizedDescription": "Last updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "439.1",
           "date": "2024-01-13",
           "size": 150201298,
@@ -226,36 +226,36 @@
           "size": 153623252,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-448.1.0.ipa",
           "localizedDescription": "Last updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "448.0.0",
           "date": "2024-01-25",
           "size": 153623252,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-448.0.0.ipa",
           "localizedDescription": "Last updated: 01-25-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "447.1.2",
           "date": "2024-01-21",
           "size": 153623252,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-447.1.2.ipa",
           "localizedDescription": "Last updated: 01-21-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "446.0",
           "date": "2024-01-18",
           "size": 149190964,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-446.0.0.ipa",
           "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-18-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "445.0",
           "date": "2024-01-13",
           "size": 150201298,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-445.0.0.ipa",
           "localizedDescription": "Facebook, injected with Wolf for Facebook by Michael Lema\nLast updated: 01-13-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
-			{
+        },
+			  {
           "version": "439.1",
           "date": "2024-01-13",
           "size": 150201298,
@@ -277,42 +277,42 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-443.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 02-01-2024\nStatus: \u2754"
         },
-		{
+		    {
           "version": "442.1.0",
           "date": "2024-01-27",
           "size": 78788029,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-442.1.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 01-27-2024\nStatus: \u2754"
         },
-		{
+		    {
           "version": "442.0.0",
           "date": "2024-01-25",
           "size": 78788029,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-442.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 01-25-2024\nStatus: \u2754"
         },
-		{
+		    {
           "version": "441.0.0",
           "date": "2024-01-19",
           "size": 78788029,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-441.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 01-19-2024\nStatus: \u2754"
         },
-		{
+		    {
           "version": "440.0.0",
           "date": "2024-01-17",
           "size": 78788029,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-440.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 01-17-2024\nStatus: \u2754"
         },
-		{
+		    {
           "version": "439.0.0",
           "date": "2023-12-29",
           "size": 64677332,
           "downloadURL": "https://github.com/vkhiep/vkhiep.github.io/releases/download/ipa/MessengerLSN-439.0.0.ipa",
           "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 12-29-2023\nStatus: \u2754"
         },
-		{
+		    {
           "version": "436.0.1",
           "date": "2023-12-29",
           "size": 64677332,
@@ -333,7 +333,7 @@
           "size": 13912275,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/Filza_NoUrlScheme_4.0Crack.tipa",
           "localizedDescription": "tigisoftware"
-            }
+        }
           ]
         },
         {
@@ -348,8 +348,8 @@
           "size": 44625682,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ibis/ibisPaint.X-11.2.1.ipa",
           "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
-            },
-			{
+       },
+			 {
           "version": "11.2.0",
           "date": "2024-01-11",
           "size": 43513602,
@@ -371,35 +371,35 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-315.1.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "315.0.2",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-315.0.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "314.0.6",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-314.0.6.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "313.0.2",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-313.0.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "312.0.1",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-312.0.1.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "311.0.2",
           "date": "2024-01-09",
           "size": 140391936,
@@ -421,35 +421,35 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-BH-315.1.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "315.0.2",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-BH-315.0.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "314.0.6",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-BH-314.0.6.ipa",
           "localizedDescription": "Instagram Rocket BH Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "313.0.2",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-BH-313.0.2.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "312.0.1",
           "date": "2024-01-26",
           "size": 148409155,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ins/Instagram-Rocket-BH-312.0.1.ipa",
           "localizedDescription": "Instagram Rocket Crack\nLast updated: 01-26-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "311.0.2",
           "date": "2024-01-26",
           "size": 148409155,
@@ -464,35 +464,35 @@
       "developerName": "Lê Tí",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
-		{
+		    {
           "version": "19.04.3",
           "date": "2024-01-31",
           "size": 125139321,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.04.3.ipa",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         },
-		{
+		    {
           "version": "19.03.2",
           "date": "2024-01-16",
           "size": 125139321,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.03.2.ipa",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         },
-		{
+		    {
           "version": "19.02.1",
           "date": "2024-01-16",
           "size": 121139321,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.02.1.ipa",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         },
-		{
+		    {
           "version": "19.01.1",
           "date": "2024-01-11",
           "size": 116402499,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/DiuTube-19.01.1.ipa",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         },
-		{
+		    {
           "version": "18.49.3",
           "date": "2023-12-01",
           "size": 116391936,
@@ -507,28 +507,35 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
-		{
+		    {
+          "version": "19.05.3",
+          "date": "2024-02-07",
+          "size": 136765412,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.05.3.ipa",
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-30-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
           "version": "19.04.3",
           "date": "2024-01-30",
           "size": 136765412,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.04.3.ipa",
-          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-30-2024\nStatus: \u2705 \ud83d\udc4d"
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-30-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "19.03.2",
           "date": "2024-01-25",
           "size": 136765412,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.03.2.ipa",
           "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "19.02.1",
           "date": "2024-01-16",
           "size": 135765412,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.02.1.ipa",
           "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-16-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "19.01.1",
           "date": "2024-01-11",
           "size": 135779012,
@@ -543,13 +550,20 @@
           "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.2\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-09-2024\nStatus: \u2705 \ud83d\udc4d"
         }
       ]
-    },
+        },
         {
       "name": "YouTube Reborn",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
+        {
+          "version": "19.05.3",
+          "date": "2024-02-07",
+          "size": 135386074,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.05.3.ipa",
+          "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 02-01-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
         {
           "version": "19.04.3",
           "date": "2024-02-01",
@@ -564,21 +578,21 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.03.2.ipa",
           "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "19.02.1",
           "date": "2024-01-22",
           "size": 133386074,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.02.1.ipa",
           "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "19.01.1",
           "date": "2024-01-22",
           "size": 133386074,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.01.1.ipa",
           "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
         },
-		{
+		    {
           "version": "18.49.3",
           "date": "2024-01-22",
           "size": 131386074,
@@ -586,8 +600,8 @@
           "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 01-22-2024\nStatus: \u2705 \ud83d\udc4d"
         }
       ]
-    },
-    {
+        },
+        {
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
@@ -600,7 +614,7 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/AppDump2-2.0.7.tipa",
           "localizedDescription": ""
         },
-		{
+		    {
           "version": "2.0.6",
           "date": "2024-01-12",
           "size": 3274107,
@@ -608,8 +622,8 @@
           "localizedDescription": ""
         }
       ]
-    },
-    {
+      },
+      {
       "name": "TrollDecrypt",
       "bundleIdentifier": "com.fiore.trolldecrypt",
       "developerName": "",
@@ -630,8 +644,8 @@
           "localizedDescription": ""
         }
       ]
-    },
-    {
+      },
+      {
       "name": "Spotify",
       "bundleIdentifier": "com.spotify.client",
       "developerName": "Hiepvk",
@@ -645,8 +659,8 @@
           "localizedDescription": ""
         }
       ]
-    },
-	{
+      },
+	     {
       "name": "Speedtest",
       "bundleIdentifier": "com.ookla.speedtest",
       "developerName": "Hiepvk",
@@ -660,8 +674,8 @@
           "localizedDescription": ""
         }
       ]
-    },
-	{
+      },
+	     {
       "name": "Geometry Dash",
       "bundleIdentifier": "com.robtop.geometryjump",
       "developerName": "Hiepvk",
@@ -675,8 +689,8 @@
           "localizedDescription": ""
         }
       ]
-    },
-    {
+      },
+      {
       "name": "CamScanner",
       "bundleIdentifier": "com.intsig.CamScannerLite",
       "developerName": "",
@@ -689,7 +703,7 @@
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/csc/CamScanner-6.58.1.ipa",
           "localizedDescription": ""
         },
-		{
+		    {
           "version": "6.57.0",
           "date": "2024-01-11",
           "size": 123702452,
