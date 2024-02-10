@@ -92,6 +92,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.readdle.ReaddleDocsIPad.png",
       "versions": [
         {
+          "version": "8.10.3",
+          "date": "2024-02-10",
+          "size": 163841215,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/doc/Documents-8.10.3.ipa",
+          "localizedDescription": "Last updated: 02-10-2024\nStatus: \u2705 \ud83d\udc4d"
+            },
+            {
           "version": "8.10.2",
           "date": "2024-01-16",
           "size": 163841215,
@@ -493,6 +500,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
+          "version": "19.05.5",
+          "date": "2024-02-10",
+          "size": 125139321,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.05.5.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
+        },
+        {
           "version": "19.05.3",
           "date": "2024-01-31",
           "size": 125139321,
@@ -543,6 +557,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
+          "version": "19.05.5",
+          "date": "2024-02-10",
+          "size": 136765412,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.05.5.ipa",
+          "localizedDescription": "uYou 3.0.1 + YouPIP 1.8.3\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 01-30-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
           "version": "19.05.3",
           "date": "2024-02-07",
           "size": 136765412,
@@ -592,6 +613,13 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
+        {
+          "version": "19.05.5",
+          "date": "2024-02-10",
+          "size": 135386074,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.05.5.ipa",
+          "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 02-10-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
         {
           "version": "19.05.3",
           "date": "2024-02-07",
