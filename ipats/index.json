@@ -18,7 +18,22 @@
           "localizedDescription": "Status: \u2705 \ud83d\udc4d"
             }
           ]
+          }{
+      "name": "DowngradeApp",
+      "bundleIdentifier": "com.netskao.downgradeapp",
+      "developerName": "netskao",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.netskao.downgradeapp.png",
+      "versions": [
+          {
+          "version": "1.1-8",
+          "date": "2024-01-13",
+          "size": 588239,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/DowngradeApp_With_TrollStore_1.1-8.tipa",
+          "localizedDescription": "Status: \u2705 \ud83d\udc4d"
+            }
+          ]
           },
+          ,
 		      {
       "name": "CarTubePlus",
       "bundleIdentifier": "com.osk3apps.CarTubePlus",
