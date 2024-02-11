@@ -18,7 +18,8 @@
           "localizedDescription": "Status: \u2705 \ud83d\udc4d"
             }
           ]
-          }{
+          },
+          {
       "name": "DowngradeApp",
       "bundleIdentifier": "com.netskao.downgradeapp",
       "developerName": "netskao",
@@ -33,7 +34,6 @@
             }
           ]
           },
-          ,
 		      {
       "name": "CarTubePlus",
       "bundleIdentifier": "com.osk3apps.CarTubePlus",
