@@ -446,10 +446,10 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.intsig.CamScannerLite.png",
       "versions": [
         {
-          "version": "6.58.1",
-          "date": "2024-01-27",
+          "version": "6.59.0",
+          "date": "2024-02-15",
           "size": 123702452,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/csc/CamScanner-6.58.1.ipa",
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/csc/CamScanner-6.59.0.ipa",
           "localizedDescription": ""
         }
       ]
