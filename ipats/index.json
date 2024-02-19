@@ -351,6 +351,21 @@
       ]
         },
         {
+      "name": "YTLite",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "19.06.2",
+          "date": "2024-02-20",
+          "size": 115386074,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ytlite/YTLite-19.06.2.ipa",
+          "localizedDescription": "YouTube v19.06.2 - YTLite 2.6\nLast updated: 02-20-2024\nStatus: \u2705 \ud83d\udc4d"
+        }
+      ]
+        },
+        {
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
