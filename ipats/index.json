@@ -306,6 +306,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
+          "version": "19.07.4",
+          "date": "2024-02-20",
+          "size": 125139321,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.07.4.ipa",
+          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
+        },
+        {
           "version": "19.06.2",
           "date": "2024-02-14",
           "size": 125139321,
@@ -328,6 +335,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
+          "version": "19.07.4",
+          "date": "2024-02-20",
+          "size": 136765412,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/uYou/uYou-19.07.4.ipa",
+          "localizedDescription": "uYou 3.0.3 + YouPIP 1.8.4\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 02-20-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
           "version": "19.06.2",
           "date": "2024-02-14",
           "size": 136765412,
@@ -371,6 +385,13 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
+        {
+          "version": "19.07.4",
+          "date": "2024-02-20",
+          "size": 115386074,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ytlite/YTLite-19.07.4.ipa",
+          "localizedDescription": "YouTube v19.07.4 - YTLite 2.6.1\nLast updated: 02-20-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
         {
           "version": "19.06.2",
           "date": "2024-02-20",
