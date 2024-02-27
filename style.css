@@ -83,7 +83,7 @@ body {
 }
 
 .icon-text {
-    width: 99%;
+    width: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
