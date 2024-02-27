@@ -91,7 +91,7 @@ body {
     opacity: 1;
     transition: opacity 0.05s ease-out;
     color: rgba(255,255,255,0.7);
-	margin: 2rem;
+	padding: 2rem;
 }
 
 [data-shaking="true"] .icon-container {
