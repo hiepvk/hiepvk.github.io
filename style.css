@@ -91,7 +91,7 @@ body {
     opacity: 1;
     transition: opacity 0.05s ease-out;
     color: rgba(255,255,255,0.7);
-    line-height: 1rem;
+    line-height: 2rem;
     user-select: none;
     -webkit-user-select: none;
 }
