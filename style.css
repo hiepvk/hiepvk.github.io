@@ -83,6 +83,11 @@ body {
 }
 
 .icon-text {
+    width: 99%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
     opacity: 1;
     transition: opacity 0.05s ease-out;
     color: rgba(255,255,255,0.7);
