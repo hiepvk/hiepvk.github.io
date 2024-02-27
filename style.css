@@ -14,7 +14,7 @@ body {
 
 #all-icons {
     display: flex;
-    width: 40rem;
+    width: 100% auto;
     transform-style: preserve-3d;
     align-content: flex-start;
     justify-content: flex-start;
