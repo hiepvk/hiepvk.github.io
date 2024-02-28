@@ -266,7 +266,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page .bg-blur, input[type=rad
 
 /** Apps **/
 .app, .folder {
-  margin: 0 15% 7px 8px;
+  margin: 0 10% auto;
   max-width: 60px;
   max-height: 80px;
   border-radius: 23%;
