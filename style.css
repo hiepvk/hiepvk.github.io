@@ -140,7 +140,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page .bg-blur, input[type=rad
   align-content: flex-start;
   flex-wrap: wrap;
   padding: 27px 8px 7px 8px;
-  width: 380px;
+  width: 100% auto;
   height: 100%;
 }
 .page .folder:nth-child(1) .folder-apps:focus {
@@ -266,7 +266,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page .bg-blur, input[type=rad
 
 /** Apps **/
 .app, .folder {
-  margin: 0 100% 40% 50% auto;
+  margin: 0 100% 7px 6px;
   max-width: 60px;
   max-height: 80px;
   border-radius: 23%;
