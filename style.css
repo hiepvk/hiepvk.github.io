@@ -56,7 +56,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page .bg-blur, input[type=rad
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
-  width: 320px;
+  width: 350px;
   height: 568px;
 }
 
@@ -139,7 +139,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page .bg-blur, input[type=rad
   align-content: flex-start;
   flex-wrap: wrap;
   padding: 27px 8px 7px 8px;
-  width: 320px;
+  width: 350px;
   height: 100%;
 }
 .page .folder:nth-child(1) .folder-apps:focus {
