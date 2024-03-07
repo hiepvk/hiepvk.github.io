@@ -416,6 +416,21 @@
       ]
         },
         {
+      "name": "YTPatch",
+      "bundleIdentifier": "com.nathan.ytpatch",
+      "developerName": "nathan",
+      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2024-03-01",
+          "size": 2274107,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/ytpatch.tipa",
+          "localizedDescription": "patch YouTube Noads"
+        }
+      ]
+       },
+        {
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
