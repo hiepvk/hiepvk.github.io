@@ -163,13 +163,22 @@
           "size": 149762860,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-453.0.0.ipa",
           "localizedDescription": "Last updated: 03-08-2024\nStatus: \u2705 \ud83d\udc4d"
-            },
+            }
+            ]
+        },
         {
       "name": "MessengerLSN",
       "bundleIdentifier": "com.facebook.Messenger",
       "developerName": "Hiepvk",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Messenger.png",
       "versions": [
+        {
+          "version": "447.0.0",
+          "date": "2024-03-08",
+          "size": 75966139,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/MessengerLSN-447.0.0.ipa",
+          "localizedDescription": "Block ads, seen messages and story view notifications but it's marred by bugs like call issues and crashes and lacks customizable settings. Note: I haven't tested this because I don't have Facebook nor Messenger so please refrain from opening an issue because I won't be able to provide assistance.\nLast updated: 02-10-2024\nStatus: \u2754"
+        },
         {
           "version": "444.0.0",
           "date": "2024-02-08",
@@ -267,24 +276,10 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
-          "version": "19.07.4",
-          "date": "2024-02-20",
+          "version": "19.09.4",
+          "date": "2024-03-08",
           "size": 125139321,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.07.4.ipa",
-          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
-        },
-        {
-          "version": "19.06.2",
-          "date": "2024-02-14",
-          "size": 125139321,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.06.2.ipa",
-          "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
-        },
-        {
-          "version": "19.05.5",
-          "date": "2024-02-10",
-          "size": 125139321,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/dtb/DiuTube-19.05.5.ipa",
+          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/wzvjldpfq3mpo6phoynk6/DiuTube-19.09.4.ipa?rlkey=80obwxzg30xo0dqr2ez999jrx&dl=0",
           "localizedDescription": "DiuTube là một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\nDiuTube by Lê Tí – iOS CodeVN.\n• Tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         }
           ]
@@ -296,6 +291,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
 		    {
+          "version": "19.09.4",
+          "date": "2024-03-08",
+          "size": 136765412,
+          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/xp2lncgvmrqpmpensowyu/uYou-19.09.4.ipa?rlkey=os855vtn06cjvbdn2zobynae5&dl=0",
+          "localizedDescription": "uYou 3.0.3 + YouPIP 1.8.4\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube.\nLast updated: 03-08-2024\nStatus: \u2705 \ud83d\udc4d"
+        },
+        {
           "version": "19.07.4",
           "date": "2024-02-20",
           "size": 136765412,
@@ -319,46 +321,17 @@
       ]
         },
         {
-      "name": "YouTube Reborn",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
-      "versions": [
-        {
-          "version": "19.06.2",
-          "date": "2024-02-14",
-          "size": 135386074,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.06.2.ipa",
-          "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 02-14-2024\nStatus: \u2705 \ud83d\udc4d"
-        },
-        {
-          "version": "19.05.5",
-          "date": "2024-02-10",
-          "size": 135386074,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/reborn/YouTubeReborn-19.05.5.ipa",
-          "localizedDescription": "YouTube Reborn v5.0.0 (BETA)\nLast updated: 02-10-2024\nStatus: \u2705 \ud83d\udc4d"
-        }
-      ]
-        },
-        {
       "name": "YTLite",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
         {
-          "version": "19.07.4",
-          "date": "2024-02-20",
+          "version": "19.09.4",
+          "date": "2024-03-08",
           "size": 115386074,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ytlite/YTLite-19.07.4.ipa",
-          "localizedDescription": "YouTube v19.07.4 - YTLite 2.6.1\nLast updated: 02-20-2024\nStatus: \u2705 \ud83d\udc4d"
-        },
-        {
-          "version": "19.06.2",
-          "date": "2024-02-20",
-          "size": 115386074,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ytlite/YTLite-19.06.2.ipa",
-          "localizedDescription": "YouTube v19.06.2 - YTLite 2.6\nLast updated: 02-20-2024\nStatus: \u2705 \ud83d\udc4d"
+          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/cwwqwxdlmpe8t5uk8vscl/YTLite-19.09.4.ipa?rlkey=rk2oe7ae2vtd0vai2t38eanoy&dl=0",
+          "localizedDescription": "YouTube v19.07.4 - YTLite 3.0.1\nLast updated: 03-08-2024\nStatus: \u2705 \ud83d\udc4d"
         }
       ]
         },
@@ -373,7 +346,7 @@
           "date": "2024-03-01",
           "size": 2274107,
           "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/ytpatch.tipa",
-          "localizedDescription": "patch YouTube Noads"
+          "localizedDescription": "patch YouTube Noads version support: 19.02"
         }
       ]
        },
