@@ -158,65 +158,12 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
       "versions": [
         {
-          "version": "451.0.4",
-          "date": "2024-02-15",
+          "version": "453.0.0",
+          "date": "2024-03-08",
           "size": 149762860,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-451.0.4.ipa",
-          "localizedDescription": "Last updated: 02-15-2024\nStatus: \u2705 \ud83d\udc4d"
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-453.0.0.ipa",
+          "localizedDescription": "Last updated: 03-08-2024\nStatus: \u2705 \ud83d\udc4d"
             },
-            {
-          "version": "449.0.2",
-          "date": "2024-02-08",
-          "size": 149762860,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/Facebook-449.0.2.ipa",
-          "localizedDescription": "Last updated: 02-08-2024\nStatus: \u2705 \ud83d\udc4d"
-            }
-          ]
-        },
-        {
-      "name": "FacebookNoAds",
-      "bundleIdentifier": "com.facebook.Facebook",
-      "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
-      "versions": [
-        {
-          "version": "451.0.4",
-          "date": "2024-02-15",
-          "size": 149762860,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-451.0.4.ipa",
-          "localizedDescription": "Last updated: 02-15-2024\nStatus: \u2705 \ud83d\udc4d"
-       },
-       {
-          "version": "449.0.2",
-          "date": "2024-02-08",
-          "size": 149762860,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookNoAds-449.0.2.ipa",
-          "localizedDescription": "Last updated: 02-08-2024\nStatus: \u2705 \ud83d\udc4d"
-       }
-          ]
-        },
-        {
-      "name": "FacebookWolf",
-      "bundleIdentifier": "com.facebook.Facebook",
-      "developerName": "Hiepvk",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.facebook.Facebook.png",
-      "versions": [
-        {
-          "version": "451.0.4",
-          "date": "2024-02-15",
-          "size": 153623252,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-451.0.4.ipa",
-          "localizedDescription": "Last updated: 02-15-2024\nStatus: \u2705 \ud83d\udc4d"
-        },
-        {
-          "version": "449.0.2",
-          "date": "2024-02-08",
-          "size": 153623252,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/fb-mes/FacebookWolf-449.0.2.ipa",
-          "localizedDescription": "Last updated: 02-08-2024\nStatus: \u2705 \ud83d\udc4d"
-        }
-          ]
-        },
         {
       "name": "MessengerLSN",
       "bundleIdentifier": "com.facebook.Messenger",
