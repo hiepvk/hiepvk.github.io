@@ -231,6 +231,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/jp.ne.ibis.ibisPaintX.png",
       "versions": [
         {
+          "version": "11.2.2",
+          "date": "2024-03-12",
+          "size": 44625682,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ibis/ibisPaint.X-11.2.2.ipa",
+          "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
+       },
+       {
           "version": "11.2.1",
           "date": "2024-01-23",
           "size": 44625682,
@@ -350,21 +357,6 @@
       ]
         },
         {
-      "name": "YTPatch",
-      "bundleIdentifier": "com.nathan.ytpatch",
-      "developerName": "nathan",
-      "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
-      "versions": [
-        {
-          "version": "1.0",
-          "date": "2024-03-01",
-          "size": 2274107,
-          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ipa-ts/ytpatch.tipa",
-          "localizedDescription": "patch YouTube Noads version support: 19.02"
-        }
-      ]
-       },
-        {
       "name": "AppDump2",
       "bundleIdentifier": "cn.gblw.AppsDump",
       "developerName": "",
@@ -459,6 +451,13 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.intsig.CamScannerLite.png",
       "versions": [
+        {
+          "version": "6.61.0",
+          "date": "2024-03-13",
+          "size": 123702452,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/csc/CamScanner-6.61.0.ipa",
+          "localizedDescription": ""
+        },
         {
           "version": "6.59.0",
           "date": "2024-02-15",
