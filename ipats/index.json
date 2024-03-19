@@ -231,6 +231,13 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/jp.ne.ibis.ibisPaintX.png",
       "versions": [
         {
+          "version": "12.0.0",
+          "date": "2024-03-20",
+          "size": 44625682,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/ibis/ibisPaint.X-12.0.0.ipa",
+          "localizedDescription": "ibis Paint X Prime – ibis Paint X++ iPA by Lê Tí – iOS CodeVN.\nibis Paint X++ iPA mở khóa tính năng Prime, chặn quảng cáo của ứng dụng ibis Paint X."
+       },
+        {
           "version": "11.2.2",
           "date": "2024-03-12",
           "size": 44625682,
@@ -473,6 +480,13 @@
       "developerName": "",
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.intsig.CamScannerLite.png",
       "versions": [
+        {
+          "version": "6.61.5",
+          "date": "2024-03-20",
+          "size": 123702452,
+          "downloadURL": "https://github.com/hiepvk/ipa/releases/download/csc/CamScanner-6.61.5.ipa",
+          "localizedDescription": ""
+        },
         {
           "version": "6.61.0",
           "date": "2024-03-13",
