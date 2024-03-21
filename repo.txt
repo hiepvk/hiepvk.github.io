@@ -7,3 +7,5 @@ Link: https://github.com/TheResonanceTeam/TrollApps/releases
 - Repo TTJ: https://ipa.thuthuatjb.com/repo
 - https://ipa.cypwn.xyz/cypwn_ts.json
 - Link tải appstore+++: https://github.com/34306/TrollStoreiPA/releases
+
+
