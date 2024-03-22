@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>Block Ads - Anti Cert</string>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+						<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+							<string>127.0.0.1</string>
+				</array>
+				<key>ServerName</key>
+						<string>localhost</string>
+				<key>SupplementalMatchDomains</key>
+				<array>
+					<string>oscp.apple.com</string>
+					<string>oscp2.appe.com</string>
+					<string>certs.apple.com</string>
+					<string>crl.apple.com</string>
+					<string>crl.entrust.net</string>
+					<string>crl3.digicert.com</string>
+					<string>crl4.digicert.com</string>
+					<string>ocsp.apple.com</string>
+					<string>ocsp.digicert.cn</string>
+					<string>ocsp.digicert.com</string>
+					<string>ocsp.entrust.net</string>
+					<string>ocsp2.apple.com</string>
+					<string>valid.apple.com</string>
+				</array>
+			</dict>
+			<key>PayloadDisplayName</key>
+					<string>Anti Cert</string>
+			<key>PayloadIdentifier</key>
+					<string>com.apple.dnsSettings.managed.396ca827-93a8-4f30-866d-12debc011933</string>
+			<key>PayloadType</key>
+					<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+					<string>396ca827-93a8-4f30-866d-12debc011933</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://apple.dns.nextdns.io/934a9c</string>
+				</dict>
+				<key>PayloadDisplayName</key>
+				<string>Block Ads</string>
+				<key>PayloadIdentifier</key>
+				<string>io.nextdns.934a9c.profile.dnsSettings.managed</string>
+				<key>PayloadOrganization</key>
+				<string>NextDNS</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.934a9c.dnsSettings.managed</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	<key>PayloadDescription</key>
+	<string>
+This profile uses IP 127.0.0.1 (localhost) as a DNS over TLS (DoT) server to block:
+- apple's servers:
+- oscp.apple.com
+- oscp2.appe.com
+- certs.apple.com
+- crl.apple.com
+- crl.entrust.net
+- crl3.digicert.com
+- crl4.digicert.com
+- ocsp.apple.com
+- ocsp.digicert.cn
+- ocsp.digicert.com
+- ocsp.entrust.net
+- ocsp2.apple.com
+- valid.apple.com
+
+	</string>
+	<key>PayloadDisplayName</key>
+	<string>Block Ads - Anti Cert</string>
+	<key>PayloadIdentifier</key>
+	<string>24497ba6-c1bf-46e4-a689-312384c14a93</string>
+	<key>PayloadOrganization</key>
+	<string>dev1lb0rn</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>9E178575-1415-4460-B76B-7FCB8F8A5293</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>TargetDeviceType</key>
+	<integer>0</integer>
+</dict>
+</plist>
