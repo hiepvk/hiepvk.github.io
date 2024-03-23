@@ -85,7 +85,7 @@
           <string>https://apple.dns.nextdns.io/7fb2f6</string>
         </dict>
         <key>PayloadDisplayName</key>
-        <string>Anti nextdns</string>
+        <string>Anti NextDNS</string>
         <key>PayloadIdentifier</key>
         <string>io.nextdns.7fb2f6.profile.dnsSettings.managed</string>
         <key>PayloadOrganization</key>
@@ -106,11 +106,11 @@
           <string>https://d.adguard-dns.com/dns-query/8fa797df</string>
         </dict>
         <key>PayloadDisplayName</key>
-        <string>Anti adguard</string>
+        <string>Anti AdGuard</string>
         <key>PayloadIdentifier</key>
         <string>com.apple.dnsSettings.managed.2ec9d46a-7b40-4633-a819-f3d3278cfa03</string>
         <key>PayloadOrganization</key>
-        <string>NextDNS</string>
+        <string>AdGuard</string>
         <key>PayloadType</key>
         <string>com.apple.dnsSettings.managed</string>
         <key>PayloadUUID</key>
