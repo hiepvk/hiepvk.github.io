@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/hiepvk/ipa/releases/download/ipa-ts/TrollStarTE.ipa</string>
+					<string>https://github.com/hiepvk/ipa/releases/download/ipa-ts/TrollInstallerX2.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>https://hiepvk.github.io/img/TrollStar.png</string>
+					<string>https://hiepvk.github.io/icons/trollinstallx.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -33,13 +33,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.thuthuatjb.trollforcete</string>
+				<string>com.Alfie.TrollInstallerX</string>
 				<key>bundle-version</key>
 				<string>1.0.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>TrollStarTE</string>
+				<string>TrollInstallerX</string>
 			</dict>
 		</dict>
 	</array>
