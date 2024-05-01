@@ -399,18 +399,11 @@
       "iconURL": "https://raw.githubusercontent.com/hiepvk/ipa/main/icons/com.google.ios.youtube.png",
       "versions": [
         {
-          "version": "19.14.2",
-          "date": "2024-04-08",
+          "version": "19.17.2",
+          "date": "2024-04-30",
           "size": 115386074,
-          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/supi4eaklaz5p6c76tuyb/Hiepvk_19.14.2.ipa?rlkey=jo3wrb1v6zdxcs7ozso6fuwbv&dl=0",
-          "localizedDescription": "YouTube v19.14.2 - Hiepvk\nlà một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\n• YouTubeX - PoomSmart\n• YouPIP - PoomSmart\n• YTVideoOverlay - PoomSmart\n• YouQuality - PoomSmart\n• YouMute - PoomSmart\n• YTUHD - PoomSmart\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
-        },
-        {
-          "version": "19.13.1",
-          "date": "2024-03-25",
-          "size": 115386074,
-          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/snas9y87equrseii6mt6x/Hiepvk_19.13.1.ipa?rlkey=bj45254h9s1mt5fb5pz2hhaon&dl=0",
-          "localizedDescription": "YouTube v19.13.1 - Hiepvk\nlà một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\n• YouTubeX - PoomSmart\n• YouPIP - PoomSmart\n• YTVideoOverlay - PoomSmart\n• YouQuality - PoomSmart\n• YouMute - PoomSmart\n• YTUHD - PoomSmart\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
+          "downloadURL": "https://dl.dropboxusercontent.com/scl/fi/jf8h4z08ou9xyo2g1f9fi/Hiepvk_19.17.2.ipa?rlkey=1gbfhc5xv1r6wy1v9wqf7pwib&st=sgkh47bk&dl=0",
+          "localizedDescription": "YouTube v19.17.2 - Hiepvk\nlà một bản YouTube đã được loại bỏ quảng cáo trong lúc xem video cũng như thêm chế độ phát nhạc khi tắt màn hình giúp bạn thoải mái hơn khi xem video hoặc nghe nhạc ở chế độ phát nền (tắt màn hình).\n• YouTubeX - PoomSmart\n• YouPIP - PoomSmart\n• YTVideoOverlay - PoomSmart\n• YouQuality - PoomSmart\n• YouMute - PoomSmart\n• YTUHD - PoomSmart\n• Tùy chọn bật hoặc tắt các video gợi ý gây khó chịu xuất hiện ở cuối video YouTube."
         }
       ]
         },
