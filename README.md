@@ -15,3 +15,7 @@ irm https://hiepvk.github.io/tv.ps1 | iex
 ```
 irm https://hiepvk.github.io/ult.ps1 | iex
 ```
+**Brave**
+```
+irm https://hiepvk.github.io/bra.ps1 | iex
+```
