@@ -19,3 +19,7 @@ irm https://hiepvk.github.io/ult.ps1 | iex
 ```
 irm https://hiepvk.github.io/bra.ps1 | iex
 ```
+**Microsoft Activation Scripts (MAS)**
+```
+irm https://hiepvk.github.io/mas.ps1 | iex
+```
