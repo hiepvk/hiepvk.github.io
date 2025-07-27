@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiepvk.github.io</title>
+    <!-- Tải Tailwind CSS từ CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tải phông chữ Inter từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Màu nền nhẹ */
+        }
+        /* Tùy chỉnh thanh cuộn cho các trình duyệt WebKit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8">
+    <div class="w-full max-w-2xl bg-white rounded-lg shadow-md overflow-hidden">
+        <!-- Phần tiêu đề trang -->
+        <div class="flex items-center p-4 bg-gray-100 border-b border-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" />
+            </svg>
+            <span class="text-gray-800 font-semibold text-lg">hiepvk.github.io</span>
+        </div>
+
+        <!-- Các mục nội dung -->
+        <div class="p-4 space-y-4">
+            <!-- Mục Cốc Cốc -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">Cốc cốc</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/taicc | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+
+            <!-- Mục Chrome -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">Chrome</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/taichrome | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+
+            <!-- Mục EVKey - UniKey -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">EVKey - UniKey</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/taitv | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+
+            <!-- Mục UltraViewer -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">UltraViewer</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/ultraview | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+
+            <!-- Mục Brave -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">Brave</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/taibrave | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+
+            <!-- Mục Microsoft Activation Scripts (MAS) -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                <h3 class="text-gray-700 font-medium text-base mb-2">Microsoft Activation Scripts (MAS)</h3>
+                <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
+                    <span class="flex-grow break-all pr-8">irm https://is.gd/getmas | iex</span>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200"
+                            onclick="copyToClipboard(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                    </button>
+                    <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * Hàm sao chép nội dung vào clipboard và hiển thị thông báo.
+         * @param {HTMLElement} buttonElement Nút được nhấp.
+         */
+        function copyToClipboard(buttonElement) {
+            // Lấy phần tử span chứa văn bản cần sao chép
+            const textSpan = buttonElement.previousElementSibling;
+            const textToCopy = textSpan.textContent;
+
+            // Lấy phần tử thông báo
+            const copyMessage = buttonElement.nextElementSibling;
+
+            // Sử dụng document.execCommand('copy') để sao chép văn bản
+            // Đây là phương pháp tương thích rộng rãi hơn trong môi trường iframe
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                // Hiển thị thông báo "Đã sao chép!"
+                copyMessage.classList.add('opacity-100');
+                setTimeout(() => {
+                    copyMessage.classList.remove('opacity-100');
+                }, 1500); // Ẩn thông báo sau 1.5 giây
+            } catch (err) {
+                console.error('Không thể sao chép văn bản:', err);
+                // Có thể thêm một thông báo lỗi khác nếu cần
+            }
+            document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+</html>
