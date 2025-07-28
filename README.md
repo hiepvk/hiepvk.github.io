@@ -23,4 +23,4 @@ irm https://is.gd/taibrave | iex
 ```
 irm https://is.gd/getmas | iex
 ```
-[free3of9](https://hiepvk.github.io/free3of9.zip)
+**[free3of9](https://hiepvk.github.io/free3of9.zip)**
