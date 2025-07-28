@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hiepvk.github.io</title>
-    <!-- Tải Tailwind CSS từ CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tải phông chữ Inter từ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -28,28 +26,10 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        .link-box {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 4px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9em;
-            word-break: break-all;
-        }
-        .link-box a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .link-box a:hover {
-            text-decoration: underline;
-        }
+        /* Các style cho phần font link vẫn được giữ vì chúng được thiết kế riêng */
         .font-links-container {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px; /* Điều chỉnh margin cho phù hợp với Tailwind space-y-4 */
         }
         .font-link {
             padding: 10px 20px;
@@ -74,12 +54,11 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8">
     <div class="w-full max-w-2xl bg-white rounded-lg shadow-md overflow-hidden">
-        <!-- Phần tiêu đề trang -->
         <div class="flex items-center p-4 bg-gray-100 border-b border-gray-200">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" />
@@ -87,9 +66,7 @@
             <span class="text-gray-800 font-semibold text-lg">hiepvk.github.io</span>
         </div>
 
-        <!-- Các mục nội dung -->
         <div class="p-4 space-y-4">
-            <!-- Mục Cốc Cốc -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Cốc cốc</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -104,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Mục Chrome -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Chrome</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -119,7 +95,6 @@
                 </div>
             </div>
 
-            <!-- Mục EVKey - UniKey -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">EVKey - UniKey</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -134,7 +109,6 @@
                 </div>
             </div>
 
-            <!-- Mục UltraViewer -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">UltraViewer</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -149,7 +123,6 @@
                 </div>
             </div>
 
-            <!-- Mục Brave -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Brave</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -164,7 +137,6 @@
                 </div>
             </div>
 
-            <!-- Mục Microsoft Activation Scripts (MAS) -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Microsoft Activation Scripts (MAS)</h3>
                 <div class="flex items-center bg-white border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 relative">
@@ -178,48 +150,77 @@
                     <span class="copy-message absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300">Đã sao chép!</span>
                 </div>
             </div>
-            <!-- Mục tải font -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Font barcode tk hải quan</h3>
                <div class="font-links-container">
-            <a href="#" class="font-link">Font free3of9</a>
-            <a href="#" class="font-link">Font barcode</a>
-        </div>
-        </div>
+                    <a href="#" class="font-link">Font free3of9</a>
+                    <a href="#" class="font-link">Font barcode</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
         /**
          * Hàm sao chép nội dung vào clipboard và hiển thị thông báo.
+         * Ưu tiên sử dụng Clipboard API, dự phòng cho các trình duyệt cũ.
          * @param {HTMLElement} buttonElement Nút được nhấp.
          */
         function copyToClipboard(buttonElement) {
             // Lấy phần tử span chứa văn bản cần sao chép
             const textSpan = buttonElement.previousElementSibling;
-            const textToCopy = textSpan.textContent;
+            const textToCopy = textSpan.textContent.trim(); // Dùng .trim() để loại bỏ khoảng trắng thừa
 
             // Lấy phần tử thông báo
             const copyMessage = buttonElement.nextElementSibling;
 
-            // Sử dụng document.execCommand('copy') để sao chép văn bản
-            // Đây là phương pháp tương thích rộng rãi hơn trong môi trường iframe
-            const textArea = document.createElement('textarea');
-            textArea.value = textToCopy;
-            document.body.appendChild(textArea);
-            textArea.select();
-            try {
-                document.execCommand('copy');
-                // Hiển thị thông báo "Đã sao chép!"
+            // Hàm hiển thị thông báo
+            const showCopyMessage = () => {
                 copyMessage.classList.add('opacity-100');
                 setTimeout(() => {
                     copyMessage.classList.remove('opacity-100');
                 }, 1500); // Ẩn thông báo sau 1.5 giây
-            } catch (err) {
-                console.error('Không thể sao chép văn bản:', err);
-                // Có thể thêm một thông báo lỗi khác nếu cần
+            };
+
+            // Ưu tiên sử dụng Clipboard API
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showCopyMessage();
+                }).catch(err => {
+                    console.error('Không thể sao chép văn bản bằng Clipboard API:', err);
+                    // Dự phòng nếu Clipboard API thất bại
+                    fallbackCopyToClipboard(textToCopy, showCopyMessage);
+                });
+            } else {
+                // Dự phòng cho các trình duyệt không hỗ trợ Clipboard API
+                fallbackCopyToClipboard(textToCopy, showCopyMessage);
             }
-            document.body.removeChild(textArea);
+        }
+
+        /**
+         * Hàm dự phòng để sao chép văn bản bằng document.execCommand.
+         * @param {string} textToCopy Văn bản cần sao chép.
+         * @param {function} callback Hàm để gọi sau khi sao chép thành công.
+         */
+        function fallbackCopyToClipboard(textToCopy, callback) {
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            // Đặt textarea ra ngoài màn hình để không ảnh hưởng đến giao diện
+            textArea.style.position = 'fixed';
+            textArea.style.top = '-9999px';
+            textArea.style.left = '-9999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                callback();
+            } catch (err) {
+                console.error('Không thể sao chép văn bản bằng execCommand:', err);
+                alert('Có lỗi khi sao chép. Vui lòng sao chép thủ công: \n' + textToCopy);
+            } finally {
+                document.body.removeChild(textArea);
+            }
         }
     </script>
 </body>
