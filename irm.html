@@ -28,21 +28,53 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        .links {
-            margin-top: 20px;
-            text-align: left;
+        .link-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            word-break: break-all;
         }
-
-        .links a {
-            color: #FF0000;
+        .link-box a {
+            color: #007bff;
             text-decoration: none;
-            font-size: 18px;
-            margin: 0 10px;
         }
-
-        .links a:hover {
+        .link-box a:hover {
             text-decoration: underline;
         }
+        .font-links-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .font-link {
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            display: inline-block; /* Để các link nằm trên cùng một hàng */
+            background-color: #e7f0ff;
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 5px; /* Khoảng cách giữa các link */
+        }
+        .font-link:hover {
+            background-color: #d0e2ff;
+        }
+
+        /* Responsive adjustments for font links */
+        @media (max-width: 480px) {
+            .font-link {
+                display: block; /* Xếp chồng khi màn hình nhỏ */
+                width: calc(100% - 10px); /* Đảm bảo đủ rộng và có margin */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8">
@@ -149,10 +181,9 @@
             <!-- Mục tải font -->
             <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                 <h3 class="text-gray-700 font-medium text-base mb-2">Font barcode tk hải quan</h3>
-            <div class="links">
-            <a href="https://hiepvk.github.io/free3of9.zip">•font free3of9</a>
-            <br>
-            <a href="https://hiepvk.github.io/barcodefont.zip">•font barcode</a>
+               <div class="font-links-container">
+            <a href="#" class="font-link">Font free3of9</a>
+            <a href="#" class="font-link">Font barcode</a>
         </div>
         </div>
         </div>
