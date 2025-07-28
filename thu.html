@@ -1,80 +1,174 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hiepvk.github.io</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #ffffff;
             padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
         }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         h1 {
-            color: #333;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
         }
-        h2 {
-            color: #444;
-            margin-top: 20px;
+
+        .section {
+            margin-bottom: 25px;
         }
-        .link-item {
+
+        .section-title {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background-color: #3a3a3a;
+            border-radius: 6px;
             display: flex;
             align-items: center;
-            margin: 10px 0;
+            padding: 12px 15px;
+            margin-top: 8px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
         }
-        .link-item a {
-            margin-right: 10px;
+
+        .code-block input[type="text"] {
+            flex-grow: 1;
+            background: none;
+            border: none;
+            color: #c0c0c0;
+            font-family: monospace;
+            font-size: 15px;
+            padding: 0;
+            outline: none;
+            cursor: text;
         }
-        .red-circle {
-            color: red;
+
+        .copy-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
             margin-left: 10px;
+            color: #888888;
+            font-size: 18px;
+            transition: color 0.2s ease-in-out;
         }
-        .footer {
+
+        .copy-button:hover {
+            color: #ffffff;
+        }
+
+        .links {
             margin-top: 30px;
-            font-style: italic;
-            color: #666;
+            text-align: center;
+        }
+
+        .links a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>hiepvk.github.io</h1>
+    <div class="container">
+        <h1>hiepvk.github.io</h1>
 
-    <h2>Cốc cốc</h2>
-    <div class="link-item">
-        <a href="https://is.gd/tai.cc">irm https://is.gd/tai.cc</a> | ][iex] <span class="red-circle">🔴</span>
+        <div class="section">
+            <div class="section-title">Cốc cốc</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/taicc | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Chrome</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/taichrome | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EVKey - UniKey</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/taitv | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">UltraViewer</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/ultraview | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Brave</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/taibrave | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Microsoft Activation Scripts (MAS)</div>
+            <div class="code-block">
+                <input type="text" value="irm https://is.gd/getmas | iex" readonly>
+                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="#">font barcode free3of9</a> - <a href="#">font barcode</a>
+        </div>
     </div>
 
-    <h2>Chrome</h2>
-    <div class="link-item">
-        <a href="https://is.gd/taichrome">irm https://is.gd/taichrome</a> | ][iex] <span class="red-circle">🔴</span>
-    </div>
+    <script>
+        function copyToClipboard(button) {
+            const input = button.previousElementSibling;
+            input.select();
+            input.setSelectionRange(0, 99999); // For mobile devices
 
-    <h2>EVKey - UniKey</h2>
-    <div class="link-item">
-        <a href="https://is.gd/taitv">irm https://is.gd/taitv</a> | ][iex] <span class="red-circle">🔴</span>
-    </div>
-
-    <h2>UltraViewer</h2>
-    <div class="link-item">
-        <a href="https://is.gd/ultraview">irm https://is.gd/ultraview</a> | ][iex] <span class="red-circle">🔴</span>
-    </div>
-
-    <h2>Brave</h2>
-    <div class="link-item">
-        <a href="https://is.gd/taibrave">irm https://is.gd/taibrave</a> | ][iex] <span class="red-circle">🔴</span>
-    </div>
-
-    <h2>Microsoft Activation Scripts (MAS)</h2>
-    <div class="link-item">
-        <a href="https://is.gd/getmas">irm https://is.gd/getmas</a> | ][iex] <span class="red-circle">🔴</span>
-    </div>
-
-    <div class="footer">
-        font barcode free3of9 - font barcode
-    </div>
+            navigator.clipboard.writeText(input.value)
+                .then(() => {
+                    alert("Copied to clipboard: " + input.value);
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+        }
+    </script>
 </body>
 </html>
