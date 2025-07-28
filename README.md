@@ -23,5 +23,5 @@ irm https://is.gd/taibrave | iex
 ```
 irm https://is.gd/getmas | iex
 ```
-`
-**[font barcode free3of9](https://hiepvk.github.io/free3of9.zip)** `- **[font barcode](https://hiepvk.github.io/barcodefont.zip)**
+
+**[font barcode free3of9](https://hiepvk.github.io/free3of9.zip)** - **[font barcode](https://hiepvk.github.io/barcodefont.zip)**
