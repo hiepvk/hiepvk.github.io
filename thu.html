@@ -11,28 +11,33 @@
             display: flex;
             justify-content: center;
             padding: 20px;
+            margin: 0;
         }
         .container {
             width: 100%;
             max-width: 600px;
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
         .header {
-            /* Changed for centering text */
             text-align: center;
             margin-bottom: 20px;
             border-bottom: 1px solid #eee;
             padding-bottom: 15px;
         }
         .header h1 {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
-            color: #333;
-            margin: 0; /* Ensure no extra margin */
+            color: transparent; /* Makes text transparent to show background gradient */
+            background: linear-gradient(90deg, #ff0000, #ff4500, #ffa500, #ffd700, #ffff00, #adff2f, #7cfc00, #00ff00, #00fa9a, #00ffff, #00bfff, #1e90ff, #0000ff, #8a2be2, #9932cc, #da70d6, #ff00ff, #ff1493, #ff0000);
+            -webkit-background-clip: text; /* Clip background to text shape */
+            background-clip: text;
+            background-size: 600% 100%; /* Larger background for smooth loop */
+            margin: 0;
         }
+
         .card {
             background-color: #fbfbfb;
             border-radius: 8px;
@@ -49,11 +54,11 @@
         .input-group {
             display: flex;
             align-items: center;
-            background-color: #ffffff;
+            background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 8px 10px;
-            position: relative; /* For the copy message */
+            position: relative;
         }
         .input-group input {
             flex-grow: 1;
@@ -65,18 +70,26 @@
         }
         .input-group .copy-icon {
             cursor: pointer;
-            width: 20px;
+            width: 20px; /* Original size for SVG */
             height: 20px;
             margin-left: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #777; /* Color for the SVG icon */
+            color: #777;
             flex-shrink: 0;
+            transition: color 0.2s ease-in-out;
+            padding: 0; /* Ensure no extra padding from button default styles */
+            border: none; /* Remove default button border */
+            background: none; /* Remove default button background */
+        }
+        .input-group .copy-icon:hover {
+            color: #007bff;
         }
         .input-group .copy-icon svg {
             width: 16px;
             height: 16px;
+            fill: currentColor; /* Inherit color from parent (.copy-icon) */
         }
         .font-section {
             margin-top: 20px;
@@ -105,18 +118,27 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
         }
         .link-button.font-blue {
             background-color: #007bff;
-            color: #ffffff;
+            color: #fff;
             border: 1px solid #007bff;
         }
+        .link-button.font-blue:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
         .link-button.font-white {
-            background-color: #ffffff;
+            background-color: #fff;
             color: #007bff;
             border: 1px solid #007bff;
         }
-
+        .link-button.font-white:hover {
+            background-color: #e0f0ff;
+            color: #0056b3;
+            border-color: #0056b3;
+        }
         .copy-message {
             position: absolute;
             top: 50%;
@@ -139,113 +161,142 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Vũ Khắc Hiệp</h1>
-        </div>
+        <header class="header">
+            <h1 id="mainHeader">Vũ Khắc Hiệp</h1>
+        </header>
 
-        <div class="card">
-            <div class="card-title">Cốc cốc</div>
-            <div class="input-group">
-                <input type="text" id="cocCocInput" value="irm https://is.gd/taicc | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('cocCocInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+        <main>
+            <section class="card">
+                <h2 class="card-title">Cốc cốc</h2>
+                <div class="input-group">
+                    <input type="text" id="cocCocInput" value="irm https://is.gd/taicc | iex" readonly aria-label="Lệnh cài đặt Cốc Cốc">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('cocCocInput', this)" aria-label="Sao chép lệnh Cốc Cốc">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="card">
-            <div class="card-title">Chrome</div>
-            <div class="input-group">
-                <input type="text" id="chromeInput" value="irm https://is.gd/taichrome | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('chromeInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+            <section class="card">
+                <h2 class="card-title">Chrome</h2>
+                <div class="input-group">
+                    <input type="text" id="chromeInput" value="irm https://is.gd/taichrome | iex" readonly aria-label="Lệnh cài đặt Chrome">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('chromeInput', this)" aria-label="Sao chép lệnh Chrome">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="card">
-            <div class="card-title">EVKey - UniKey</div>
-            <div class="input-group">
-                <input type="text" id="evkeyInput" value="irm https://is.gd/taitv | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('evkeyInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+            <section class="card">
+                <h2 class="card-title">EVKey - UniKey</h2>
+                <div class="input-group">
+                    <input type="text" id="evkeyInput" value="irm https://is.gd/taitv | iex" readonly aria-label="Lệnh cài đặt EVKey - UniKey">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('evkeyInput', this)" aria-label="Sao chép lệnh EVKey - UniKey">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="card">
-            <div class="card-title">UltraViewer</div>
-            <div class="input-group">
-                <input type="text" id="ultraviewerInput" value="irm https://is.gd/ultraview | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('ultraviewerInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+            <section class="card">
+                <h2 class="card-title">UltraViewer</h2>
+                <div class="input-group">
+                    <input type="text" id="ultraviewerInput" value="irm https://is.gd/ultraview | iex" readonly aria-label="Lệnh cài đặt UltraViewer">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('ultraviewerInput', this)" aria-label="Sao chép lệnh UltraViewer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="card">
-            <div class="card-title">Brave</div>
-            <div class="input-group">
-                <input type="text" id="braveInput" value="irm https://is.gd/taibrave | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('braveInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+            <section class="card">
+                <h2 class="card-title">Brave</h2>
+                <div class="input-group">
+                    <input type="text" id="braveInput" value="irm https://is.gd/taibrave | iex" readonly aria-label="Lệnh cài đặt Brave">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('braveInput', this)" aria-label="Sao chép lệnh Brave">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="card">
-            <div class="card-title">Microsoft Activation Scripts (MAS)</div>
-            <div class="input-group">
-                <input type="text" id="masInput" value="irm https://is.gd/getmas | iex" readonly>
-                <div class="copy-icon" onclick="copyToClipboard('masInput', this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
-                    </svg>
+            <section class="card">
+                <h2 class="card-title">Microsoft Activation Scripts (MAS)</h2>
+                <div class="input-group">
+                    <input type="text" id="masInput" value="irm https://is.gd/getmas | iex" readonly aria-label="Lệnh cài đặt Microsoft Activation Scripts (MAS)">
+                    <button type="button" class="copy-icon" onclick="copyToClipboard('masInput', this)" aria-label="Sao chép lệnh Microsoft Activation Scripts (MAS)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                        </svg>
+                    </button>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="font-section">
-            <div class="font-section-title">Font barcode tk hải quan</div>
-            <div class="button-group">
-                <a href="URL_CUA_FONT_FREE3OF9" class="link-button font-blue" download>Font free3of9</a>
-                <a href="URL_CUA_FONT_BARCODE" class="link-button font-white" download>Font barcode</a>
-            </div>
-        </div>
+            <section class="font-section">
+                <h2 class="font-section-title">Font barcode tk hải quan</h2>
+                <div class="button-group">
+                    <a href="URL_CUA_FONT_FREE3OF9" class="link-button font-blue" download>Font free3of9</a>
+                    <a href="URL_CUA_FONT_BARCODE" class="link-button font-white" download>Font barcode</a>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script>
-        function copyToClipboard(elementId, clickedElement) {
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerElement = document.getElementById('mainHeader');
+            let backgroundPositionX = 0;
+            // Tốc độ di chuyển của gradient (pixels mỗi frame)
+            // Giá trị càng lớn, animation càng nhanh
+            const animationSpeed = 2; // Đã tăng từ 1.5 lên 2 để nhanh hơn nữa
+
+            function animateRainbow() {
+                backgroundPositionX -= animationSpeed;
+
+                // Điều kiện để lặp lại animation mượt mà
+                // Khi backgroundPositionX di chuyển qua một chu kỳ đầy đủ của gradient
+                // (gradient dài gấp 6 lần chiều rộng của chữ, nên cần dịch chuyển 5 lần chiều rộng)
+                if (backgroundPositionX <= -headerElement.offsetWidth * 5) {
+                    backgroundPositionX = 0; // Đặt lại về 0 để lặp lại từ đầu
+                }
+
+                headerElement.style.backgroundPosition = `${backgroundPositionX}px 50%`;
+
+                // Yêu cầu trình duyệt vẽ frame tiếp theo
+                requestAnimationFrame(animateRainbow);
+            }
+
+            // Bắt đầu animation khi trang được tải
+            requestAnimationFrame(animateRainbow);
+        });
+
+        function copyToClipboard(elementId, clickedButton) {
             const inputElement = document.getElementById(elementId);
             const textToCopy = inputElement.value;
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(textToCopy).then(() => {
-                    showCopyMessage(clickedElement.closest('.input-group'));
-                }).catch(err => {
-                    console.error('Không thể sao chép văn bản: ', err);
-                    fallbackCopyToClipboard(inputElement);
-                    showCopyMessage(clickedElement.closest('.input-group'));
-                });
+                navigator.clipboard.writeText(textToCopy)
+                    .then(() => showCopyMessage(clickedButton.closest('.input-group')))
+                    .catch(err => {
+                        console.error('Không thể sao chép văn bản (Clipboard API): ', err);
+                        fallbackCopyToClipboard(inputElement);
+                        showCopyMessage(clickedButton.closest('.input-group'));
+                    });
             } else {
                 fallbackCopyToClipboard(inputElement);
-                showCopyMessage(clickedElement.closest('.input-group'));
+                showCopyMessage(clickedButton.closest('.input-group'));
             }
         }
 
@@ -255,7 +306,7 @@
             try {
                 document.execCommand('copy');
             } catch (err) {
-                console.error('Fallback: Không thể sao chép văn bản', err);
+                console.error('Không thể sao chép văn bản (Fallback): ', err);
             }
         }
 
@@ -269,10 +320,7 @@
             }
 
             messageElement.classList.add('show');
-
-            setTimeout(() => {
-                messageElement.classList.remove('show');
-            }, 1500);
+            setTimeout(() => messageElement.classList.remove('show'), 1500);
         }
     </script>
 </body>
