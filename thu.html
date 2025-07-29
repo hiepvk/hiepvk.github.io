@@ -12,6 +12,7 @@
             justify-content: center;
             padding: 20px;
             margin: 0;
+            line-height: 1.2; /* Tối ưu: Giảm line-height tổng thể để văn bản gọn hơn */
         }
         .container {
             width: 100%;
@@ -36,12 +37,25 @@
             background-clip: text;
             background-size: 600% 100%;
             margin: 0;
+            -webkit-animation: rainbow-animation 10s linear infinite; /* Tối ưu: Thêm tiền tố cho khả năng tương thích */
+            animation: rainbow-animation 10s linear infinite;
+        }
+
+        /* Tối ưu: Khung ảnh động cầu vồng để mượt mà hơn */
+        @-webkit-keyframes rainbow-animation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: -600% 50%; } /* Giúp animation không bị giật cuối vòng lặp */
+        }
+        @keyframes rainbow-animation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: -600% 50%; } /* Giúp animation không bị giật cuối vòng lặp */
         }
 
         .card {
             background-color: #fbfbfb;
             border-radius: 8px;
-            padding: 15px;
+            /* Giữ nguyên padding top 1px theo yêu cầu "cào lên" */
+            padding: 1px 15px 8px 15px;
             margin-bottom: 15px;
             border: 1px solid #ddd;
         }
@@ -49,7 +63,9 @@
             font-size: 16px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 4px; /* Giữ nguyên 4px để sát với input group */
+            margin-top: 8px; /* Tối ưu: Đặt margin-top cụ thể cho tiêu đề nếu cần đẩy ra khỏi padding 1px */
+                              /* Nếu muốn sát hơn nữa, có thể giảm padding-top của .card và bỏ margin-top này */
         }
         .input-group {
             display: flex;
@@ -57,7 +73,7 @@
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
-            padding: 8px 10px;
+            padding: 6px 10px; /* Giữ nguyên 6px cho gọn */
             position: relative;
         }
         .input-group input {
@@ -65,14 +81,14 @@
             border: none;
             outline: none;
             font-size: 14px;
-            color: #333; /* Màu chữ tối hơn để dễ đọc */
+            color: #333;
             background-color: transparent;
-            padding: 0; /* Đảm bảo không có padding thừa từ input mặc định */
-            margin: 0; /* Đảm bảo không có margin thừa từ input mặc định */
-            white-space: nowrap; /* Giữ văn bản trên một dòng */
-            overflow: hidden; /* Ẩn phần văn bản tràn */
-            text-overflow: ellipsis; /* Thêm dấu "..." khi văn bản bị cắt */
-            cursor: text; /* Đổi con trỏ thành dạng văn bản khi rê chuột qua input */
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: text;
         }
         .input-group .copy-icon {
             cursor: pointer;
@@ -98,33 +114,50 @@
             fill: currentColor;
         }
         .font-section {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
+            background-color: #fbfbfb;
+            border-radius: 8px;
+            /* Giữ nguyên padding top 1px theo yêu cầu "cào lên" */
+            padding: 1px 15px 8px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
         }
         .font-section-title {
             font-size: 16px;
             font-weight: bold;
             color: #333;
+            margin-bottom: 4px; /* Giữ nguyên 4px để sát với input group */
+            margin-top: 8px; /* Tối ưu: Đặt margin-top cụ thể cho tiêu đề nếu cần đẩy ra khỏi padding 1px */
+                              /* Nếu muốn sát hơn nữa, có thể giảm padding-top của .card và bỏ margin-top này */
+        }
+        .font-section-description {
+            font-size: 14px;
+            color: #555;
             margin-bottom: 15px;
+            line-height: 1.5;
         }
         .button-group {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
+            align-items: center;
         }
         .link-button {
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 0.9em;
             cursor: pointer;
-            flex-grow: 1;
+            flex: 1 1 auto;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            min-width: 120px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .link-button.font-blue {
             background-color: #007bff;
@@ -162,6 +195,34 @@
         }
         .copy-message.show {
             opacity: 1;
+        }
+
+        /* Tối ưu: Media Queries cho các màn hình nhỏ hơn */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .card {
+                padding: 5px 10px 6px 10px; /* Giảm padding ngang trên mobile */
+            }
+            .card-title {
+                font-size: 15px;
+            }
+            .input-group input {
+                font-size: 13px;
+            }
+            .input-group .copy-icon {
+                width: 18px;
+                height: 18px;
+            }
+            .link-button {
+                font-size: 0.85em;
+                padding: 8px 12px;
+                min-width: 100px;
+            }
         }
     </style>
 </head>
@@ -250,11 +311,12 @@
                 </div>
             </section>
 
-            <section class="font-section">
+            <section class="font-section card">
                 <h2 class="font-section-title">Font barcode tk hải quan</h2>
+                <p class="font-section-description">font hiển thị barcode cho tờ khai hải quan.</p>
                 <div class="button-group">
-                    <a href="URL_CUA_FONT_FREE3OF9" class="link-button font-blue" download>Font free3of9</a>
-                    <a href="URL_CUA_FONT_BARCODE" class="link-button font-white" download>Font barcode</a>
+                    <a href="https://hiepvk.github.io/free3of9.zip" class="link-button font-blue" download="Tải Font Free3of9">Tải Font Free3of9</a>
+                    <a href="https://hiepvk.github.io/barcodefont.zip" class="link-button font-white" download="Tải Font Barcode">Tải Font Barcode</a>
                 </div>
             </section>
         </main>
@@ -263,18 +325,19 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const headerElement = document.getElementById('mainHeader');
-            let backgroundPositionX = 0;
-            const animationSpeed = 2;
+            // Dòng này không còn cần thiết vì đã dùng CSS keyframe animation
+            // let backgroundPositionX = 0;
+            // const animationSpeed = 2;
 
-            function animateRainbow() {
-                backgroundPositionX -= animationSpeed;
-                if (backgroundPositionX <= -headerElement.offsetWidth * 5) {
-                    backgroundPositionX = 0;
-                }
-                headerElement.style.backgroundPosition = `${backgroundPositionX}px 50%`;
-                requestAnimationFrame(animateRainbow);
-            }
-            requestAnimationFrame(animateRainbow);
+            // function animateRainbow() {
+            //     backgroundPositionX -= animationSpeed;
+            //     if (backgroundPositionX <= -headerElement.offsetWidth * 5) {
+            //         backgroundPositionX = 0;
+            //     }
+            //     headerElement.style.backgroundPosition = `${backgroundPositionX}px 50%`;
+            //     requestAnimationFrame(animateRainbow);
+            // }
+            // requestAnimationFrame(animateRainbow);
         });
 
         function copyToClipboard(elementId, clickedButton) {
