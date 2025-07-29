@@ -3,171 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hiepvk.github.io</title>
+    <title>Vũ Khắc Hiệp</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #2e2e2e;
-            color: #ffffff;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            margin: 0;
+            padding: 20px;
         }
-
         .container {
             width: 100%;
             max-width: 600px;
-            background-color: #2e2e2e;
-            padding: 20px;
+            background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-
-        h1 {
-            color: #ffffff;
-            font-size: 24px;
-            margin-bottom: 30px;
+        .header {
+            /* Changed for centering text */
             text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
         }
-
-        .section {
-            margin-bottom: 25px;
-        }
-
-        .section-title {
-            font-size: 18px;
-            color: #e0e0e0;
-            margin-bottom: 10px;
+        .header h1 {
+            font-size: 20px;
             font-weight: bold;
+            color: #333;
+            margin: 0; /* Ensure no extra margin */
         }
-
-        .code-block {
-            background-color: #3a3a3a;
-            border-radius: 6px;
+        .card {
+            background-color: #fbfbfb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .input-group {
             display: flex;
             align-items: center;
-            padding: 12px 15px;
-            margin-top: 8px;
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px 10px;
+            position: relative; /* For the copy message */
         }
-
-        .code-block input[type="text"] {
+        .input-group input {
             flex-grow: 1;
-            background: none;
             border: none;
-            color: #c0c0c0;
-            font-family: monospace;
-            font-size: 15px;
-            padding: 0;
             outline: none;
-            cursor: text;
+            font-size: 14px;
+            color: #555;
+            background-color: transparent;
         }
-
-        .copy-button {
-            background: none;
-            border: none;
+        .input-group .copy-icon {
             cursor: pointer;
-            padding: 5px;
+            width: 20px;
+            height: 20px;
             margin-left: 10px;
-            color: #888888;
-            font-size: 18px;
-            transition: color 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777; /* Color for the SVG icon */
+            flex-shrink: 0;
         }
-
-        .copy-button:hover {
-            color: #ffffff;
+        .input-group .copy-icon svg {
+            width: 16px;
+            height: 16px;
         }
-
-        .links {
-            margin-top: 30px;
+        .font-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .font-section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        .link-button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            flex-grow: 1;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
         }
-
-        .links a {
+        .link-button.font-blue {
+            background-color: #007bff;
+            color: #ffffff;
+            border: 1px solid #007bff;
+        }
+        .link-button.font-white {
+            background-color: #ffffff;
             color: #007bff;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 0 10px;
+            border: 1px solid #007bff;
         }
 
-        .links a:hover {
-            text-decoration: underline;
+        .copy-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .copy-message.show {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>hiepvk.github.io</h1>
+        <div class="header">
+            <h1>Vũ Khắc Hiệp</h1>
+        </div>
 
-        <div class="section">
-            <div class="section-title">Cốc cốc</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/taicc | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">Cốc cốc</div>
+            <div class="input-group">
+                <input type="text" id="cocCocInput" value="irm https://is.gd/taicc | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('cocCocInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Chrome</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/taichrome | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">Chrome</div>
+            <div class="input-group">
+                <input type="text" id="chromeInput" value="irm https://is.gd/taichrome | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('chromeInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">EVKey - UniKey</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/taitv | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">EVKey - UniKey</div>
+            <div class="input-group">
+                <input type="text" id="evkeyInput" value="irm https://is.gd/taitv | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('evkeyInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">UltraViewer</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/ultraview | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">UltraViewer</div>
+            <div class="input-group">
+                <input type="text" id="ultraviewerInput" value="irm https://is.gd/ultraview | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('ultraviewerInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Brave</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/taibrave | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">Brave</div>
+            <div class="input-group">
+                <input type="text" id="braveInput" value="irm https://is.gd/taibrave | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('braveInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Microsoft Activation Scripts (MAS)</div>
-            <div class="code-block">
-                <input type="text" value="irm https://is.gd/getmas | iex" readonly>
-                <button class="copy-button" onclick="copyToClipboard(this)">&#x2398;</button>
+        <div class="card">
+            <div class="card-title">Microsoft Activation Scripts (MAS)</div>
+            <div class="input-group">
+                <input type="text" id="masInput" value="irm https://is.gd/getmas | iex" readonly>
+                <div class="copy-icon" onclick="copyToClipboard('masInput', this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"/>
+                    </svg>
+                </div>
             </div>
         </div>
 
-        <div class="links">
-            <a href="#">font barcode free3of9 - font barcode</a>
+        <div class="font-section">
+            <div class="font-section-title">Font barcode tk hải quan</div>
+            <div class="button-group">
+                <a href="URL_CUA_FONT_FREE3OF9" class="link-button font-blue" download>Font free3of9</a>
+                <a href="URL_CUA_FONT_BARCODE" class="link-button font-white" download>Font barcode</a>
+            </div>
         </div>
     </div>
 
     <script>
-        function copyToClipboard(button) {
-            const input = button.previousElementSibling;
-            input.select();
-            input.setSelectionRange(0, 99999); // For mobile devices
+        function copyToClipboard(elementId, clickedElement) {
+            const inputElement = document.getElementById(elementId);
+            const textToCopy = inputElement.value;
 
-            navigator.clipboard.writeText(input.value)
-                .then(() => {
-                    alert("Đã sao chép vào clipboard: " + input.value);
-                })
-                .catch(err => {
-                    console.error('Sao chép thất bại: ', err);
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showCopyMessage(clickedElement.closest('.input-group'));
+                }).catch(err => {
+                    console.error('Không thể sao chép văn bản: ', err);
+                    fallbackCopyToClipboard(inputElement);
+                    showCopyMessage(clickedElement.closest('.input-group'));
                 });
+            } else {
+                fallbackCopyToClipboard(inputElement);
+                showCopyMessage(clickedElement.closest('.input-group'));
+            }
+        }
+
+        function fallbackCopyToClipboard(inputElement) {
+            inputElement.select();
+            inputElement.setSelectionRange(0, 99999);
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                console.error('Fallback: Không thể sao chép văn bản', err);
+            }
+        }
+
+        function showCopyMessage(parentGroup) {
+            let messageElement = parentGroup.querySelector('.copy-message');
+            if (!messageElement) {
+                messageElement = document.createElement('div');
+                messageElement.classList.add('copy-message');
+                messageElement.textContent = 'Đã sao chép!';
+                parentGroup.appendChild(messageElement);
+            }
+
+            messageElement.classList.add('show');
+
+            setTimeout(() => {
+                messageElement.classList.remove('show');
+            }, 1500);
         }
     </script>
 </body>
