@@ -30,14 +30,12 @@
         .header h1 {
             font-size: 24px;
             font-weight: bold;
-            color: transparent; /* Makes text transparent to show background gradient */
-            /* GIỮ NGUYÊN các thuộc tính này để JS có thể dịch chuyển gradient */
+            color: transparent;
             background: linear-gradient(90deg, #ff0000, #ff4500, #ffa500, #ffd700, #ffff00, #adff2f, #7cfc00, #00ff00, #00fa9a, #00ffff, #00bfff, #1e90ff, #0000ff, #8a2be2, #9932cc, #da70d6, #ff00ff, #ff1493, #ff0000);
-            -webkit-background-clip: text; /* Clip background to text shape */
+            -webkit-background-clip: text;
             background-clip: text;
-            background-size: 600% 100%; /* Larger background for smooth loop */
+            background-size: 600% 100%;
             margin: 0;
-            /* ĐÃ XÓA hiệu ứng 3D (text-shadow) */
         }
 
         .card {
@@ -67,8 +65,14 @@
             border: none;
             outline: none;
             font-size: 14px;
-            color: #555;
+            color: #333; /* Màu chữ tối hơn để dễ đọc */
             background-color: transparent;
+            padding: 0; /* Đảm bảo không có padding thừa từ input mặc định */
+            margin: 0; /* Đảm bảo không có margin thừa từ input mặc định */
+            white-space: nowrap; /* Giữ văn bản trên một dòng */
+            overflow: hidden; /* Ẩn phần văn bản tràn */
+            text-overflow: ellipsis; /* Thêm dấu "..." khi văn bản bị cắt */
+            cursor: text; /* Đổi con trỏ thành dạng văn bản khi rê chuột qua input */
         }
         .input-group .copy-icon {
             cursor: pointer;
@@ -260,22 +264,16 @@
         document.addEventListener('DOMContentLoaded', () => {
             const headerElement = document.getElementById('mainHeader');
             let backgroundPositionX = 0;
-            // Tốc độ di chuyển của gradient (pixels mỗi frame).
-            // Giá trị càng lớn, animation cầu vồng càng nhanh.
-            const animationSpeed = 2; // Giữ nguyên tốc độ đã điều chỉnh
+            const animationSpeed = 2;
 
             function animateRainbow() {
                 backgroundPositionX -= animationSpeed;
-
-                // Điều kiện để lặp lại animation mượt mà.
                 if (backgroundPositionX <= -headerElement.offsetWidth * 5) {
                     backgroundPositionX = 0;
                 }
-
                 headerElement.style.backgroundPosition = `${backgroundPositionX}px 50%`;
                 requestAnimationFrame(animateRainbow);
             }
-
             requestAnimationFrame(animateRainbow);
         });
 
