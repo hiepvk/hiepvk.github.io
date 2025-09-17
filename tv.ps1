@@ -1,50 +1,46 @@
-# Bắt buộc PowerShell sử dụng bảng mã UTF-8
-# Điều này giúp hiển thị các ký tự đặc biệt và tiếng Việt có dấu đúng cách
-$OutputEncoding = [System.Text.UTF8Encoding]::new()
-$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
-
-# --- Phần còn lại của script ---
-
-# Script để tải xuống và cài đặt EVK-UNK
-# Chạy với quyền quản trị viên (Run as Administrator)
+# Script to download and install EVK-UNK
+# Run as Administrator
 
 $Path = $ENV:TEMP
 $Installer = "EVK-UNK-Setup.exe"
+$EVKUNKURL = "https://github.com/hiepvk/ipa/releases/download/exe/EVK-UNK-Setup.exe"
 
-# --- Phần Tải xuống ---
-Write-Host "⏳ Đang tải xuống EVK-UNK..." -ForegroundColor Yellow
+# --- Download Section ---
+Write-Host "⏳ Downloading EVK-UNK..." -ForegroundColor Yellow
 
-# Tạo thanh tiến trình giả lập
+# Create a simple progress bar
 1..100 | ForEach-Object {
-    Write-Progress -Activity "Đang tải file cài đặt..." -Status "$_%" -PercentComplete $_
+    Write-Progress -Activity "Downloading EVK-UNK installer..." -Status "$_%" -PercentComplete $_
     Start-Sleep -Milliseconds 15
 }
 
 try {
-    Invoke-WebRequest "https://github.com/hiepvk/ipa/releases/download/exe/EVK-UNK-Setup.exe" -OutFile "$Path\$Installer"
-    Write-Host "✔️ Đã tải xuống thành công." -ForegroundColor Green
+    Invoke-WebRequest -Uri $EVKUNKURL -OutFile "$Path\$Installer"
+    Write-Host "✔️ Download successful." -ForegroundColor Green
 }
 catch {
-    Write-Host "❌ Lỗi: Không thể tải xuống file cài đặt." -ForegroundColor Red
-    return # Dừng script nếu có lỗi
+    Write-Host "❌ Error: Could not download the installer file. Please check your internet connection." -ForegroundColor Red
+    return # Exit the script if download fails
 }
 
-# --- Phần Cài đặt ---
-Write-Host "⏳ Đang bắt đầu quá trình cài đặt..." -ForegroundColor Yellow
+# --- Installation Section ---
+Write-Host "⏳ Starting the installation process..." -ForegroundColor Yellow
 
 try {
+    # Run the installer in silent mode with administrator privileges
+    # /silent and /install are standard arguments for many installers
     Start-Process -FilePath "$Path\$Installer" -Args "/silent /install" -Verb RunAs -Wait
-    Write-Host "✔️ Cài đặt hoàn tất." -ForegroundColor Green
+    Write-Host "✔️ Installation completed." -ForegroundColor Green
 }
 catch {
-    Write-Host "❌ Lỗi: Không thể chạy trình cài đặt." -ForegroundColor Red
-    return # Dừng script nếu có lỗi
+    Write-Host "❌ Error: Could not run the installer." -ForegroundColor Red
+    return # Exit the script if installation fails
 }
 
-# --- Phần Dọn dẹp ---
-Write-Host "⏳ Đang dọn dẹp file cài đặt..." -ForegroundColor Yellow
+# --- Cleanup Section ---
+Write-Host "⏳ Cleaning up the installer file..." -ForegroundColor Yellow
 
 Remove-Item "$Path\$Installer" -ErrorAction SilentlyContinue
-Write-Host "✔️ Đã dọn dẹp xong." -ForegroundColor Green
+Write-Host "✔️ Cleanup complete." -ForegroundColor Green
 
-Write-Host "🎉 Hoàn tất." -ForegroundColor Cyan
+Write-Host "🎉 All tasks are complete. EVK-UNK has been installed successfully." -ForegroundColor Cyan
