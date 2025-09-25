@@ -32,7 +32,7 @@ function CheckFile {
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
-    'https://raw.githubusercontent.com/hiepvk/IDM-Activation-Script/refs/heads/main/IASL.cmd',
+    'https://raw.githubusercontent.com/hiepvk/IDM-Activation-Script/refs/heads/main/IASL.cmd'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
@@ -72,3 +72,4 @@ CheckFile $FilePath
 
 $FilePaths = @("$env:SystemRoot\Temp\IASL.cmd", "$env:USERPROFILE\AppData\Local\Temp\IASL.cmd")
 foreach ($FilePath in $FilePaths) { Get-Item $FilePath | Remove-Item }
+
