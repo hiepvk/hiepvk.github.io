@@ -2,17 +2,19 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Video Player Fix</title>
+    <title>Trình phát Video Inline</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; background: #222; color: white; }
-        .container { display: flex; width: 95%; max-width: 1100px; margin-top: 30px; background: #333; border-radius: 8px; overflow: hidden; }
-        .main-video { flex: 2; background: #000; position: relative; }
-        video { width: 100%; height: auto; aspect-ratio: 16/9; }
-        .playlist { flex: 1; background: #444; overflow-y: auto; max-height: 500px; }
-        .playlist h3 { padding: 15px; margin: 0; background: #111; font-size: 1rem; }
-        .video-item { padding: 15px; border-bottom: 1px solid #555; cursor: pointer; transition: 0.2s; }
-        .video-item:hover { background: #555; }
-        .video-item.active { background: #007bff; color: white; }
+        body { font-family: Arial, sans-serif; background: #1a1a1a; color: white; display: flex; justify-content: center; padding: 20px; }
+        .container { display: flex; width: 100%; max-width: 1100px; gap: 20px; background: #333; padding: 15px; border-radius: 12px; }
+        
+        .main-video { flex: 2; }
+        video { width: 100%; border-radius: 8px; background: #000; }
+
+        .playlist { flex: 1; background: #222; border-radius: 8px; overflow-y: auto; max-height: 450px; }
+        .playlist h3 { padding: 15px; margin: 0; border-bottom: 1px solid #444; font-size: 1rem; }
+        .video-item { padding: 12px 15px; border-bottom: 1px solid #333; cursor: pointer; transition: 0.3s; }
+        .video-item:hover { background: #444; }
+        .video-item.active { background: #007bff; border-left: 4px solid #fff; }
         .video-item p { margin: 0; font-size: 0.9rem; }
     </style>
 </head>
@@ -20,23 +22,23 @@
 
 <div class="container">
     <div class="main-video">
-        <!-- Đưa src trực tiếp vào thẻ video để JS dễ điều khiển -->
-        <video id="video-player" controls autoplay muted>
+        <!-- controls: Hiện thanh điều khiển -->
+        <!-- playsinline: Chống tự phóng to trên di động -->
+        <video id="video-player" controls playsinline webkit-playsinline>
             <source id="video-source" src="https://github.com/hiepvk/ipa/releases/download/video/video1.mp4" type="video/mp4">
         </video>
     </div>
 
     <div class="playlist">
-        <h3>Danh sách phát</h3>
+        <h3>Danh sách bài học</h3>
         <div class="video-item active" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
-            <p>01. Video Bài 1</p>
+            <p>01. Giới thiệu tổng quan</p>
         </div>
-        <!-- Lưu ý: Thay đổi link video2.mp4, video3.mp4 tương ứng trên GitHub của bạn -->
         <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video2.mp4', this)">
-            <p>02. Video Bài 2</p>
+            <p>02. Hướng dẫn cài đặt</p>
         </div>
         <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video3.mp4', this)">
-            <p>03. Video Bài 3</p>
+            <p>03. Kết thúc khóa học</p>
         </div>
     </div>
 </div>
@@ -46,20 +48,15 @@
         const videoPlayer = document.getElementById('video-player');
         const videoSource = document.getElementById('video-source');
 
-        // 1. Đổi nguồn video
+        // Thay đổi nguồn video
         videoSource.src = fileUrl;
         
-        // 2. QUAN TRỌNG: Tải lại video để trình duyệt nhận diện file mới
+        // Tải lại và phát ngay tại khung hình (không phóng to)
         videoPlayer.load();
-
-        // 3. Phát video
-        videoPlayer.play().catch(error => {
-            console.log("Chế độ tự động phát bị chặn, người dùng cần bấm Play: ", error);
-        });
+        videoPlayer.play().catch(e => console.log("Chờ người dùng bấm play"));
 
         // Cập nhật giao diện danh sách
-        const items = document.querySelectorAll('.video-item');
-        items.forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('.video-item').forEach(item => item.classList.remove('active'));
         element.classList.add('active');
     }
 
