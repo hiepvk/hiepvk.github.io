@@ -2,57 +2,55 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Video Player với Nút Toàn Màn Hình</title>
+    <title>Video Player Hoàn Chỉnh</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #1a1a1a; color: white; display: flex; justify-content: center; padding: 20px; }
-        .container { display: flex; width: 100%; max-width: 1100px; gap: 20px; background: #333; padding: 15px; border-radius: 12px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a1a; color: white; display: flex; justify-content: center; padding: 20px; }
+        .container { display: flex; width: 100%; max-width: 1100px; gap: 20px; background: #333; padding: 15px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         
-        /* Khung chứa video và nút tùy chỉnh */
+        /* Khung video */
         .video-wrapper { flex: 2; position: relative; background: #000; border-radius: 8px; overflow: hidden; height: fit-content; }
-        video { width: 100%; display: block; }
+        video { width: 100%; display: block; aspect-ratio: 16/9; }
 
-        /* Nút Toàn màn hình tùy chỉnh */
-        .fullscreen-btn {
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-            background: rgba(0, 123, 255, 0.8);
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            z-index: 10;
-            transition: 0.3s;
+        /* Nút toàn màn hình tùy chỉnh */
+        .fs-btn {
+            position: absolute; bottom: 50px; right: 15px;
+            background: rgba(0, 123, 255, 0.9); color: white;
+            border: none; padding: 8px 15px; border-radius: 4px;
+            cursor: pointer; z-index: 10; transition: 0.3s;
         }
-        .fullscreen-btn:hover { background: #0056b3; }
+        .fs-btn:hover { background: #0056b3; transform: scale(1.05); }
 
-        .playlist { flex: 1; background: #222; border-radius: 8px; overflow-y: auto; max-height: 450px; }
-        .playlist h3 { padding: 15px; margin: 0; border-bottom: 1px solid #444; }
-        .video-item { padding: 12px 15px; border-bottom: 1px solid #333; cursor: pointer; }
-        .video-item.active { background: #007bff; }
-        .video-item p { margin: 0; font-size: 0.9rem; }
+        /* Danh sách phát */
+        .playlist { flex: 1; background: #222; border-radius: 8px; overflow-y: auto; max-height: 500px; }
+        .playlist h3 { padding: 15px; margin: 0; background: #111; font-size: 1.1rem; border-bottom: 1px solid #444; }
+        .video-item { padding: 15px; border-bottom: 1px solid #333; cursor: pointer; transition: 0.2s; }
+        .video-item:hover { background: #444; }
+        .video-item.active { background: #007bff; border-left: 5px solid #fff; }
+        .video-item p { margin: 0; font-size: 0.9rem; font-weight: 500; }
     </style>
 </head>
 <body>
 
 <div class="container">
+    <!-- Khu vực trình phát -->
     <div class="video-wrapper" id="video-container">
-        <video id="video-player" controls playsinline>
+        <video id="video-player" controls playsinline webkit-playsinline>
             <source id="video-source" src="https://github.com/hiepvk/ipa/releases/download/video/video1.mp4" type="video/mp4">
         </video>
-        <!-- Nút thêm vào -->
-        <button class="fullscreen-btn" onclick="toggleFullScreen()">Toàn màn hình ⛶</button>
+        <button class="fs-btn" onclick="toggleFullScreen()">Toàn màn hình ⛶</button>
     </div>
 
+    <!-- Khu vực danh sách bài học -->
     <div class="playlist">
         <h3>Danh sách bài học</h3>
         <div class="video-item active" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
-            <p>01. Video Bài Một</p>
+            <p>01. Video Giới thiệu</p>
         </div>
         <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video2.mp4', this)">
-            <p>02. Video Bài Hai</p>
+            <p>02. Hướng dẫn chi tiết</p>
+        </div>
+        <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video3.mp4', this)">
+            <p>03. Kết thúc khóa học</p>
         </div>
     </div>
 </div>
@@ -60,14 +58,29 @@
 <script>
     const videoContainer = document.getElementById('video-container');
     const videoPlayer = document.getElementById('video-player');
+    const videoSource = document.getElementById('video-source');
 
-    // Hàm điều khiển toàn màn hình
+    // 1. Hàm chuyển video trong danh sách
+    function playVideo(fileUrl, element) {
+        videoSource.src = fileUrl;
+        videoPlayer.load(); // Bắt buộc phải có để nạp link mới
+        
+        videoPlayer.play().catch(error => {
+            console.log("Autoplay bị chặn, chờ người dùng bấm Play.");
+        });
+
+        // Cập nhật trạng thái hiển thị của danh sách
+        document.querySelectorAll('.video-item').forEach(item => item.classList.remove('active'));
+        element.classList.add('active');
+    }
+
+    // 2. Hàm xử lý Toàn màn hình (Fullscreen)
     function toggleFullScreen() {
-        if (!document.fullscreenElement) {
-            // Phóng to toàn bộ khung chứa (bao gồm cả nút và video)
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+            // Phóng to toàn bộ khung (bao gồm video và nút của bạn)
             if (videoContainer.requestFullscreen) {
                 videoContainer.requestFullscreen();
-            } else if (videoContainer.webkitRequestFullscreen) { 
+            } else if (videoContainer.webkitRequestFullscreen) {
                 videoContainer.webkitRequestFullscreen();
             } else if (videoContainer.msRequestFullscreen) {
                 videoContainer.msRequestFullscreen();
@@ -76,21 +89,13 @@
             // Thoát chế độ toàn màn hình
             if (document.exitFullscreen) {
                 document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
             }
         }
     }
 
-    function playVideo(fileUrl, element) {
-        const videoSource = document.getElementById('video-source');
-        videoSource.src = fileUrl;
-        videoPlayer.load();
-        videoPlayer.play();
-
-        document.querySelectorAll('.video-item').forEach(item => item.classList.remove('active'));
-        element.classList.add('active');
-    }
-
-    // Tự động chuyển bài
+    // 3. Tự động chuyển bài khi kết thúc video
     videoPlayer.onended = function() {
         let activeItem = document.querySelector('.video-item.active');
         let nextItem = activeItem.nextElementSibling;
