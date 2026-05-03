@@ -2,31 +2,35 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Video Player Hoàn Chỉnh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Hoàn Chỉnh - Hỗ trợ iOS</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #1a1a1a; color: white; display: flex; justify-content: center; padding: 20px; }
-        .container { display: flex; width: 100%; max-width: 1100px; gap: 20px; background: #333; padding: 15px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a1a; color: white; display: flex; justify-content: center; padding: 20px; margin: 0; }
+        .container { display: flex; flex-direction: row; width: 100%; max-width: 1100px; gap: 20px; background: #333; padding: 15px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         
+        /* Mobile responsive */
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+
         /* Khung video */
         .video-wrapper { flex: 2; position: relative; background: #000; border-radius: 8px; overflow: hidden; height: fit-content; }
-        video { width: 100%; display: block; aspect-ratio: 16/9; }
+        video { width: 100%; display: block; aspect-ratio: 16/9; background: #000; }
 
         /* Nút toàn màn hình tùy chỉnh */
         .fs-btn {
             position: absolute; bottom: 50px; right: 15px;
             background: rgba(0, 123, 255, 0.9); color: white;
             border: none; padding: 8px 15px; border-radius: 4px;
-            cursor: pointer; z-index: 10; transition: 0.3s;
+            cursor: pointer; z-index: 10; transition: 0.3s; font-weight: bold;
         }
         .fs-btn:hover { background: #0056b3; transform: scale(1.05); }
 
         /* Danh sách phát */
-        .playlist { flex: 1; background: #222; border-radius: 8px; overflow-y: auto; max-height: 500px; }
-        .playlist h3 { padding: 15px; margin: 0; background: #111; font-size: 1.1rem; border-bottom: 1px solid #444; }
+        .playlist { flex: 1; background: #222; border-radius: 8px; overflow-y: auto; max-height: 450px; }
+        .playlist h3 { padding: 15px; margin: 0; background: #111; font-size: 1.1rem; border-bottom: 1px solid #444; position: sticky; top: 0; }
         .video-item { padding: 15px; border-bottom: 1px solid #333; cursor: pointer; transition: 0.2s; }
         .video-item:hover { background: #444; }
         .video-item.active { background: #007bff; border-left: 5px solid #fff; }
-        .video-item p { margin: 0; font-size: 0.9rem; font-weight: 500; }
+        .video-item p { margin: 0; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -34,13 +38,16 @@
 <div class="container">
     <!-- Khu vực trình phát -->
     <div class="video-wrapper" id="video-container">
+        <!-- playsinline và webkit-playsinline để chống tự phóng to trên iOS khi Play -->
         <video id="video-player" controls playsinline webkit-playsinline>
             <source id="video-source" src="https://github.com/hiepvk/ipa/releases/download/video/video1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video HTML5.
         </video>
+        <!-- Nút bấm thủ công -->
         <button class="fs-btn" onclick="toggleFullScreen()">Toàn màn hình ⛶</button>
     </div>
 
-    <!-- Khu vực danh sách bài học -->
+    <!-- Khu vực danh sách -->
     <div class="playlist">
         <h3>Danh sách bài học</h3>
         <div class="video-item active" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
@@ -60,42 +67,52 @@
     const videoPlayer = document.getElementById('video-player');
     const videoSource = document.getElementById('video-source');
 
-    // 1. Hàm chuyển video trong danh sách
+    // 1. Chuyển video và giữ chế độ Inline (không tự phóng to)
     function playVideo(fileUrl, element) {
         videoSource.src = fileUrl;
-        videoPlayer.load(); // Bắt buộc phải có để nạp link mới
+        videoPlayer.load(); 
         
-        videoPlayer.play().catch(error => {
-            console.log("Autoplay bị chặn, chờ người dùng bấm Play.");
-        });
+        // Phát video nhưng không ép toàn màn hình
+        videoPlayer.play().catch(err => console.log("Chờ tương tác người dùng"));
 
-        // Cập nhật trạng thái hiển thị của danh sách
+        // Cập nhật giao diện danh sách
         document.querySelectorAll('.video-item').forEach(item => item.classList.remove('active'));
         element.classList.add('active');
     }
 
-    // 2. Hàm xử lý Toàn màn hình (Fullscreen)
+    // 2. Xử lý toàn màn hình tương thích Safari iOS
     function toggleFullScreen() {
-        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-            // Phóng to toàn bộ khung (bao gồm video và nút của bạn)
+        // Kiểm tra trạng thái đang toàn màn hình hay không
+        const isFullscreen = document.fullscreenElement || 
+                             document.webkitFullscreenElement || 
+                             document.webkitDisplayingFullscreen;
+
+        if (!isFullscreen) {
+            // Đối với PC, Android, iPad (hỗ trợ phóng to cả khung chứa)
             if (videoContainer.requestFullscreen) {
                 videoContainer.requestFullscreen();
             } else if (videoContainer.webkitRequestFullscreen) {
                 videoContainer.webkitRequestFullscreen();
-            } else if (videoContainer.msRequestFullscreen) {
-                videoContainer.msRequestFullscreen();
+            } 
+            // Đối với iPhone (Safari) - Phải phóng to trực tiếp thẻ video
+            else if (videoPlayer.webkitEnterFullscreen) {
+                videoPlayer.webkitEnterFullscreen();
+            } else if (videoPlayer.enterFullscreen) {
+                videoPlayer.enterFullscreen();
             }
         } else {
-            // Thoát chế độ toàn màn hình
+            // Thoát toàn màn hình
             if (document.exitFullscreen) {
                 document.exitFullscreen();
             } else if (document.webkitExitFullscreen) {
                 document.webkitExitFullscreen();
+            } else if (videoPlayer.webkitExitFullscreen) {
+                videoPlayer.webkitExitFullscreen();
             }
         }
     }
 
-    // 3. Tự động chuyển bài khi kết thúc video
+    // 3. Tự động chuyển bài khi hết video
     videoPlayer.onended = function() {
         let activeItem = document.querySelector('.video-item.active');
         let nextItem = activeItem.nextElementSibling;
@@ -103,6 +120,11 @@
             nextItem.click();
         }
     };
+
+    // Lắng nghe lỗi bảo mật từ trình duyệt
+    document.addEventListener('fullscreenerror', (e) => {
+        alert("Trình duyệt chặn quyền toàn màn hình. Hãy chạy mã này trên HTTPS hoặc Server.");
+    });
 </script>
 
 </body>
