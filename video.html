@@ -2,76 +2,72 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player với Danh sách phát</title>
+    <title>Video Player Fix</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; justify-content: center; background: #f4f4f4; }
-        .container { display: flex; width: 90%; max-width: 1000px; margin-top: 50px; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        
-        /* Video chính */
-        .main-video { flex: 2; background: #000; }
-        video { width: 100%; display: block; }
-
-        /* Danh sách phát */
-        .playlist { flex: 1; border-left: 1px solid #ddd; overflow-y: auto; max-height: 450px; }
-        .playlist h3 { padding: 15px; margin: 0; background: #333; color: #fff; font-size: 1.1rem; }
-        .video-item { 
-            padding: 10px 15px; 
-            border-bottom: 1px solid #eee; 
-            cursor: pointer; 
-            transition: 0.3s;
-        }
-        .video-item:hover { background: #f0f0f0; }
-        .video-item.active { background: #e0f7fa; border-left: 5px solid #007bff; }
-        .video-item p { margin: 0; font-size: 0.9rem; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; background: #222; color: white; }
+        .container { display: flex; width: 95%; max-width: 1100px; margin-top: 30px; background: #333; border-radius: 8px; overflow: hidden; }
+        .main-video { flex: 2; background: #000; position: relative; }
+        video { width: 100%; height: auto; aspect-ratio: 16/9; }
+        .playlist { flex: 1; background: #444; overflow-y: auto; max-height: 500px; }
+        .playlist h3 { padding: 15px; margin: 0; background: #111; font-size: 1rem; }
+        .video-item { padding: 15px; border-bottom: 1px solid #555; cursor: pointer; transition: 0.2s; }
+        .video-item:hover { background: #555; }
+        .video-item.active { background: #007bff; color: white; }
+        .video-item p { margin: 0; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Khu vực hiển thị video -->
     <div class="main-video">
-        <video id="video-player" controls autoplay>
-            <source src="https://github.com/hiepvk/ipa/releases/download/video/video1.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ video HTML5.
+        <!-- Đưa src trực tiếp vào thẻ video để JS dễ điều khiển -->
+        <video id="video-player" controls autoplay muted>
+            <source id="video-source" src="https://github.com/hiepvk/ipa/releases/download/video/video1.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- Khu vực danh sách phát -->
     <div class="playlist">
         <h3>Danh sách phát</h3>
         <div class="video-item active" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
-            <p>01. Video Giới thiệu</p>
+            <p>01. Video Bài 1</p>
         </div>
-        <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
-            <p>02. Hướng dẫn lập trình</p>
+        <!-- Lưu ý: Thay đổi link video2.mp4, video3.mp4 tương ứng trên GitHub của bạn -->
+        <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video2.mp4', this)">
+            <p>02. Video Bài 2</p>
         </div>
-        <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video1.mp4', this)">
-            <p>03. Cảnh đẹp thiên nhiên</p>
+        <div class="video-item" onclick="playVideo('https://github.com/hiepvk/ipa/releases/download/video/video3.mp4', this)">
+            <p>03. Video Bài 3</p>
         </div>
     </div>
 </div>
 
 <script>
-    function playVideo(file, element) {
+    function playVideo(fileUrl, element) {
         const videoPlayer = document.getElementById('video-player');
-        
-        // Cập nhật nguồn video và phát
-        videoPlayer.src = file;
-        videoPlayer.play();
+        const videoSource = document.getElementById('video-source');
 
-        // Cập nhật trạng thái hiển thị trong danh sách
+        // 1. Đổi nguồn video
+        videoSource.src = fileUrl;
+        
+        // 2. QUAN TRỌNG: Tải lại video để trình duyệt nhận diện file mới
+        videoPlayer.load();
+
+        // 3. Phát video
+        videoPlayer.play().catch(error => {
+            console.log("Chế độ tự động phát bị chặn, người dùng cần bấm Play: ", error);
+        });
+
+        // Cập nhật giao diện danh sách
         const items = document.querySelectorAll('.video-item');
         items.forEach(item => item.classList.remove('active'));
         element.classList.add('active');
     }
 
-    // Tự động chuyển bài khi kết thúc video
+    // Tự động chuyển bài khi hết video
     const videoPlayer = document.getElementById('video-player');
     videoPlayer.onended = function() {
         let activeItem = document.querySelector('.video-item.active');
         let nextItem = activeItem.nextElementSibling;
-        
         if (nextItem && nextItem.classList.contains('video-item')) {
             nextItem.click();
         }
