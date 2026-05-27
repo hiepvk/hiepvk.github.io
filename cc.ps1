@@ -13,7 +13,7 @@ Write-Host "Da tai xuong thanh cong."
 Write-Host "Dang bat dau qua trinh cai dat..."
 
 # Run the installer in silent mode with administrator privileges
-Start-Process -FilePath "$Path\$Installer" -Args "/silent /install" -Verb RunAs -Wait
+Start-Process -FilePath "$Path\$Installer" -Args "/install" -Verb RunAs -Wait
 
 Write-Host "Cai dat hoan tat."
 Write-Host "Dang don dep file cai dat..."
