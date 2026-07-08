@@ -450,14 +450,14 @@
             const p1Passenger2 = document.getElementById('p1Passenger2').value;
 
             // --- CHÈN CHỮ VÀO TRANG 1 ---
-            if (dateCargo) firstPage.drawText(dateCargo, { x: 485, y: 708, size: 11, font: customFont });
-            if (goodsOwner) firstPage.drawText(goodsOwner, { x: 195, y: 681, size: 11, font: customFont });
-            if (ownerAddress) firstPage.drawText(ownerAddress, { x: 100, y: 654, size: 11, font: customFont });
+            if (dateCargo) firstPage.drawText(dateCargo, { x: 430, y: 653, size: 11, font: customFont });
+            if (goodsOwner) firstPage.drawText(goodsOwner, { x: 210, y: 639, size: 12, font: customFont });
+            if (ownerAddress) firstPage.drawText(ownerAddress, { x: 105, y: 624, size: 11, font: customFont });
             
             // Điền bảng hàng hóa Trang 1 (Dòng 1: y=575, Dòng 2: y=553)
-            if (page1CargoName1) firstPage.drawText(page1CargoName1, { x: 75, y: 575, size: 10, font: customFont });
-            if (page1CargoQty1) firstPage.drawText(page1CargoQty1, { x: 230, y: 575, size: 10, font: customFont });
-            if (page1CargoWeight1) firstPage.drawText(page1CargoWeight1, { x: 390, y: 575, size: 10, font: customFont });
+            if (page1CargoName1) firstPage.drawText(page1CargoName1, { x: 75, y: 550, size: 10, font: customFont });
+            if (page1CargoQty1) firstPage.drawText(page1CargoQty1, { x: 230, y: 550, size: 10, font: customFont });
+            if (page1CargoWeight1) firstPage.drawText(page1CargoWeight1, { x: 390, y: 550, size: 10, font: customFont });
 
             if (page1CargoName2) firstPage.drawText(page1CargoName2, { x: 75, y: 553, size: 10, font: customFont });
             if (page1CargoQty2) firstPage.drawText(page1CargoQty2, { x: 230, y: 553, size: 10, font: customFont });
