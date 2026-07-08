@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuất PDF Từ Excel - Điền Thông Tin Thông Minh</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        /* Khung nhập liệu */
+        .form-panel {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+        /* Khung hiển thị PDF */
+        .preview-panel {
+            width: 210mm;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h3 {
+            margin-top: 0;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+        .form-group {
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn-pdf {
+            width: 100%;
+            padding: 12px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .btn-pdf:hover { background-color: #004085; }
+
+        /* ĐỊNH DẠNG TRANG IN PDF (GIỮ NGUYÊN BỐ CỤC FILE GỐC TIẾNG TRUNG/VIỆT) */
+        #pdf-area {
+            font-family: "Times New Roman", Times, serif;
+            color: #000;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        .pdf-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .pdf-table td {
+            padding: 4px 5px;
+            vertical-align: middle;
+            word-break: break-word;
+        }
+        /* Định dạng hiển thị các ô dữ liệu được chèn thêm chữ vào */
+        .filled-text {
+            color: #000;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    <div class="form-panel">
+        <h3>1. Chọn File Excel Gốc</h3>
+        <div class="form-group">
+            <input type="file" id="upload-excel" accept=".xlsx, .xls, .csv">
+        </div>
+
+        <h3>2. Điền Mục Cần Thêm</h3>
+        <div class="form-group">
+            <label>Ngày, tháng, năm (dd/mm/yy):</label>
+            <input type="text" id="input-date" value="7/7/2026" oninput="syncFormToPDF()">
+        </div>
+        <div class="form-group">
+            <label>Tên chủ hàng / Goods owner:</label>
+            <input type="text" id="input-owner" value="NGUYỄN VĂN A" oninput="syncFormToPDF()">
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ chủ hàng / Address:</label>
+            <input type="text" id="input-address" value="Số 123 Phường Móng Cái 3, Quảng Ninh" oninput="syncFormToPDF()">
+        </div>
+        <div class="form-group">
+            <label>Tên chủ phương tiện / Operator:</label>
+            <input type="text" id="input-operator" value="TRẦN VĂN B" oninput="syncFormToPDF()">
+        </div>
+        <div class="form-group">
+            <label>Địa chỉ chủ phương tiện / Address:</label>
+            <input type="text" id="input-op-address" value="Đông Hưng, Trung Quốc" oninput="syncFormToPDF()">
+        </div>
+
+        <button class="btn-pdf" onclick="exportToPDF()">XUẤT FILE PDF TRỰC TIẾP</button>
+    </div>
+
+    <div class="preview-panel">
+        <div id="pdf-area">
+            <p style="text-align: center; color: #888; font-style: italic; margin-top: 50px;">
+                Vui lòng chọn file Excel gốc để hiển thị bố cục xem trước tại đây...
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+let excelRawRows = []; // Lưu trữ dữ liệu thô nguyên bản của file excel
+
+// Lắng nghe sự kiện tải file lên
+document.getElementById('upload-excel').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+        const data = evt.target.result;
+        const workbook = XLSX.read(data, { type: 'binary' });
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        
+        // Đọc nguyên trạng ma trận dữ liệu (bao gồm cả các ô trống)
+        excelRawRows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
+        
+        // Render cấu trúc file gốc ra màn hình preview
+        syncFormToPDF();
+    };
+    reader.readAsBinaryString(file);
+});
+
+// Hàm đồng bộ: Lấy file gốc + Chèn thêm chữ từ form nhập liệu vào đúng vị trí
+function syncFormToPDF() {
+    if (excelRawRows.length === 0) return;
+
+    // Lấy giá trị hiện tại từ các ô nhập liệu bên Form
+    const dateVal = document.getElementById('input-date').value;
+    const ownerVal = document.getElementById('input-owner').value;
+    const addrVal = document.getElementById('input-address').value;
+    const operatorVal = document.getElementById('input-operator').value;
+    const opAddrVal = document.getElementById('input-op-address').value;
+
+    const pdfArea = document.getElementById('pdf-area');
+    pdfArea.innerHTML = ''; // Reset khung preview
+
+    const table = document.createElement('table');
+    table.className = 'pdf-table';
+
+    excelRawRows.forEach((row) => {
+        const tr = document.createElement('tr');
+        
+        row.forEach((cell) => {
+            const td = document.createElement('td');
+            let cellText = cell ? cell.toString() : '';
+
+            // --- ĐOẠN DÒ TÌM THÔNG MINH ĐỂ CHÈN CHỮ VÀO MỤC CẦN THIẾT ---
+            
+            // 1. Nếu ô chứa từ khóa "Ngày, tháng, năm/Date" hoặc có sẵn giá trị ngày cũ
+            if (cellText.includes("Ngày, tháng, năm") || cellText.includes("2026-07-07") || cellText.includes("7/7/2026")) {
+                if (cellText.includes("2026-07-07") || cellText.includes("7/7/2026")) {
+                    cellText = `<span class="filled-text">${dateVal}</span>`;
+                } else {
+                    cellText = cellText + ` <span class="filled-text">${dateVal}</span>`;
+                }
+            }
+            // 2. Chèn Tên chủ hàng
+            else if (cellText.includes("Tên chủ hàng/Name of the goods owner")) {
+                cellText = cellText + ` <span class="filled-text">${ownerVal}</span>`;
+            }
+            // 3. Chèn Tên chủ phương tiện
+            else if (cellText.includes("Tên chủ phương tiện") && cellText.includes("operator")) {
+                cellText = cellText + ` <span class="filled-text">${operatorVal}</span>`;
+            }
+            // 4. Chèn Địa chỉ (Dựa vào vị trí dòng tương ứng trong mẫu)
+            else if (cellText.trim() === "Địa chỉ/Address") {
+                // Kiểm tra xem đây là địa chỉ chủ hàng hay chủ xe dựa vào ngữ cảnh file để chèn đúng loại
+                cellText = cellText + ` <span class="filled-text">${addrVal}</span>`;
+            }
+
+            // Nếu ô không có viền (ô trống ở ngoài lề trong Excel), ẩn border đi cho giống nguyên bản
+            if (cellText === '') {
+                td.style.border = 'none';
+                td.innerHTML = '&nbsp;';
+            } else {
+                // Nếu là khu vực bảng dữ liệu hoặc tiêu đề cần kẻ khung
+                td.style.border = '1px solid #000';
+                td.innerHTML = cellText;
+            }
+            
+            tr.appendChild(td);
+        });
+        
+        table.appendChild(tr);
+    });
+
+    pdfArea.appendChild(table);
+}
+
+// Hàm thực hiện xuất trực tiếp khu vực Preview sang file PDF chuẩn A4 đứng
+function exportToPDF() {
+    if (excelRawRows.length === 0) {
+        alert("Vui lòng tải file Excel lên trước!");
+        return;
+    }
+
+    const element = document.getElementById('pdf-area');
+    const opt = {
+        margin:       [12, 12, 12, 12], // Căn lề trang PDF 12mm
+        filename:     'To_Khai_Y_Te_Xuat_Truc_Tiep.pdf',
+        image:        { type: 'jpeg', quality: 1.0 },
+        html2canvas:  { scale: 2.5, useCORS: true, letterRendering: true }, // Tăng độ phân giải chống nhòe chữ
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' } // Khổ giấy A4 đứng
+    };
+
+    // Xuất bản và tải file về máy
+    html2pdf().set(opt).from(element).save();
+}
+</script>
+
+</body>
+</html>
