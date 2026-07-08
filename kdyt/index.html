@@ -337,14 +337,12 @@
 <script>
     let truckCount = 1;
 
-    // Hàm đồng bộ ngày tháng tự động từ ô số 1 sang các ô còn lại
     function syncDates() {
         const primaryDate = document.getElementById('dateCargo').value;
         document.getElementById('dateConveyance').value = primaryDate;
         document.getElementById('page2SignDate').value = primaryDate;
     }
 
-    // Hàm sinh thêm dòng xe tiếp theo cho bảng trang 2
     function addTruckRow() {
         truckCount++;
         const container = document.getElementById('truckContainer');
@@ -397,21 +395,18 @@
             submitBtn.disabled = true;
             loadingText.style.display = 'block';
 
-            // 1. Tải Font chữ từ kho lưu trữ
             const fontUrl = 'https://hiepvk.github.io/kdyt/times.ttf';
             const fontBytes = await fetch(fontUrl).then(res => {
                 if (!res.ok) throw new Error("Không thể tải tệp Font chữ!");
                 return res.arrayBuffer();
             });
 
-            // 2. Tải file PDF phôi mới mau.pdf
             const pdfUrl = 'https://hiepvk.github.io/kdyt/TKKDYT.pdf';
             const existingPdfBytes = await fetch(pdfUrl).then(res => {
                 if (!res.ok) throw new Error("Không thể tải file PDF phôi mẫu!");
                 return res.arrayBuffer();
             });
 
-            // 3. Khởi tạo dữ liệu PDF Lib và đăng ký xử lý font
             const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
             pdfDoc.registerFontkit(fontkit);
             const customFont = await pdfDoc.embedFont(fontBytes);
@@ -420,64 +415,82 @@
             const firstPage = pages[0];
             const secondPage = pages[1];
 
-            // Đọc dữ liệu Phần 1
+            // Đọc dữ liệu chung
             const dateCargo = document.getElementById('dateCargo').value;
             const goodsOwner = document.getElementById('goodsOwner').value;
             const ownerAddress = document.getElementById('ownerAddress').value;
-            
-            const page1CargoName = document.getElementById('page1CargoName').value;
-            const page1CargoQty = document.getElementById('page1CargoQty').value;
-            const page1CargoWeight = document.getElementById('page1CargoWeight').value;
-            const page1TotalQty = document.getElementById('page1TotalQty').value;
-            const page1TotalWeight = document.getElementById('page1TotalWeight').value;
-
-            // Đọc dữ liệu Phần 2
             const dateConveyance = document.getElementById('dateConveyance').value;
             const operatorName = document.getElementById('operatorName').value;
             const conveyanceAddress = document.getElementById('conveyanceAddress').value;
-
-            const p1RegNo = document.getElementById('p1RegNo').value;
-            const p1QtyConveyance = document.getElementById('p1QtyConveyance').value;
-            const p1NetTonnage = document.getElementById('p1NetTonnage').value;
-            const p1StaffNum = document.getElementById('p1StaffNum').value;
-            const p1PassengerNum = document.getElementById('p1PassengerNum').value;
-
-            // Đọc dữ liệu Ngày tháng Trang 2
             const page2SignDate = document.getElementById('page2SignDate').value;
 
-            // --- CHÈN CHỮ VÀO CÁC MỤC Ở TRANG 1 ---
+            // Đọc dữ liệu bảng hàng hóa (Trang 1)
+            const page1CargoName1 = document.getElementById('page1CargoName1').value;
+            const page1CargoQty1 = document.getElementById('page1CargoQty1').value;
+            const page1CargoWeight1 = document.getElementById('page1CargoWeight1').value;
+
+            const page1CargoName2 = document.getElementById('page1CargoName2').value;
+            const page1CargoQty2 = document.getElementById('page1CargoQty2').value;
+            const page1CargoWeight2 = document.getElementById('page1CargoWeight2').value;
+
+            const page1TotalQty = document.getElementById('page1TotalQty').value;
+            const page1TotalWeight = document.getElementById('page1TotalWeight').value;
+
+            // Đọc dữ liệu bảng phương tiện (Trang 1)
+            const p1RegNo1 = document.getElementById('p1RegNo1').value;
+            const p1Qty1 = document.getElementById('p1Qty1').value;
+            const p1Tonnage1 = document.getElementById('p1Tonnage1').value;
+            const p1Staff1 = document.getElementById('p1Staff1').value;
+            const p1Passenger1 = document.getElementById('p1Passenger1').value;
+
+            const p1RegNo2 = document.getElementById('p1RegNo2').value;
+            const p1Qty2 = document.getElementById('p1Qty2').value;
+            const p1Tonnage2 = document.getElementById('p1Tonnage2').value;
+            const p1Staff2 = document.getElementById('p1Staff2').value;
+            const p1Passenger2 = document.getElementById('p1Passenger2').value;
+
+            // --- CHÈN CHỮ VÀO TRANG 1 ---
             if (dateCargo) firstPage.drawText(dateCargo, { x: 430, y: 653, size: 11, font: customFont });
             if (goodsOwner) firstPage.drawText(goodsOwner, { x: 210, y: 639, size: 12, font: customFont });
             if (ownerAddress) firstPage.drawText(ownerAddress, { x: 105, y: 624, size: 11, font: customFont });
             
-            // Bảng hàng hóa Trang 1
-            if (page1CargoName) firstPage.drawText(page1CargoName, { x: 75, y: 575, size: 10, font: customFont });
-            if (page1CargoQty) firstPage.drawText(page1CargoQty, { x: 230, y: 575, size: 10, font: customFont });
-            if (page1CargoWeight) firstPage.drawText(page1CargoWeight, { x: 390, y: 575, size: 10, font: customFont });
+            // Điền bảng hàng hóa Trang 1 (Dòng 1: y=575, Dòng 2: y=553)
+            if (page1CargoName1) firstPage.drawText(page1CargoName1, { x: 75, y: 550, size: 10, font: customFont });
+            if (page1CargoQty1) firstPage.drawText(page1CargoQty1, { x: 230, y: 550, size: 10, font: customFont });
+            if (page1CargoWeight1) firstPage.drawText(page1CargoWeight1, { x: 390, y: 550, size: 10, font: customFont });
+
+            if (page1CargoName2) firstPage.drawText(page1CargoName2, { x: 75, y: 553, size: 10, font: customFont });
+            if (page1CargoQty2) firstPage.drawText(page1CargoQty2, { x: 230, y: 553, size: 10, font: customFont });
+            if (page1CargoWeight2) firstPage.drawText(page1CargoWeight2, { x: 390, y: 553, size: 10, font: customFont });
+
             if (page1TotalQty) firstPage.drawText(page1TotalQty, { x: 230, y: 528, size: 10, font: customFont });
             if (page1TotalWeight) firstPage.drawText(page1TotalWeight, { x: 390, y: 528, size: 10, font: customFont });
 
-            // Phần 2 thông tin chung cơ bản
+            // Thông tin chung phần phương tiện
             if (operatorName) firstPage.drawText(operatorName, { x: 440, y: 398, size: 11, font: customFont });
             if (conveyanceAddress) firstPage.drawText(conveyanceAddress, { x: 120, y: 374, size: 11, font: customFont });
             if (dateConveyance) firstPage.drawText(dateConveyance, { x: 410, y: 330, size: 11, font: customFont });
 
-            // Bảng số liệu ngang Phần 2 (Trang 1)
-            if (p1RegNo) firstPage.drawText(p1RegNo, { x: 75, y: 442, size: 10, font: customFont });
-            if (p1QtyConveyance) firstPage.drawText(p1QtyConveyance, { x: 200, y: 442, size: 10, font: customFont });
-            if (p1NetTonnage) firstPage.drawText(p1NetTonnage, { x: 290, y: 442, size: 10, font: customFont });
-            if (p1StaffNum) firstPage.drawText(p1StaffNum, { x: 390, y: 442, size: 10, font: customFont });
-            if (p1PassengerNum) firstPage.drawText(p1PassengerNum, { x: 495, y: 442, size: 10, font: customFont });
+            // Điền bảng phương tiện Trang 1 (Dòng 1: y=442, Dòng 2: y=420)
+            if (p1RegNo1) firstPage.drawText(p1RegNo1, { x: 75, y: 442, size: 10, font: customFont });
+            if (p1Qty1) firstPage.drawText(p1Qty1, { x: 200, y: 442, size: 10, font: customFont });
+            if (p1Tonnage1) firstPage.drawText(p1Tonnage1, { x: 290, y: 442, size: 10, font: customFont });
+            if (p1Staff1) firstPage.drawText(p1Staff1, { x: 390, y: 442, size: 10, font: customFont });
+            if (p1Passenger1) firstPage.drawText(p1Passenger1, { x: 495, y: 442, size: 10, font: customFont });
+
+            if (p1RegNo2) firstPage.drawText(p1RegNo2, { x: 75, y: 420, size: 10, font: customFont });
+            if (p1Qty2) firstPage.drawText(p1Qty2, { x: 200, y: 420, size: 10, font: customFont });
+            if (p1Tonnage2) firstPage.drawText(p1Tonnage2, { x: 290, y: 420, size: 10, font: customFont });
+            if (p1Staff2) firstPage.drawText(p1Staff2, { x: 390, y: 420, size: 10, font: customFont });
+            if (p1Passenger2) firstPage.drawText(p1Passenger2, { x: 495, y: 420, size: 10, font: customFont });
 
             // --- CHÈN CHỮ VÀO TRANG 2 ---
             if (secondPage) {
-                // Chèn Ngày/Date của trang 2
                 if (page2SignDate) secondPage.drawText(page2SignDate, { x: 75, y: 693, size: 11, font: customFont });
 
-                // Vòng lặp điền dọc danh sách xe ở bảng trang 2
                 const truckRows = document.querySelectorAll('.truck-item');
-                let startY = 399; 
-                let lineSpacing = 15;
+                let startY = 562; 
+                let lineSpacing = 22;
 
                 truckRows.forEach((rowElement, i) => {
                     const currentY = startY - (i * lineSpacing);
@@ -488,15 +501,14 @@
                     const cargo = rowElement.querySelector('.cargoName').value;
                     const staff = rowElement.querySelector('.staffNum').value;
 
-                    if (plate) secondPage.drawText(plate, { x: 95, y: currentY, size: 11, font: customFont });
-                    if (tonnage) secondPage.drawText(tonnage, { x: 189, y: currentY, size: 11, font: customFont });
-                    if (weight) secondPage.drawText(weight, { x: 260, y: currentY, size: 11, font: customFont });
-                    if (cargo) secondPage.drawText(cargo, { x: 340, y: currentY, size: 11, font: customFont });
-                    if (staff) secondPage.drawText(staff, { x: 475, y: currentY, size: 11, font: customFont });
+                    if (plate) secondPage.drawText(plate, { x: 75, y: currentY, size: 10, font: customFont });
+                    if (tonnage) secondPage.drawText(tonnage, { x: 175, y: currentY, size: 10, font: customFont });
+                    if (weight) secondPage.drawText(weight, { x: 250, y: currentY, size: 10, font: customFont });
+                    if (cargo) secondPage.drawText(cargo, { x: 340, y: currentY, size: 10, font: customFont });
+                    if (staff) secondPage.drawText(staff, { x: 495, y: currentY, size: 10, font: customFont });
                 });
             }
 
-            // Đóng gói dữ liệu và tự động tải file mới xuống máy
             const pdfBytes = await pdfDoc.save();
             const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const link = document.createElement('a');
