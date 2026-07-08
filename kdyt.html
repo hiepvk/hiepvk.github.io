@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xuất PDF Từ Excel - Điền Thông Tin Thông Minh</title>
+    <title>Xuất Giấy Khai Báo Y Tế Chuẩn PDF</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        .main-layout {
+        .container {
             display: flex;
             gap: 20px;
-            max-width: 1200px;
-            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
         }
-        /* Khung nhập liệu */
+        /* Form nhập liệu bên trái */
         .form-panel {
             flex: 1;
             background: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             height: fit-content;
         }
-        /* Khung hiển thị PDF */
+        /* Trang xem trước PDF bên phải */
         .preview-panel {
-            width: 210mm;
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h3 {
-            margin-top: 0;
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            padding: 10px;
         }
         .form-group {
             margin-bottom: 12px;
@@ -55,6 +45,7 @@
             font-weight: bold;
             font-size: 13px;
             margin-bottom: 5px;
+            color: #333;
         }
         .form-group input {
             padding: 8px;
@@ -76,78 +67,219 @@
         }
         .btn-pdf:hover { background-color: #004085; }
 
-        /* ĐỊNH DẠNG TRANG IN PDF (GIỮ NGUYÊN BỐ CỤC FILE GỐC TIẾNG TRUNG/VIỆT) */
-        #pdf-area {
+        /* --- CSS BIỂU MẪU CHUẨN ĐỂ IN PDF --- */
+        #pdf-page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 15mm;
+            background: #fff;
+            box-sizing: border-box;
             font-family: "Times New Roman", Times, serif;
             color: #000;
             line-height: 1.4;
-            font-size: 11px;
+            font-size: 13px;
         }
-        .pdf-table {
+        .header-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .header-subtitle {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        .row-flex {
+            display: flex;
+            margin-bottom: 6px;
+            width: 100%;
+        }
+        .col-flex {
+            flex: 1;
+        }
+        .underline-value {
+            font-weight: bold;
+            border-bottom: 1px dotted #000;
+            padding: 0 4px;
+            display: inline-block;
+        }
+        /* Định dạng bảng danh sách hàng hóa và xe */
+        .data-table {
             width: 100%;
             border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 12px;
         }
-        .pdf-table td {
-            padding: 4px 5px;
+        .data-table th, .data-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
             vertical-align: middle;
-            word-break: break-word;
         }
-        /* Định dạng hiển thị các ô dữ liệu được chèn thêm chữ vào */
-        .filled-text {
-            color: #000;
+        .data-table th {
+            background-color: #f2f2f2;
+            text-align: center;
             font-weight: bold;
-            text-decoration: underline;
-            text-underline-offset: 3px;
+        }
+        .footer-sec {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-<div class="main-layout">
+<div class="container">
     <div class="form-panel">
-        <h3>1. Chọn File Excel Gốc</h3>
+        <h3 style="margin-top:0; color:#0056b3;">1. Chọn File Excel Gốc</h3>
         <div class="form-group">
             <input type="file" id="upload-excel" accept=".xlsx, .xls, .csv">
         </div>
-
-        <h3>2. Điền Mục Cần Thêm</h3>
+        
+        <h3 style="color:#0056b3;">2. Điền thông tin bổ sung</h3>
         <div class="form-group">
-            <label>Ngày, tháng, năm (dd/mm/yy):</label>
-            <input type="text" id="input-date" value="7/7/2026" oninput="syncFormToPDF()">
+            <label>Ngày, tháng, năm / Date:</label>
+            <input type="text" id="in-date" value="7/7/2026" oninput="updatePreview()">
         </div>
         <div class="form-group">
             <label>Tên chủ hàng / Goods owner:</label>
-            <input type="text" id="input-owner" value="NGUYỄN VĂN A" oninput="syncFormToPDF()">
+            <input type="text" id="in-owner" value="NGUYỄN VĂN A" oninput="updatePreview()">
         </div>
         <div class="form-group">
             <label>Địa chỉ chủ hàng / Address:</label>
-            <input type="text" id="input-address" value="Số 123 Phường Móng Cái 3, Quảng Ninh" oninput="syncFormToPDF()">
+            <input type="text" id="in-address" value="Số 123 Phường Móng Cái 3, Quảng Ninh" oninput="updatePreview()">
         </div>
         <div class="form-group">
             <label>Tên chủ phương tiện / Operator:</label>
-            <input type="text" id="input-operator" value="TRẦN VĂN B" oninput="syncFormToPDF()">
+            <input type="text" id="in-operator" value="TRẦN VĂN B" oninput="updatePreview()">
         </div>
         <div class="form-group">
             <label>Địa chỉ chủ phương tiện / Address:</label>
-            <input type="text" id="input-op-address" value="Đông Hưng, Trung Quốc" oninput="syncFormToPDF()">
+            <input type="text" id="in-op-address" value="Đông Hưng, Trung Quốc" oninput="updatePreview()">
         </div>
-
-        <button class="btn-pdf" onclick="exportToPDF()">XUẤT FILE PDF TRỰC TIẾP</button>
+        
+        <button class="btn-pdf" onclick="exportPDF()">XUẤT FILE PDF SẮC NÉT</button>
     </div>
 
     <div class="preview-panel">
-        <div id="pdf-area">
-            <p style="text-align: center; color: #888; font-style: italic; margin-top: 50px;">
-                Vui lòng chọn file Excel gốc để hiển thị bố cục xem trước tại đây...
-            </p>
+        <div id="pdf-page">
+            <div class="header-title">GIẤY KHAI BÁO Y TẾ</div>
+            <div class="header-title">HÀNG HOÁ VÀ PHƯƠNG TIỆN VẬN CHUYỂN</div>
+            <div class="header-subtitle">(đối với đường bộ, đường sắt, đường hàng không)</div>
+            <div class="header-subtitle" style="margin-top:-12px;">Health Declaration for conveyances, and cargo (for land transportation means, railway, airway)</div>
+
+            <div class="section-title">1. Phần khai hàng hoá (bao gồm cả đường bộ, đường sắt, đường hàng không)/Declaration for cargo</div>
+            <div class="row-flex">
+                <div class="col-flex">Nơi đi/Departure: <span class="underline-value">Phường Móng Cái 3-Việt Nam</span></div>
+                <div class="col-flex">Nơi đến/Arrival: <span class="underline-value">Đông Hưng- Trung Quốc</span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Đến cửa khẩu/Name of entry point: <span class="underline-value">Lối mở Km 3+4</span></div>
+                <div class="col-flex">Ngày, tháng, năm/Date: <span id="out-date1" class="underline-value">7/7/2026</span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Tên chủ hàng/Name of the goods owner: <span id="out-owner" class="underline-value" style="min-width:300px;"></span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Địa chỉ/Address: <span id="out-address" class="underline-value" style="min-width:400px;"></span></div>
+            </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width:7%;">STT</th>
+                        <th style="width:35%;">Danh mục hàng hóa<br><small>Name of cargo</small></th>
+                        <th style="width:25%;">Số lượng & Quy cách đóng gói<br><small>Quantity and package form</small></th>
+                        <th style="width:18%;">Trọng lượng<br><small>Gross weight</small></th>
+                        <th style="width:15%;">Ghi chú<br><small>Notes</small></th>
+                    </tr>
+                </thead>
+                <tbody id="cargo-table-body">
+                    <tr><td style="text-align:center;">1</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td style="text-align:center;">2</td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <div class="section-title">2. Phần khai phương tiện đường bộ, đường sắt, đường hàng không/Declaration for land transportation means...</div>
+            <div class="row-flex">
+                <div class="col-flex">Nơi đi/Departure: <span class="underline-value">Phường Móng Cái 3- Việt Nam</span></div>
+                <div class="col-flex">Nơi đến/Arrival: <span class="underline-value">Đông Hưng-Trung Quốc</span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Tên chủ phương tiện/Name of the conveyance operator: <span id="out-operator" class="underline-value" style="min-width:300px;"></span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Địa chỉ/Address: <span id="out-op-address" class="underline-value" style="min-width:400px;"></span></div>
+            </div>
+            <div class="row-flex">
+                <div class="col-flex">Đến cửa khẩu/Name of entry point: <span class="underline-value">Lối mở Km 3+4</span></div>
+                <div class="col-flex">Ngày, tháng, năm/Date: <span id="out-date2" class="underline-value">7/7/2026</span></div>
+            </div>
+
+            <div class="header-title" style="font-size:12px; margin-top:15px;">DANH SÁCH PHƯƠNG TIỆN VẬN TẢI, HÀNG HÓA KIỂM TRA XỬ LÝ Y TẾ</div>
+            <div class="header-subtitle" style="font-size:11px; margin-bottom:5px;">LIST OF HEALTH INSPECTION/TREATMENT FOR CONVEYANCES AND CARGO</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width:6%;">STT</th>
+                        <th style="width:24%;">Số hiệu biển số<br><small>Registration No</small></th>
+                        <th style="width:16%;">Tải trọng xe<br><small>Net tonnage</small></th>
+                        <th style="width:18%;">Trọng lượng hàng hóa<br><small>Gross weight</small></th>
+                        <th style="width:22%;">Danh mục hàng hóa<br><small>Name of cargo</small></th>
+                        <th style="width:14%;">Số nhân viên<br><small>Staff No</small></th>
+                    </tr>
+                </thead>
+                <tbody id="vehicle-table-body">
+                    <tr><td style="text-align:center;">1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td style="text-align:center;">2</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td style="text-align:center;">3</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top:10px; font-style:italic; font-size:12px;">
+                <strong>Ý kiến của kiểm dịch viên y tế:</strong> Thu thập thông tin, quan sát y tế kiểm tra giấy tờ. Sau kiểm tra giấy tờ không bằng chứng phát hiện.
+            </div>
+
+            <div class="footer-sec">
+                <div>
+                    <span style="font-weight:bold;">Kiểm dịch viên y tế</span><br><small>health quarantine officer</small>
+                    <p style="margin-top:30px; font-size:11px; color:#555;">(Ký và đóng dấu)</p>
+                </div>
+                <div>
+                    <span>Ngày/Date: <span class="underline-value" id="out-date3">7/7/2026</span> giờ/hour: <span class="underline-value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><br>
+                    <span style="font-weight:bold; display:inline-block; margin-top:5px;">Người khai (Ký, ghi rõ họ tên)</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-let excelRawRows = []; // Lưu trữ dữ liệu thô nguyên bản của file excel
+// Hàm cập nhật chữ từ form sang khung preview PDF một cách đồng bộ
+function updatePreview() {
+    const d = document.getElementById('in-date').value;
+    document.getElementById('out-date1').innerText = d;
+    document.getElementById('out-date2').innerText = d;
+    document.getElementById('out-date3').innerText = d;
+    
+    document.getElementById('out-owner').innerText = document.getElementById('in-owner').value;
+    document.getElementById('out-address').innerText = document.getElementById('in-address').value;
+    document.getElementById('out-operator').innerText = document.getElementById('in-operator').value;
+    document.getElementById('out-op-address').innerText = document.getElementById('in-op-address').value;
+}
 
-// Lắng nghe sự kiện tải file lên
+// Đọc dữ liệu bảng từ file Excel được upload lên
 document.getElementById('upload-excel').addEventListener('change', function(e) {
     const file = e.target.files[0];
     if (!file) return;
@@ -156,104 +288,87 @@ document.getElementById('upload-excel').addEventListener('change', function(e) {
     reader.onload = function(evt) {
         const data = evt.target.result;
         const workbook = XLSX.read(data, { type: 'binary' });
-        const sheetName = workbook.SheetNames[0];
-        const worksheet = workbook.Sheets[sheetName];
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
         
-        // Đọc nguyên trạng ma trận dữ liệu (bao gồm cả các ô trống)
-        excelRawRows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
-        
-        // Render cấu trúc file gốc ra màn hình preview
-        syncFormToPDF();
+        let isVehicleSection = false;
+        let cargoData = [];
+        let vehicleData = [];
+
+        rows.forEach(row => {
+            if (!row || row.length === 0) return;
+            const textLine = row.join(" ");
+
+            // Tự động nhận diện điền tên chủ hàng/chủ xe nếu file có dữ liệu sẵn
+            if (textLine.includes("Tên chủ hàng")) {
+                const val = row.find(c => c && !c.toString().includes("Tên chủ hàng"));
+                if(val) document.getElementById('in-owner').value = val;
+            } else if (textLine.includes("Tên chủ phương tiện")) {
+                const val = row.find(c => c && !c.toString().includes("Tên chủ phương tiện"));
+                if(val) document.getElementById('in-operator').value = val;
+            }
+
+            // Nhận diện Khu vực 1: Bảng hàng hóa (nằm ở nửa trên file Excel)
+            if (textLine.includes("Quantity and package form")) return; // dòng tiêu đề
+            if (textLine.trim().startsWith("1") && !isVehicleSection) {
+                if(row[1] || row[2] || row[3]) cargoData.push(row);
+            }
+            if (textLine.trim().startsWith("2") && !isVehicleSection && !textLine.includes("Phần khai phương tiện")) {
+                if(row[1] || row[2] || row[3]) cargoData.push(row);
+            }
+
+            // Nhận diện Khu vực 2: Bảng danh sách phương tiện (nằm ở cuối file Excel)
+            if (textLine.toUpperCase().includes("DANH SÁCH PHƯƠNG TIỆN") || textLine.toUpperCase().includes("REGISTRATION NO")) {
+                isVehicleSection = true;
+                return;
+            }
+
+            if (isVehicleSection) {
+                const col1 = row[1] ? row[1].toString().trim() : "";
+                if (col1 && !col1.toUpperCase().includes("SỐ HIỆU") && !col1.toUpperCase().includes("TỔNG CỘNG")) {
+                    vehicleData.push(row);
+                }
+            }
+        });
+
+        // Đổ dữ liệu vào bảng Hàng Hóa (Danh mục, số lượng, trọng lượng)
+        const cargoBody = document.getElementById('cargo-table-body');
+        if(cargoData.length > 0) {
+            cargoBody.innerHTML = '';
+            cargoData.forEach((r, idx) => {
+                cargoBody.innerHTML += `<tr><td style="text-align:center;">${idx+1}</td><td>${r[2]||''}</td><td>${r[12]||''}</td><td>${r[18]||''}</td><td>${r[21]||''}</td></tr>`;
+            });
+        }
+
+        // Đổ dữ liệu vào bảng Danh sách xe (Biển số, tải trọng, trọng lượng...)
+        const vehicleBody = document.getElementById('vehicle-table-body');
+        if(vehicleData.length > 0) {
+            vehicleBody.innerHTML = '';
+            vehicleData.forEach((r, idx) => {
+                vehicleBody.innerHTML += `<tr><td style="text-align:center;">${idx+1}</td><td>${r[1]||''}</td><td>${r[2]||''}</td><td>${r[3]||''}</td><td>${r[4]||''}</td><td style="text-align:center;">${r[5]||''}</td></tr>`;
+            });
+        }
+
+        updatePreview();
     };
     reader.readAsBinaryString(file);
 });
 
-// Hàm đồng bộ: Lấy file gốc + Chèn thêm chữ từ form nhập liệu vào đúng vị trí
-function syncFormToPDF() {
-    if (excelRawRows.length === 0) return;
-
-    // Lấy giá trị hiện tại từ các ô nhập liệu bên Form
-    const dateVal = document.getElementById('input-date').value;
-    const ownerVal = document.getElementById('input-owner').value;
-    const addrVal = document.getElementById('input-address').value;
-    const operatorVal = document.getElementById('input-operator').value;
-    const opAddrVal = document.getElementById('input-op-address').value;
-
-    const pdfArea = document.getElementById('pdf-area');
-    pdfArea.innerHTML = ''; // Reset khung preview
-
-    const table = document.createElement('table');
-    table.className = 'pdf-table';
-
-    excelRawRows.forEach((row) => {
-        const tr = document.createElement('tr');
-        
-        row.forEach((cell) => {
-            const td = document.createElement('td');
-            let cellText = cell ? cell.toString() : '';
-
-            // --- ĐOẠN DÒ TÌM THÔNG MINH ĐỂ CHÈN CHỮ VÀO MỤC CẦN THIẾT ---
-            
-            // 1. Nếu ô chứa từ khóa "Ngày, tháng, năm/Date" hoặc có sẵn giá trị ngày cũ
-            if (cellText.includes("Ngày, tháng, năm") || cellText.includes("2026-07-07") || cellText.includes("7/7/2026")) {
-                if (cellText.includes("2026-07-07") || cellText.includes("7/7/2026")) {
-                    cellText = `<span class="filled-text">${dateVal}</span>`;
-                } else {
-                    cellText = cellText + ` <span class="filled-text">${dateVal}</span>`;
-                }
-            }
-            // 2. Chèn Tên chủ hàng
-            else if (cellText.includes("Tên chủ hàng/Name of the goods owner")) {
-                cellText = cellText + ` <span class="filled-text">${ownerVal}</span>`;
-            }
-            // 3. Chèn Tên chủ phương tiện
-            else if (cellText.includes("Tên chủ phương tiện") && cellText.includes("operator")) {
-                cellText = cellText + ` <span class="filled-text">${operatorVal}</span>`;
-            }
-            // 4. Chèn Địa chỉ (Dựa vào vị trí dòng tương ứng trong mẫu)
-            else if (cellText.trim() === "Địa chỉ/Address") {
-                // Kiểm tra xem đây là địa chỉ chủ hàng hay chủ xe dựa vào ngữ cảnh file để chèn đúng loại
-                cellText = cellText + ` <span class="filled-text">${addrVal}</span>`;
-            }
-
-            // Nếu ô không có viền (ô trống ở ngoài lề trong Excel), ẩn border đi cho giống nguyên bản
-            if (cellText === '') {
-                td.style.border = 'none';
-                td.innerHTML = '&nbsp;';
-            } else {
-                // Nếu là khu vực bảng dữ liệu hoặc tiêu đề cần kẻ khung
-                td.style.border = '1px solid #000';
-                td.innerHTML = cellText;
-            }
-            
-            tr.appendChild(td);
-        });
-        
-        table.appendChild(tr);
-    });
-
-    pdfArea.appendChild(table);
-}
-
-// Hàm thực hiện xuất trực tiếp khu vực Preview sang file PDF chuẩn A4 đứng
-function exportToPDF() {
-    if (excelRawRows.length === 0) {
-        alert("Vui lòng tải file Excel lên trước!");
-        return;
-    }
-
-    const element = document.getElementById('pdf-area');
+// Xuất file PDF chất lượng cao không bị co lệch hàng chữ
+function exportPDF() {
+    const element = document.getElementById('pdf-page');
     const opt = {
-        margin:       [12, 12, 12, 12], // Căn lề trang PDF 12mm
-        filename:     'To_Khai_Y_Te_Xuat_Truc_Tiep.pdf',
+        margin:       0, // Đã padding chuẩn khổ A4 bằng CSS
+        filename:     'Giay_Khai_Bao_Y_Te_Chuan_Bao_Cao.pdf',
         image:        { type: 'jpeg', quality: 1.0 },
-        html2canvas:  { scale: 2.5, useCORS: true, letterRendering: true }, // Tăng độ phân giải chống nhòe chữ
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' } // Khổ giấy A4 đứng
+        html2canvas:  { scale: 2.5, useCORS: true }, // Tăng độ phân giải chống nhòe vỡ chữ
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
-
-    // Xuất bản và tải file về máy
     html2pdf().set(opt).from(element).save();
 }
+
+// Chạy cập nhật form ban đầu khi load trang
+updatePreview();
 </script>
 
 </body>
