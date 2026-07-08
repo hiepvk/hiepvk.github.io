@@ -51,18 +51,37 @@
             box-sizing: border-box;
             width: 100%;
         }
-        /* Cấu trúc lưới hiển thị đa dụng linh hoạt */
         .row {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 15px;
         }
-        /* Cấu trúc hàng ngang cho 5 ô Phần 2 Trang 1 */
+        .row-3 {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 10px;
+            background: #fdfdfd;
+            padding: 10px;
+            border: 1px dashed #ced4da;
+            border-radius: 4px;
+        }
         .row-5 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            background: #fdfdfd;
+            padding: 10px;
+            border: 1px dashed #ced4da;
+            border-radius: 4px;
+        }
+        .sub-title {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
         .status-box {
             background-color: #d3f9d8;
@@ -142,7 +161,7 @@
     <h2>TẠO GIẤY KHAI BÁO Y TẾ TỰ ĐỘNG</h2>
     
     <div class="status-box">
-        <strong>🚀 Chế độ liên kết ngày tháng thông minh:</strong> Anh chỉ cần nhập ô Ngày đầu tiên, 2 ô ngày tháng còn lại sẽ tự động điền theo một cách đồng bộ.
+        <strong>🚀 Cập nhật phôi 2 dòng:</strong> Đã mở rộng thêm các ô nhập liệu cho Dòng số 2 ở cả phần Khai hàng hóa và Khai phương tiện tại Trang 1.
     </div>
 
     <form id="declarationForm">
@@ -162,36 +181,54 @@
             <input type="text" id="ownerAddress" placeholder="Nhập địa chỉ">
         </div>
 
-        <div class="row">
+        <div class="sub-title">BẢNG DANH MỤC HÀNG HÓA (TRANG 1)</div>
+        
+        <div class="row-3">
             <div class="form-group">
-                <label>Danh mục hàng hóa (Name of cargo - Dòng 1):</label>
-                <input type="text" id="page1CargoName" placeholder="VD: Tạp hóa">
+                <label>Danh mục hàng hóa (Dòng 1):</label>
+                <input type="text" id="page1CargoName1" placeholder="VD: Tạp hóa">
             </div>
             <div class="form-group">
-                <label>Số lượng & Quy cách đóng gói (Dòng 1):</label>
-                <input type="text" id="page1CargoQty" placeholder="VD: 100 kiện">
+                <label>Số lượng (Dòng 1):</label>
+                <input type="text" id="page1CargoQty1" placeholder="VD: 100 kiện">
+            </div>
+            <div class="form-group">
+                <label>Trọng lượng (Dòng 1):</label>
+                <input type="text" id="page1CargoWeight1" placeholder="VD: 28000 kg">
             </div>
         </div>
-        <div class="row">
+
+        <div class="row-3">
             <div class="form-group">
-                <label>Trọng lượng (Gross weight - Dòng 1):</label>
-                <input type="text" id="page1CargoWeight" placeholder="VD: 28000 kg">
+                <label>Danh mục hàng hóa (Dòng 2):</label>
+                <input type="text" id="page1CargoName2" placeholder="VD: Linh kiện">
             </div>
+            <div class="form-group">
+                <label>Số lượng (Dòng 2):</label>
+                <input type="text" id="page1CargoQty2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Trọng lượng (Dòng 2):</label>
+                <input type="text" id="page1CargoWeight2" placeholder="Có thể để trống">
+            </div>
+        </div>
+
+        <div class="row">
             <div class="form-group">
                 <label>Tổng cộng Số lượng & Quy cách đóng gói:</label>
                 <input type="text" id="page1TotalQty" placeholder="VD: 100 kiện">
             </div>
-        </div>
-        <div class="form-group">
-            <label>Tổng cộng Trọng lượng (Total Gross weight):</label>
-            <input type="text" id="page1TotalWeight" placeholder="VD: 28000 kg">
+            <div class="form-group">
+                <label>Tổng cộng Trọng lượng (Total Gross weight):</label>
+                <input type="text" id="page1TotalWeight" placeholder="VD: 28000 kg">
+            </div>
         </div>
 
         <h3>2. Phần khai phương tiện (Trang 1)</h3>
         <div class="row">
             <div class="form-group">
                 <label>Ngày, tháng, năm đến cửa khẩu (Khai phương tiện):</label>
-                <input type="text" id="dateConveyance" placeholder="Sẽ tự động điền theo ô đầu tiên...">
+                <input type="text" id="dateConveyance" placeholder="Sẽ tự động điền...">
             </div>
             <div class="form-group">
                 <label>Tên người điều khiển / chủ phương tiện:</label>
@@ -203,26 +240,51 @@
             <input type="text" id="conveyanceAddress" placeholder="Nhập địa chỉ">
         </div>
 
+        <div class="sub-title">BẢNG SỐ LIỆU PHƯƠNG TIỆN (TRANG 1)</div>
+        
         <div class="row-5">
             <div class="form-group">
-                <label>Số hiệu / biển số:</label>
-                <input type="text" id="p1RegNo" placeholder="15C-133.97">
+                <label>Số hiệu / biển số (D1):</label>
+                <input type="text" id="p1RegNo1" placeholder="15C-133.97">
             </div>
             <div class="form-group">
-                <label>Số lượng PT:</label>
-                <input type="text" id="p1QtyConveyance" placeholder="1">
+                <label>Số lượng (D1):</label>
+                <input type="text" id="p1Qty1" placeholder="1">
             </div>
             <div class="form-group">
-                <label>Trọng tải (tấn):</label>
-                <input type="text" id="p1NetTonnage" placeholder="35">
+                <label>Trọng tải (D1):</label>
+                <input type="text" id="p1Tonnage1" placeholder="35">
             </div>
             <div class="form-group">
-                <label>Số nhân viên:</label>
-                <input type="text" id="p1StaffNum" placeholder="1">
+                <label>Nhân viên (D1):</label>
+                <input type="text" id="p1Staff1" placeholder="1">
             </div>
             <div class="form-group">
-                <label>Hành khách:</label>
-                <input type="text" id="p1PassengerNum" placeholder="0">
+                <label>Hành khách (D1):</label>
+                <input type="text" id="p1Passenger1" placeholder="0">
+            </div>
+        </div>
+
+        <div class="row-5">
+            <div class="form-group">
+                <label>Số hiệu / biển số (D2):</label>
+                <input type="text" id="p1RegNo2" placeholder="15C-222.22">
+            </div>
+            <div class="form-group">
+                <label>Số lượng (D2):</label>
+                <input type="text" id="p1Qty2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Trọng tải (D2):</label>
+                <input type="text" id="p1Tonnage2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Nhân viên (D2):</label>
+                <input type="text" id="p1Staff2" placeholder="Có thể để trống">
+            </div>
+            <div class="form-group">
+                <label>Hành khách (D2):</label>
+                <input type="text" id="p1Passenger2" placeholder="Có thể để trống">
             </div>
         </div>
 
@@ -230,7 +292,7 @@
         
         <div class="form-group" style="max-width: 300px; margin-bottom: 20px;">
             <label>Ngày, tháng, năm / Date (Trang 2):</label>
-            <input type="text" id="page2SignDate" placeholder="Sẽ tự động điền theo ô đầu tiên...">
+            <input type="text" id="page2SignDate" placeholder="Sẽ tự động điền...">
         </div>
         
         <div id="truckContainer">
