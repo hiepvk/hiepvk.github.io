@@ -395,13 +395,13 @@
             submitBtn.disabled = true;
             loadingText.style.display = 'block';
 
-            const fontUrl = 'https://cdn.jsdelivr.net/gh/hiepvk/kdyt@main/times.ttf';
+            const fontUrl = 'https://hiepvk.github.io/kdyt/times.ttf';
             const fontBytes = await fetch(fontUrl).then(res => {
                 if (!res.ok) throw new Error("Không thể tải tệp Font chữ!");
                 return res.arrayBuffer();
             });
 
-            const pdfUrl = 'https://cdn.jsdelivr.net/gh/hiepvk/kdyt@main/mau.pdf';
+            const pdfUrl = 'https://hiepvk.github.io/kdyt/TKKDYT.pdf';
             const existingPdfBytes = await fetch(pdfUrl).then(res => {
                 if (!res.ok) throw new Error("Không thể tải file PDF phôi mẫu!");
                 return res.arrayBuffer();
