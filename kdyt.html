@@ -1,360 +1,54 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xuất PDF Chuẩn Biểu Mẫu Tờ Khai KDYT</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            display: flex;
-            gap: 20px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-        /* Cột điều khiển bên trái */
-        .control-panel {
-            flex: 1;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            height: fit-content;
-        }
-        /* Cột xem trước bản in PDF bên phải */
-        .preview-panel {
-            background: #ccc;
-            padding: 10px;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .form-group {
-            margin-bottom: 12px;
-            display: flex;
-            flex-direction: column;
-        }
-        .form-group label {
-            font-weight: bold;
-            font-size: 13px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        .form-group input {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        .btn-pdf {
-            width: 100%;
-            padding: 12px;
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        .btn-pdf:hover { background-color: #004085; }
-
-        /* --- CSS PHOM GỐC CỐ ĐỊNH CHUẨN TRANG A4 ĐỂ XUẤT PDF --- */
-        #pdf-page {
-            width: 210mm;
-            min-height: 297mm;
-            padding: 20mm 15mm;
-            background: #fff;
-            box-sizing: border-box;
-            font-family: "Times New Roman", Times, serif;
-            color: #000;
-            line-height: 1.4;
-            font-size: 13px;
-        }
-        .text-center { text-align: center; }
-        .text-bold { font-weight: bold; }
-        .title-main { font-size: 16px; font-weight: bold; text-transform: uppercase; }
-        .title-sub { font-size: 12px; font-style: italic; margin-bottom: 15px; }
-        .section-title { font-weight: bold; margin-top: 15px; margin-bottom: 5px; font-size: 13px; }
-        
-        .flex-row { display: flex; margin-bottom: 6px; width: 100%; }
-        .flex-col { flex: 1; }
-        
-        /* Hiển thị chữ điền thêm có gạch chân mảnh chấm dotted */
-        .fill-value {
-            font-weight: bold;
-            border-bottom: 1px dotted #000;
-            padding: 0 4px;
-            display: inline-block;
-        }
-
-        /* Định dạng bảng biểu danh sách xe/hàng hóa cố định khung */
-        .fixed-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 8px 0;
-            font-size: 12px;
-        }
-        .fixed-table th, .fixed-table td {
-            border: 1px solid #000;
-            padding: 6px;
-            vertical-align: middle;
-        }
-        .fixed-table th {
-            background-color: #f2f2f2;
-            text-align: center;
-            font-weight: bold;
-        }
-        .footer-signatures {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Ghi đè chữ vào PDF</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 </head>
 <body>
+  <h2>Chèn chữ vào PDF</h2>
+  <input type="file" id="upload" accept="application/pdf">
+  <br><br>
+  <label>Tên chủ hàng: <input type="text" id="goodsOwner"></label><br>
+  <label>Địa chỉ: <input type="text" id="address"></label><br><br>
+  <button onclick="processPDF()">Xuất PDF mới</button>
 
-<div class="container">
-    <div class="control-panel">
-        <h3 style="margin-top:0; color:#0056b3;">1. Tải Lên File Excel (.xlsx)</h3>
-        <div class="form-group">
-            <input type="file" id="upload-excel" accept=".xlsx, .xls, .csv">
-        </div>
-        
-        <h3 style="color:#0056b3;">2. Chỉnh Sửa Các Mục Cần Thiết</h3>
-        <div class="form-group">
-            <label>Ngày, tháng, năm / Date:</label>
-            <input type="text" id="in-date" value="7/7/2026" oninput="syncData()">
-        </div>
-        <div class="form-group">
-            <label>Tên chủ hàng / Goods owner:</label>
-            <input type="text" id="in-owner" value="" oninput="syncData()">
-        </div>
-        <div class="form-group">
-            <label>Địa chỉ chủ hàng / Address:</label>
-            <input type="text" id="in-address" value="" oninput="syncData()">
-        </div>
-        <div class="form-group">
-            <label>Tên chủ phương tiện / Operator:</label>
-            <input type="text" id="in-operator" value="" oninput="syncData()">
-        </div>
-        <div class="form-group">
-            <label>Địa chỉ chủ xe / Address:</label>
-            <input type="text" id="in-op-address" value="" oninput="syncData()">
-        </div>
-        
-        <button class="btn-pdf" onclick="exportToPDF()">XUẤT FILE PDF NGUYÊN BẢN</button>
-    </div>
+  <script>
+    async function processPDF() {
+      const fileInput = document.getElementById("upload");
+      if (!fileInput.files.length) {
+        alert("Vui lòng chọn file PDF trước");
+        return;
+      }
 
-    <div class="preview-panel">
-        <div id="pdf-page">
-            <div class="text-center title-main">GIẤY KHAI BÁO Y TẾ</div>
-            <div class="text-center title-main">HÀNG HOÁ VÀ PHƯƠNG TIỆN VẬN CHUYỂN</div>
-            <div class="text-center title-sub">(đối với đường bộ, đường sắt, đường hàng không)</div>
-            <div class="text-center title-sub" style="margin-top:-12px;">Health Declaration for conveyances, and cargo (for land transportation means, railway, airway)</div>
+      const arrayBuffer = await fileInput.files[0].arrayBuffer();
+      const pdfDoc = await PDFLib.PDFDocument.load(arrayBuffer);
 
-            <div class="section-title">1. Phần khai hàng hoá (bao gồm cả đường bộ, đường sắt, đường hàng không)/Declaration for cargo</div>
-            <div class="flex-row">
-                <div class="flex-col">Nơi đi/Departure: <span class="fill-value">Phường Móng Cái 3-Việt Nam</span></div>
-                <div class="flex-col">Nơi đến/Arrival: <span class="fill-value">Đông Hưng- Trung Quốc</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Đến cửa khẩu/Name of entry point: <span class="fill-value">Lối mở Km 3+4</span></div>
-                <div class="flex-col">Ngày, tháng, năm/Date: <span id="out-date1" class="fill-value">7/7/2026</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Tên chủ hàng/Name of the goods owner: <span id="out-owner" class="fill-value" style="min-width:300px;">&nbsp;</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Địa chỉ/Address: <span id="out-address" class="fill-value" style="min-width:400px;">&nbsp;</span></div>
-            </div>
+      const pages = pdfDoc.getPages();
+      const firstPage = pages[0];
 
-            <table class="fixed-table">
-                <thead>
-                    <tr>
-                        <th style="width:7%;">STT</th>
-                        <th style="width:38%;">Danh mục hàng hóa<br><small>Name of cargo</small></th>
-                        <th style="width:25%;">Số lượng & Quy cách đóng gói<br><small>Quantity and package form</small></th>
-                        <th style="width:15%;">Trọng lượng<br><small>Gross weight</small></th>
-                        <th style="width:15%;">Ghi chú<br><small>Notes</small></th>
-                    </tr>
-                </thead>
-                <tbody id="cargo-table-body">
-                    <tr><td class="text-center">1</td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td class="text-center">2</td><td></td><td></td><td></td><td></td></tr>
-                </tbody>
-            </table>
+      const goodsOwner = document.getElementById("goodsOwner").value;
+      const address = document.getElementById("address").value;
 
-            <div class="section-title">2. Phần khai phương tiện đường bộ, đường sắt, đường hàng không/Declaration for land transportation means...</div>
-            <div class="flex-row">
-                <div class="flex-col">Nơi đi/Departure: <span class="fill-value">Phường Móng Cái 3- Việt Nam</span></div>
-                <div class="flex-col">Nơi đến/Arrival: <span class="fill-value">Đông Hưng-Trung Quốc</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Tên chủ phương tiện/Name of the conveyance operator: <span id="out-operator" class="fill-value" style="min-width:300px;">&nbsp;</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Địa chỉ/Address: <span id="out-op-address" class="fill-value" style="min-width:400px;">&nbsp;</span></div>
-            </div>
-            <div class="flex-row">
-                <div class="flex-col">Đến cửa khẩu/Name of entry point: <span class="fill-value">Lối mở Km 3+4</span></div>
-                <div class="flex-col">Ngày, tháng, năm/Date: <span id="out-date2" class="fill-value">7/7/2026</span></div>
-            </div>
+      // Thêm chữ vào vị trí mong muốn (tọa độ x,y)
+      firstPage.drawText("Tên chủ hàng: " + goodsOwner, {
+        x: 100,
+        y: 500,
+        size: 12
+      });
+      firstPage.drawText("Địa chỉ: " + address, {
+        x: 100,
+        y: 480,
+        size: 12
+      });
 
-            <div class="text-bold text-center" style="font-size:12px; margin-top:20px;">DANH SÁCH PHƯƠNG TIỆN VẬN TẢI, HÀNG HÓA KIỂM TRA XỬ LÝ Y TẾ</div>
-            <div class="text-center title-sub" style="font-size:11px; margin-bottom:5px;">LIST OF HEALTH INSPECTION/TREATMENT FOR CONVEYANCES AND CARGO</div>
-
-            <table class="fixed-table">
-                <thead>
-                    <tr>
-                        <th style="width:6%;">STT</th>
-                        <th style="width:24%;">Số hiệu biển số<br><small>Registration No</small></th>
-                        <th style="width:16%;">Tải trọng xe<br><small>Net tonnage</small></th>
-                        <th style="width:18%;">Trọng lượng hàng hóa<br><small>Gross weight</small></th>
-                        <th style="width:22%;">Danh mục hàng hóa<br><small>Name of cargo</small></th>
-                        <th style="width:14%;">Số nhân viên<br><small>Staff No</small></th>
-                    </tr>
-                </thead>
-                <tbody id="vehicle-table-body">
-                    <tr><td class="text-center">1</td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td class="text-center">2</td><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td class="text-center">3</td><td></td><td></td><td></td><td></td><td></td></tr>
-                </tbody>
-            </table>
-
-            <div style="margin-top:15px; font-style:italic; font-size:12px;">
-                <strong>Ý kiến của kiểm dịch viên y tế/Recommendation of health quarantine officer:</strong><br>
-                Thu thập thông tin, quan sát y tế kiểm tra giấy tờ. Sau kiểm tra giấy tờ không bằng chứng phát hiện.
-            </div>
-
-            <div class="footer-signatures">
-                <div>
-                    <span class="text-bold">Kiểm dịch viên y tế</span><br><small>health quarantine officer</small>
-                    <p style="margin-top:35px; font-size:11px; color:#555;">(Ký và đóng dấu/Signature and stamp)</p>
-                </div>
-                <div>
-                    <span>Ngày/Date: <span class="fill-value" id="out-date3">7/7/2026</span> giờ/hour: <span class="fill-value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><br>
-                    <span class="text-bold" style="display:inline-block; margin-top:5px;">Người khai (ký, ghi rõ họ tên)</span><br><small>(Signature and full name of Declarant)</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-// Đồng bộ text từ Input Form sang Khung PDF cố định
-function syncData() {
-    const d = document.getElementById('in-date').value;
-    document.getElementById('out-date1').innerText = d;
-    document.getElementById('out-date2').innerText = d;
-    document.getElementById('out-date3').innerText = d;
-    
-    document.getElementById('out-owner').innerText = document.getElementById('in-owner').value || " ";
-    document.getElementById('out-address').innerText = document.getElementById('in-address').value || " ";
-    document.getElementById('out-operator').innerText = document.getElementById('in-operator').value || " ";
-    document.getElementById('out-op-address').innerText = document.getElementById('in-op-address').value || " ";
-}
-
-// Xử lý đọc file Excel thông minh đưa vào các cột cố định
-document.getElementById('upload-excel').addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = function(evt) {
-        const data = evt.target.result;
-        const workbook = XLSX.read(data, { type: 'binary' });
-        const sheet = workbook.Sheets[workbook.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 });
-        
-        let isVehicleSection = false;
-        let cargoData = [];
-        let vehicleData = [];
-
-        rows.forEach(row => {
-            if (!row || row.length === 0) return;
-            const textLine = row.join(" ");
-
-            // Tìm thông tin chủ hàng/chủ xe để điền tự động vào ô
-            if (textLine.includes("Tên chủ hàng")) {
-                const val = row.find(c => c && !c.toString().includes("Tên chủ hàng"));
-                if(val) document.getElementById('in-owner').value = val;
-            } else if (textLine.includes("Tên chủ phương tiện")) {
-                const val = row.find(c => c && !c.toString().includes("Tên chủ phương tiện"));
-                if(val) document.getElementById('in-operator').value = val;
-            }
-
-            // Nhập mảng bảng Hàng hóa (Phần 1)
-            if (textLine.includes("Quantity and package form")) return;
-            if (textLine.trim().startsWith("1") && !isVehicleSection) {
-                if(row[1] || row[2] || row[3]) cargoData.push(row);
-            }
-            if (textLine.trim().startsWith("2") && !isVehicleSection && !textLine.includes("Phần khai phương tiện")) {
-                if(row[1] || row[2] || row[3]) cargoData.push(row);
-            }
-
-            // Nhập mảng bảng Danh sách xe (Phần cuối)
-            if (textLine.toUpperCase().includes("DANH SÁCH PHƯƠNG TIỆN") || textLine.toUpperCase().includes("REGISTRATION NO")) {
-                isVehicleSection = true;
-                return;
-            }
-
-            if (isVehicleSection) {
-                const col1 = row[1] ? row[1].toString().trim() : "";
-                if (col1 && !col1.toUpperCase().includes("SỐ HIỆU") && !col1.toUpperCase().includes("TỔNG CỘNG")) {
-                    vehicleData.push(row);
-                }
-            }
-        });
-
-        // Đổ dữ liệu vào bảng Hàng Hoá cố định
-        const cargoBody = document.getElementById('cargo-table-body');
-        if(cargoData.length > 0) {
-            cargoBody.innerHTML = '';
-            cargoData.forEach((r, idx) => {
-                cargoBody.innerHTML += `<tr><td class="text-center">${idx+1}</td><td>${r[2]||''}</td><td>${r[12]||''}</td><td>${r[18]||''}</td><td>${r[21]||''}</td></tr>`;
-            });
-        }
-
-        // Đổ dữ liệu vào bảng Danh sách xe cố định
-        const vehicleBody = document.getElementById('vehicle-table-body');
-        if(vehicleData.length > 0) {
-            vehicleBody.innerHTML = '';
-            vehicleData.forEach((r, idx) => {
-                vehicleBody.innerHTML += `<tr><td class="text-center">${idx+1}</td><td>${r[1]||''}</td><td>${r[2]||''}</td><td>${r[3]||''}</td><td>${r[4]||''}</td><td class="text-center">${r[5]||''}</td></tr>`;
-            });
-        }
-
-        syncData();
-    };
-    reader.readAsBinaryString(file);
-});
-
-// Xuất file ảnh chụp canvas sang PDF chuẩn A4 sắc nét
-function exportToPDF() {
-    const element = document.getElementById('pdf-page');
-    const opt = {
-        margin:       0,
-        filename:     'To_Khai_Y_Te_Co_Dinh_Phom.pdf',
-        image:        { type: 'jpeg', quality: 1.0 },
-        html2canvas:  { scale: 2.5, useCORS: true, letterRendering: true }, // Tỉ lệ scale cao để tránh nhòe chữ
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-    html2pdf().set(opt).from(element).save();
-}
-
-// Chạy khởi tạo ban đầu
-syncData();
-</script>
-
+      const pdfBytes = await pdfDoc.save();
+      const blob = new Blob([pdfBytes], { type: "application/pdf" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "KhaiBaoYTe_GhiDe.pdf";
+      link.click();
+    }
+  </script>
 </body>
 </html>
