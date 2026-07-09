@@ -489,8 +489,8 @@
                 if (page2SignDate) secondPage.drawText(page2SignDate, { x: 110, y: 670, size: 11, font: customFont });
 
                 const truckRows = document.querySelectorAll('.truck-item');
-                let startY = 562; 
-                let lineSpacing = 22;
+                let startY = 460; 
+                let lineSpacing = 20;
 
                 truckRows.forEach((rowElement, i) => {
                     const currentY = startY - (i * lineSpacing);
@@ -501,11 +501,11 @@
                     const cargo = rowElement.querySelector('.cargoName').value;
                     const staff = rowElement.querySelector('.staffNum').value;
 
-                    if (plate) secondPage.drawText(plate, { x: 75, y: currentY, size: 10, font: customFont });
-                    if (tonnage) secondPage.drawText(tonnage, { x: 175, y: currentY, size: 10, font: customFont });
-                    if (weight) secondPage.drawText(weight, { x: 250, y: currentY, size: 10, font: customFont });
-                    if (cargo) secondPage.drawText(cargo, { x: 340, y: currentY, size: 10, font: customFont });
-                    if (staff) secondPage.drawText(staff, { x: 495, y: currentY, size: 10, font: customFont });
+                    if (plate) secondPage.drawText(plate, { x: 90, y: currentY, size: 10, font: customFont });
+                    if (tonnage) secondPage.drawText(tonnage, { x: 185, y: currentY, size: 10, font: customFont });
+                    if (weight) secondPage.drawText(weight, { x: 255, y: currentY, size: 10, font: customFont });
+                    if (cargo) secondPage.drawText(cargo, { x: 345, y: currentY, size: 10, font: customFont });
+                    if (staff) secondPage.drawText(staff, { x: 500, y: currentY, size: 10, font: customFont });
                 });
             }
 
