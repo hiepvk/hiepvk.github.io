@@ -81,7 +81,7 @@
         @media (min-width: 600px) {
             body { padding: 20px; }
             .container { padding: 25px; }
-            .row-flex { display: table; width: 100%; table-layout: fixed; }
+            .row-flex { display: table; width: 100%; table-layout:fixed; }
             .col-50 { display: table-cell; padding-right: 10px; vertical-align: top; }
             .col-50:last-child { padding-right: 0; }
             .row-table-custom { display: table; width: 100%; table-layout: fixed; }
@@ -204,7 +204,6 @@
     <div class="preview-panel">
         <h3 style="border:none; margin: 0 0 5px 0; font-size: 16px;">HÌNH ẢNH KẾT QUẢ XEM TRƯỚC</h3>
         <canvas id="previewCanvas"></canvas>
-        <p style="font-size: 12px; color: #7f8c8d; margin-top: 8px; margin-bottom: 0;">Mẹo: Nhấn trực tiếp vào ảnh trên màn hình để xem tọa độ (X, Y).</p>
     </div>
 </div>
 
@@ -219,16 +218,9 @@
         canvas.width = imgPhoi.width;
         canvas.height = imgPhoi.height;
         ctx.drawImage(imgPhoi, 0, 0);
-
-        // Lấy tọa độ khi chạm/click trên ảnh
-        canvas.addEventListener('click', function(event) {
-            const rect = canvas.getBoundingClientRect();
-            const xClick = Math.round((event.clientX - rect.left) * (canvas.width / rect.width));
-            const yClick = Math.round((event.clientY - rect.top) * (canvas.height / rect.height));
-            alert("Tọa độ ô này là: X = " + xClick + ", Y = " + yClick);
-        });
     };
 
+    // Định dạng thêm dấu phẩy hàng nghìn khi nhập số
     function formatNumberString(val) {
         let num = val.replace(/[^0-9]/g, '');
         if (!num) return '';
@@ -282,7 +274,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(imgPhoi, 0, 0);
 
-        // Cài đặt font chữ Times New Roman thanh lịch, tiệp màu chữ in kim thực tế
+        // Cài đặt font chữ in đậm rõ nét
         ctx.fillStyle = '#0f1a24';
         ctx.font = '60px "Arial"'; 
 
@@ -297,7 +289,6 @@
         const priceService = document.getElementById('priceService').value;
 
         // --- CĂN CHỈNH TỌA ĐỘ CHỮ THEO PHÔI ẢNH THỰC TẾ ---
-        // Phần thông tin chung
         if(dateIn) ctx.fillText(dateIn, 2400, 769.5);
         if(clientName) ctx.fillText(clientName, 777, 1068);
 
