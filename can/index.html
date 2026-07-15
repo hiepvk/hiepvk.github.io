@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Quản Lý Phiếu Cân - Thành Đạt</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f3f6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Thanh tiêu đề chính */
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+        /* Thanh Tab Điều Hướng */
+        .tab-container {
+            max-width: 1200px;
+            margin: 15px auto 0 auto;
+            display: flex;
+            background: #fff;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border-bottom: 3px solid #e67e22;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 15px 20px;
+            text-align: center;
+            background: #e8ecef;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            transition: all 0.3s ease;
+            border-right: 1px solid #dcdde1;
+        }
+        .tab-btn:last-child {
+            border-right: none;
+        }
+        .tab-btn:hover {
+            background: #dcdde1;
+            color: #2c3e50;
+        }
+        /* Tab đang được chọn */
+        .tab-btn.active {
+            background-color: #e67e22;
+            color: white;
+        }
+        /* Khu vực hiển thị nội dung phần mềm cân */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto 20px auto;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            height: calc(100vh - 140px); /* Tự động co giãn theo chiều cao màn hình */
+            min-height: 700px;
+        }
+        .tab-content {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
 
+<div class="header">
+    <h1>TẠO PHIẾU CÂN</h1>
+</div>
+
+<div class="tab-container">
+    <button class="tab-btn active" onclick="openTab(event, 'tab-vo')">📋 PHIẾU CÂN VỎ</button>
+    <button class="tab-btn" onclick="openTab(event, 'tab-xe1')">🚛 PHIẾU CÂN XE 1</button>
+    <button class="tab-btn" onclick="openTab(event, 'tab-xe2')">🚚 PHIẾU CÂN XE 2</button>
+</div>
+
+<div class="content-container">
+    
+    <div id="tab-vo" class="tab-content active">
+        <iframe src="phieuvo.html"></iframe>
+    </div>
+
+    <div id="tab-xe1" class="tab-content">
+        <iframe src="phieucanxe1.html"></iframe>
+    </div>
+
+    <div id="tab-xe2" class="tab-content">
+        <iframe src="phieucanxe2.html"></iframe>
+    </div>
+
+</div>
+
+<script>
+    // Hàm xử lý chuyển đổi qua lại giữa các Tab
+    function openTab(evt, tabId) {
+        // 1. Lấy tất cả các thẻ nội dung tab và ẩn đi
+        const tabContents = document.getElementsByClassName("tab-content");
+        for (let i = 0; i < tabContents.length; i++) {
+            tabContents[i].className = tabContents[i].className.replace(" active", "");
+        }
+
+        // 2. Lấy tất cả các nút tab và bỏ màu active
+        const tabBtns = document.getElementsByClassName("tab-btn");
+        for (let i = 0; i < tabBtns.length; i++) {
+            tabBtns[i].className = tabBtns[i].className.replace(" active", "");
+        }
+
+        // 3. Hiển thị tab hiện tại được click và kích hoạt class active cho nút đó
+        document.getElementById(tabId).className += " active";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
