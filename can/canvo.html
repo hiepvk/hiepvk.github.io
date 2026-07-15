@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Phiếu Cân Tự Động - Thành Đạt</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 800px) {
+            .container { grid-template-columns: 1fr; }
+        }
+        .form-panel {
+            padding-right: 10px;
+        }
+        .preview-panel {
+            text-align: center;
+            background: #eaeded;
+            padding: 15px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #34495e;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            padding: 8px 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .row-table {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1.2fr;
+            gap: 8px;
+            background: #f8f9fa;
+            padding: 8px;
+            border: 1px dashed #bdc3c7;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .btn-action {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .btn-action:hover { background-color: #d35400; }
+        .btn-pdf { background-color: #2980b9; margin-top: 5px;}
+        .btn-pdf:hover { background-color: #1f618d; }
+        #previewCanvas {
+            max-width: 100%;
+            border: 1px solid #7f8c8d;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .status-box {
+            background-color: #d3f9d8;
+            padding: 10px;
+            border: 1px solid #b2f2bb;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #2b8a3e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-panel">
+        <h2>THÔNG TIN PHIẾU CÂN</h2>
+        
+        <div class="status-box">
+            <strong>💡 Tính năng thông minh:</strong> Khi ô "KL Tổng" trống, ô "KL Hàng (Tự tính)" sẽ tự động xóa sạch thông tin (không hiện kể cả số 0)!
+        </div>
+        
+        <div class="form-group">
+            <label style="color: #2980b9;">Tên khách hàng (Tự động điền theo Biển số xe):</label>
+            <input type="text" id="clientName" placeholder="Tên khách hàng hoặc Biển số xe...">
+        </div>
+
+        <div class="form-group">
+            <label>Ngày cân (Ngày vào):</label>
+            <input type="text" id="dateIn" placeholder="VD: 15/07/2026">
+        </div>
+
+        <h3>Chi tiết Mặt hàng & Phương tiện</h3>
+        
+        <div class="row">
+            <div class="form-group">
+                <label style="color: #2980b9;">Số xe (Biển số):</label>
+                <input type="text" id="truckPlate" placeholder="VD: 15C-133.97" oninput="syncTruckPlate()">
+            </div>
+            <div class="form-group">
+                <label>Số container:</label>
+                <input type="text" id="containerNo" placeholder="VD: SZLU9077726">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Tên mặt hàng:</label>
+            <input type="text" id="cargoType" placeholder="VD: Linh kiện điện tử">
+        </div>
+
+        <div class="row-table">
+            <div class="form-group">
+                <label>KL Tổng (kg):</label>
+                <input type="text" id="weightGross" placeholder="VD: 50,500" oninput="handleWeightInput(this)">
+            </div>
+            <div class="form-group">
+                <label>KL Bì (kg):</label>
+                <input type="text" id="weightTare" placeholder="VD: 20,000" oninput="handleWeightInput(this)">
+            </div>
+            <div class="form-group">
+                <label>KL Hàng (Tự tính):</label>
+                <input type="text" id="weightNet" placeholder="Kết quả..." readonly style="background: #e9ecef; font-weight: bold; color: #d35400;">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Tiền cân xe (VNĐ):</label>
+            <input type="text" id="priceService" value="150,000" placeholder="VD: 150,000" oninput="formatCurrencyInput(this)">
+        </div>
+
+        <button type="button" class="btn-action" onclick="drawTextOnImage()">🔄 CẬP NHẬT ẢNH XEM TRƯỚC</button>
+        <button type="button" class="btn-action btn-pdf" onclick="exportToJPG()">💾 TẢI FILE ẢNH (.JPG)</button>
+    </div>
+
+    <div class="preview-panel">
+        <h3 style="border:none; margin-bottom: 10px;">HÌNH ẢNH KẾT QUẢ XEM TRƯỚC</h3>
+        <canvas id="previewCanvas"></canvas>
+        <p style="font-size: 12px; color: #7f8c8d; margin-top: 10px;">Mẹo: Click chuột trực tiếp vào ảnh để lấy tọa độ (X, Y) chính xác.</p>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('previewCanvas');
+    const ctx = canvas.getContext('2d');
+    const imgPhoi = new Image();
+
+    imgPhoi.src = 'canvo.jpeg';
+
+    imgPhoi.onload = function() {
+        canvas.width = imgPhoi.width;
+        canvas.height = imgPhoi.height;
+        ctx.drawImage(imgPhoi, 0, 0);
+
+        // --- LẤY TỌA ĐỘ CLICK CHUỘT ---
+        canvas.addEventListener('click', function(event) {
+            const rect = canvas.getBoundingClientRect();
+            const xClick = Math.round((event.clientX - rect.left) * (canvas.width / rect.width));
+            const yClick = Math.round((event.clientY - rect.top) * (canvas.height / rect.height));
+            
+            alert("Tọa độ ô này là: X = " + xClick + ", Y = " + yClick);
+            console.log("Tọa độ click:", xClick, yClick);
+        });
+    };
+
+    // Định dạng thêm dấu phẩy hàng nghìn khi nhập số
+    function formatNumberString(val) {
+        let num = val.replace(/[^0-9]/g, '');
+        if (!num) return '';
+        return num.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    function handleWeightInput(inputElement) {
+        const selectionStart = inputElement.selectionStart;
+        const oldLength = inputElement.value.length;
+
+        inputElement.value = formatNumberString(inputElement.value);
+
+        const newLength = inputElement.value.length;
+        inputElement.setSelectionRange(selectionStart + (newLength - oldLength), selectionStart + (newLength - oldLength));
+
+        tinhKhoiLuongHang();
+    }
+
+    function formatCurrencyInput(inputElement) {
+        const selectionStart = inputElement.selectionStart;
+        const oldLength = inputElement.value.length;
+
+        inputElement.value = formatNumberString(inputElement.value);
+
+        const newLength = inputElement.value.length;
+        inputElement.setSelectionRange(selectionStart + (newLength - oldLength), selectionStart + (newLength - oldLength));
+    }
+
+    // Tự động tính KL Hàng = Tổng - Bì (Xử lý điều kiện trống)
+    function tinhKhoiLuongHang() {
+        const grossRaw = document.getElementById('weightGross').value;
+        const grossVal = grossRaw.replace(/,/g, '');
+        const tareVal = document.getElementById('weightTare').value.replace(/,/g, '');
+
+        // Điều kiện: Nếu KL Tổng rỗng hoặc không có giá trị nhập vào
+        if (grossRaw.trim() === "") {
+            document.getElementById('weightNet').value = '';
+            return;
+        }
+
+        const gross = parseFloat(grossVal) || 0;
+        const tare = parseFloat(tareVal) || 0;
+        const net = gross - tare;
+
+        if (net > 0) {
+            document.getElementById('weightNet').value = net.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        } else {
+            document.getElementById('weightNet').value = '0';
+        }
+    }
+
+    function syncTruckPlate() {
+        const plate = document.getElementById('truckPlate').value;
+        document.getElementById('clientName').value = plate;
+    }
+
+    function drawTextOnImage() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(imgPhoi, 0, 0);
+
+        ctx.fillStyle = '#000000';
+        ctx.font = 'bold 60px "Times New Roman"'; // Chữ in đậm rõ nét
+
+        const clientName = document.getElementById('clientName').value;
+        const dateIn = document.getElementById('dateIn').value;
+        
+        const truckPlate = document.getElementById('truckPlate').value;
+        const containerNo = document.getElementById('containerNo').value;
+        const cargoType = document.getElementById('cargoType').value;
+        const weightGross = document.getElementById('weightGross').value;
+        const weightTare = document.getElementById('weightTare').value;
+        const weightNet = document.getElementById('weightNet').value;
+        const priceService = document.getElementById('priceService').value;
+
+        // CĂN CHỈNH TỌA ĐỘ PIXEL (X, Y)
+        if(dateIn) ctx.fillText(dateIn, 2480, 765);
+        if(clientName) ctx.fillText(clientName, 780, 1064);
+
+        // Bảng dòng dữ liệu
+        if(cargoType) ctx.fillText(cargoType, 410, 1460);
+        if(truckPlate) ctx.fillText(truckPlate, 866, 1460);
+        if(containerNo) ctx.fillText(containerNo, 1310, 1460);
+        if(weightGross) ctx.fillText(weightGross, 1735, 1460);
+        if(weightTare) ctx.fillText(weightTare, 2070, 1460);
+        if(weightNet) ctx.fillText(weightNet, 2410, 1460);
+        if(priceService) ctx.fillText(priceService, 2900, 1460);
+    }
+
+    function exportToJPG() {
+        drawTextOnImage();
+        const link = document.createElement('a');
+        link.download = 'Phieu_Can_Vo.jpg';
+        link.href = canvas.toDataURL('image/jpeg', 1.0); 
+        link.click();
+    }
+</script>
+</body>
+</html>
