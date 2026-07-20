@@ -3,7 +3,7 @@
 # ========================================================
 
 # 1. Config URLs and Paths
-$url = "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/app.ps1" # <-- Replace with your script URL
+$url = "https://github.com/hiepvk/ipa/releases/download/exe/app.ps1" # <-- Replace with your script URL
 $downloadPath = Join-Path $env:TEMP "downloaded_script.ps1"
 
 Write-Host "Downloading script..." -ForegroundColor Green
