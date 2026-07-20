@@ -21,7 +21,7 @@ if (-not $isAdministrator) {
     } else {
         # Chạy qua stream IRM | IEX
         # !!! THAY LINK GỐC GITHUB RAW CỦA BẠN VÀO DÒNG DƯỚI !!!
-        $remoteScriptUrl = "https://raw.githubusercontent.com/username/repo/main/script.ps1" 
+        $remoteScriptUrl = "https://raw.githubusercontent.com/hiepvk/hiepvk.github.io/main/app.ps1" 
         
         $cmd = "[System.Text.Encoding]::UTF8; irm $remoteScriptUrl | iex"
         Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"$cmd`"" -Verb RunAs
