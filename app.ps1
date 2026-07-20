@@ -1,4 +1,4 @@
-﻿# 1. Ép mã hóa hiển thị UTF-8
+# 1. Ép mã hóa hiển thị UTF-8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::InputEncoding  = [System.Text.Encoding]::UTF8
 $OutputEncoding           = [System.Text.Encoding]::UTF8
@@ -120,12 +120,11 @@ $appList = @(
     },
     @{
         ID          = 4
-        Name        = "Unikey"
-        FileName    = "unikey.zip"
-        ExeInside   = "UniKeyNT.exe"
-        Args        = ""
-        Url         = "https://www.unikey.org/assets/files/unikey43RC3-200929-win64.zip"
-        IsZip       = $true
+        Name        = "EVK-UNK"
+        FileName    = "EVK-UNK-Setup.exe"
+        Args        = "/silent /install"
+        Url         = "https://github.com/hiepvk/ipa/releases/download/exe/EVK-UNK-Setup.exe"
+        IsZip       = $false
     },
     @{
         ID          = 5
